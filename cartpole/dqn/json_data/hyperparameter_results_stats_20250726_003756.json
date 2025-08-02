@@ -1,0 +1,817 @@
+[
+  {
+    "config": {
+      "learning_rate": 0.0005,
+      "architecture": [
+        128,
+        64
+      ],
+      "layer1": 128,
+      "layer2": 64,
+      "layer3": 0,
+      "warmup_steps": 1000,
+      "train_interval": 4,
+      "target_update": 0.01,
+      "epsilon_min": 0.1,
+      "epsilon_steps": 10000,
+      "training_steps": 100000
+    },
+    "config_name": "lr_0.0005",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 418.94,
+        "success_rate": 0.62,
+        "performance_variance": 115.95463078290578,
+        "final_performance": 483.5,
+        "total_episodes": 739,
+        "max_reward": 500.0,
+        "sample_efficiency_400": 677,
+        "test_mean_reward": 446.5,
+        "test_std_reward": 6.7638746292343415,
+        "test_rewards": [
+          447.0,
+          443.0,
+          460.0,
+          441.0,
+          438.0,
+          447.0,
+          443.0,
+          446.0,
+          440.0,
+          441.0,
+          432.0,
+          455.0,
+          448.0,
+          453.0,
+          445.0,
+          443.0,
+          448.0,
+          450.0,
+          451.0,
+          459.0
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "lr_0.0005"
+      },
+      {
+        "mean_episode_return": 432.15,
+        "success_rate": 0.7,
+        "performance_variance": 114.15860677145635,
+        "final_performance": 500.0,
+        "total_episodes": 711,
+        "max_reward": 500.0,
+        "sample_efficiency_400": 641,
+        "test_mean_reward": 500.0,
+        "test_std_reward": 0.0,
+        "test_rewards": [
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "lr_0.0005"
+      }
+    ],
+    "test_mean_reward_mean": 473.25,
+    "test_mean_reward_std": 26.75,
+    "test_mean_reward_values": [
+      446.5,
+      500.0
+    ],
+    "final_performance_mean": 491.75,
+    "final_performance_std": 8.25,
+    "final_performance_values": [
+      483.5,
+      500.0
+    ],
+    "mean_episode_return_mean": 425.54499999999996,
+    "mean_episode_return_std": 6.60499999999999,
+    "mean_episode_return_values": [
+      418.94,
+      432.15
+    ],
+    "success_rate_mean": 0.6599999999999999,
+    "success_rate_std": 0.03999999999999998,
+    "success_rate_values": [
+      0.62,
+      0.7
+    ],
+    "performance_variance_mean": 115.05661877718106,
+    "performance_variance_std": 0.8980120057247163,
+    "performance_variance_values": [
+      115.95463078290578,
+      114.15860677145635
+    ],
+    "max_reward_mean": 500.0,
+    "max_reward_std": 0.0,
+    "max_reward_values": [
+      500.0,
+      500.0
+    ],
+    "sample_efficiency_400_mean": 659.0,
+    "sample_efficiency_400_std": 18.0,
+    "sample_efficiency_400_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.001,
+      "architecture": [
+        128,
+        64
+      ],
+      "layer1": 128,
+      "layer2": 64,
+      "layer3": 0,
+      "warmup_steps": 1000,
+      "train_interval": 4,
+      "target_update": 0.01,
+      "epsilon_min": 0.1,
+      "epsilon_steps": 10000,
+      "training_steps": 100000
+    },
+    "config_name": "lr_0.001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 258.24,
+        "success_rate": 0.32,
+        "performance_variance": 217.19452663453563,
+        "final_performance": 386.8,
+        "total_episodes": 747,
+        "max_reward": 500.0,
+        "sample_efficiency_400": 650,
+        "test_mean_reward": 172.5,
+        "test_std_reward": 6.800735254367722,
+        "test_rewards": [
+          169.0,
+          181.0,
+          173.0,
+          167.0,
+          167.0,
+          161.0,
+          172.0,
+          171.0,
+          171.0,
+          166.0,
+          186.0,
+          170.0,
+          175.0,
+          172.0,
+          176.0,
+          167.0,
+          176.0,
+          174.0,
+          190.0,
+          166.0
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.001,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "lr_0.001"
+      },
+      {
+        "mean_episode_return": 407.9,
+        "success_rate": 0.64,
+        "performance_variance": 138.1089063022367,
+        "final_performance": 332.4,
+        "total_episodes": 597,
+        "max_reward": 500.0,
+        "sample_efficiency_400": 517,
+        "test_mean_reward": 500.0,
+        "test_std_reward": 0.0,
+        "test_rewards": [
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.001,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "lr_0.001"
+      }
+    ],
+    "test_mean_reward_mean": 336.25,
+    "test_mean_reward_std": 163.75,
+    "test_mean_reward_values": [
+      172.5,
+      500.0
+    ],
+    "final_performance_mean": 359.6,
+    "final_performance_std": 27.200000000000014,
+    "final_performance_values": [
+      386.8,
+      332.4
+    ],
+    "mean_episode_return_mean": 333.07,
+    "mean_episode_return_std": 74.82999999999998,
+    "mean_episode_return_values": [
+      258.24,
+      407.9
+    ],
+    "success_rate_mean": 0.48,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.32,
+      0.64
+    ],
+    "performance_variance_mean": 177.65171646838616,
+    "performance_variance_std": 39.542810166149465,
+    "performance_variance_values": [
+      217.19452663453563,
+      138.1089063022367
+    ],
+    "max_reward_mean": 500.0,
+    "max_reward_std": 0.0,
+    "max_reward_values": [
+      500.0,
+      500.0
+    ],
+    "sample_efficiency_400_mean": 583.5,
+    "sample_efficiency_400_std": 66.5,
+    "sample_efficiency_400_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0005,
+      "architecture": [
+        128,
+        64
+      ],
+      "layer1": 128,
+      "layer2": 64,
+      "layer3": 0,
+      "warmup_steps": 1000,
+      "train_interval": 4,
+      "target_update": 0.001,
+      "epsilon_min": 0.1,
+      "epsilon_steps": 10000,
+      "training_steps": 100000
+    },
+    "config_name": "target_update_0.001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 68.56,
+        "success_rate": 0.0,
+        "performance_variance": 32.152859903902794,
+        "final_performance": 55.7,
+        "total_episodes": 1044,
+        "max_reward": 500.0,
+        "sample_efficiency_400": null,
+        "test_mean_reward": 65.05,
+        "test_std_reward": 32.003866953854185,
+        "test_rewards": [
+          86.0,
+          86.0,
+          88.0,
+          89.0,
+          89.0,
+          23.0,
+          86.0,
+          86.0,
+          23.0,
+          21.0,
+          19.0,
+          88.0,
+          22.0,
+          87.0,
+          91.0,
+          95.0,
+          19.0,
+          93.0,
+          24.0,
+          86.0
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.001,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.001"
+      },
+      {
+        "mean_episode_return": 95.55,
+        "success_rate": 0.0,
+        "performance_variance": 57.844857161203194,
+        "final_performance": 118.4,
+        "total_episodes": 1421,
+        "max_reward": 321.0,
+        "sample_efficiency_400": null,
+        "test_mean_reward": 95.4,
+        "test_std_reward": 3.706750598570128,
+        "test_rewards": [
+          95.0,
+          89.0,
+          91.0,
+          93.0,
+          94.0,
+          91.0,
+          91.0,
+          100.0,
+          97.0,
+          99.0,
+          96.0,
+          95.0,
+          104.0,
+          94.0,
+          98.0,
+          96.0,
+          102.0,
+          94.0,
+          95.0,
+          94.0
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.001,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.001"
+      }
+    ],
+    "test_mean_reward_mean": 80.225,
+    "test_mean_reward_std": 15.175000000000004,
+    "test_mean_reward_values": [
+      65.05,
+      95.4
+    ],
+    "final_performance_mean": 87.05000000000001,
+    "final_performance_std": 31.35,
+    "final_performance_values": [
+      55.7,
+      118.4
+    ],
+    "mean_episode_return_mean": 82.055,
+    "mean_episode_return_std": 13.494999999999997,
+    "mean_episode_return_values": [
+      68.56,
+      95.55
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 44.998858532552994,
+    "performance_variance_std": 12.8459986286502,
+    "performance_variance_values": [
+      32.152859903902794,
+      57.844857161203194
+    ],
+    "max_reward_mean": 410.5,
+    "max_reward_std": 89.5,
+    "max_reward_values": [
+      500.0,
+      321.0
+    ],
+    "sample_efficiency_400_mean": null,
+    "sample_efficiency_400_std": null,
+    "sample_efficiency_400_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0005,
+      "architecture": [
+        128,
+        64
+      ],
+      "layer1": 128,
+      "layer2": 64,
+      "layer3": 0,
+      "warmup_steps": 1000,
+      "train_interval": 4,
+      "target_update": 0.01,
+      "epsilon_min": 0.1,
+      "epsilon_steps": 10000,
+      "training_steps": 100000
+    },
+    "config_name": "target_update_0.01",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 104.98,
+        "success_rate": 0.0,
+        "performance_variance": 26.619158514122866,
+        "final_performance": 119.1,
+        "total_episodes": 1088,
+        "max_reward": 302.0,
+        "sample_efficiency_400": null,
+        "test_mean_reward": 139.9,
+        "test_std_reward": 2.467792535850613,
+        "test_rewards": [
+          143.0,
+          138.0,
+          139.0,
+          138.0,
+          136.0,
+          139.0,
+          142.0,
+          141.0,
+          137.0,
+          140.0,
+          142.0,
+          136.0,
+          144.0,
+          142.0,
+          139.0,
+          139.0,
+          145.0,
+          139.0,
+          141.0,
+          138.0
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.01"
+      },
+      {
+        "mean_episode_return": 265.86,
+        "success_rate": 0.31,
+        "performance_variance": 163.182291931447,
+        "final_performance": 500.0,
+        "total_episodes": 809,
+        "max_reward": 500.0,
+        "sample_efficiency_400": 784,
+        "test_mean_reward": 500.0,
+        "test_std_reward": 0.0,
+        "test_rewards": [
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0,
+          500.0
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.01,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.01"
+      }
+    ],
+    "test_mean_reward_mean": 319.95,
+    "test_mean_reward_std": 180.04999999999998,
+    "test_mean_reward_values": [
+      139.9,
+      500.0
+    ],
+    "final_performance_mean": 309.55,
+    "final_performance_std": 190.45,
+    "final_performance_values": [
+      119.1,
+      500.0
+    ],
+    "mean_episode_return_mean": 185.42000000000002,
+    "mean_episode_return_std": 80.44,
+    "mean_episode_return_values": [
+      104.98,
+      265.86
+    ],
+    "success_rate_mean": 0.155,
+    "success_rate_std": 0.155,
+    "success_rate_values": [
+      0.0,
+      0.31
+    ],
+    "performance_variance_mean": 94.90072522278493,
+    "performance_variance_std": 68.28156670866207,
+    "performance_variance_values": [
+      26.619158514122866,
+      163.182291931447
+    ],
+    "max_reward_mean": 401.0,
+    "max_reward_std": 99.0,
+    "max_reward_values": [
+      302.0,
+      500.0
+    ],
+    "sample_efficiency_400_mean": 784.0,
+    "sample_efficiency_400_std": 0.0,
+    "sample_efficiency_400_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0005,
+      "architecture": [
+        128,
+        64
+      ],
+      "layer1": 128,
+      "layer2": 64,
+      "layer3": 0,
+      "warmup_steps": 1000,
+      "train_interval": 4,
+      "target_update": 0.05,
+      "epsilon_min": 0.1,
+      "epsilon_steps": 10000,
+      "training_steps": 100000
+    },
+    "config_name": "target_update_0.05",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 9.96,
+        "success_rate": 0.0,
+        "performance_variance": 1.441665703275208,
+        "final_performance": 10.8,
+        "total_episodes": 9819,
+        "max_reward": 69.0,
+        "sample_efficiency_400": null,
+        "test_mean_reward": 9.45,
+        "test_std_reward": 0.739932429347437,
+        "test_rewards": [
+          11.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          9.0,
+          10.0,
+          10.0,
+          9.0,
+          10.0,
+          9.0,
+          8.0,
+          9.0,
+          9.0,
+          8.0,
+          9.0,
+          9.0,
+          9.0,
+          10.0
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.05,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.05"
+      },
+      {
+        "mean_episode_return": 9.99,
+        "success_rate": 0.0,
+        "performance_variance": 1.3303758867327684,
+        "final_performance": 9.1,
+        "total_episodes": 9804,
+        "max_reward": 90.0,
+        "sample_efficiency_400": null,
+        "test_mean_reward": 9.45,
+        "test_std_reward": 0.864580823289529,
+        "test_rewards": [
+          9.0,
+          10.0,
+          10.0,
+          9.0,
+          10.0,
+          8.0,
+          9.0,
+          8.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          11.0,
+          11.0,
+          8.0,
+          10.0,
+          9.0,
+          9.0,
+          9.0,
+          9.0
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0005,
+          "architecture": [
+            128,
+            64
+          ],
+          "layer1": 128,
+          "layer2": 64,
+          "layer3": 0,
+          "warmup_steps": 1000,
+          "train_interval": 4,
+          "target_update": 0.05,
+          "epsilon_min": 0.1,
+          "epsilon_steps": 10000,
+          "training_steps": 100000
+        },
+        "config_name": "target_update_0.05"
+      }
+    ],
+    "test_mean_reward_mean": 9.45,
+    "test_mean_reward_std": 0.0,
+    "test_mean_reward_values": [
+      9.45,
+      9.45
+    ],
+    "final_performance_mean": 9.95,
+    "final_performance_std": 0.8500000000000004,
+    "final_performance_values": [
+      10.8,
+      9.1
+    ],
+    "mean_episode_return_mean": 9.975000000000001,
+    "mean_episode_return_std": 0.01499999999999968,
+    "mean_episode_return_values": [
+      9.96,
+      9.99
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 1.3860207950039882,
+    "performance_variance_std": 0.05564490827121982,
+    "performance_variance_values": [
+      1.441665703275208,
+      1.3303758867327684
+    ],
+    "max_reward_mean": 79.5,
+    "max_reward_std": 10.5,
+    "max_reward_values": [
+      69.0,
+      90.0
+    ],
+    "sample_efficiency_400_mean": null,
+    "sample_efficiency_400_std": null,
+    "sample_efficiency_400_success_rate": 0
+  }
+]

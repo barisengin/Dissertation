@@ -1,0 +1,2682 @@
+[
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.0001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -997.9341057500002,
+        "success_rate": 0.0,
+        "performance_variance": 196.65101473523137,
+        "final_performance": -1029.7850637,
+        "total_episodes": 1003,
+        "max_reward": -632.045086,
+        "min_reward": -1849.567966,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1000.9150287247263,
+        "test_std_reward": 206.94795107412352,
+        "test_rewards": [
+          -834.6635482967839,
+          -882.6861018277092,
+          -769.7434590173577,
+          -683.6199935277464,
+          -1111.4532298775475,
+          -985.8537499715222,
+          -1306.5271955429828,
+          -1194.0789898868982,
+          -1347.4135650979927,
+          -902.1460471804224,
+          -811.4028582904931,
+          -1070.5160176393013,
+          -928.3031970424765,
+          -1103.5134444684188,
+          -769.0632481079764,
+          -1113.8332346845814,
+          -1016.0537383127707,
+          -796.4231435390024,
+          -971.4215805595727,
+          -765.3370825639896
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0001"
+      },
+      {
+        "mean_episode_return": -1074.2236622499997,
+        "success_rate": 0.0,
+        "performance_variance": 225.0797888216469,
+        "final_performance": -1061.5128479999998,
+        "total_episodes": 1003,
+        "max_reward": -668.550651,
+        "min_reward": -1864.279949,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1013.1136826563161,
+        "test_std_reward": 238.20087863418874,
+        "test_rewards": [
+          -856.6118955661105,
+          -905.079716733615,
+          -1121.0105767229022,
+          -911.4736985718961,
+          -1014.192850512483,
+          -1018.5857636725718,
+          -758.0167776490271,
+          -1139.5270131950672,
+          -998.0803169028264,
+          -1512.6867750034912,
+          -976.1889631172222,
+          -922.1457497043684,
+          -748.4573527714864,
+          -920.2541689938782,
+          -908.7487249606315,
+          -1224.3001442500502,
+          -1012.1351755349435,
+          -1405.0248772751825,
+          -1408.8682143230153,
+          -977.225562253097
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0001"
+      }
+    ],
+    "test_mean_reward_mean": -1007.0143556905211,
+    "test_mean_reward_std": 6.099326965794887,
+    "test_mean_reward_values": [
+      -1000.9150287247263,
+      -1013.1136826563161
+    ],
+    "final_performance_mean": -1045.6489558499998,
+    "final_performance_std": 15.86389214999997,
+    "final_performance_values": [
+      -1029.7850637,
+      -1061.5128479999998
+    ],
+    "mean_episode_return_mean": -1036.078884,
+    "mean_episode_return_std": 38.144778249999774,
+    "mean_episode_return_values": [
+      -997.9341057500002,
+      -1074.2236622499997
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 210.86540177843915,
+    "performance_variance_std": 14.214387043207765,
+    "performance_variance_values": [
+      196.65101473523137,
+      225.0797888216469
+    ],
+    "max_reward_mean": -650.2978685,
+    "max_reward_std": 18.252782500000023,
+    "max_reward_values": [
+      -632.045086,
+      -668.550651
+    ],
+    "min_reward_mean": -1856.9239575000001,
+    "min_reward_std": 7.355991499999959,
+    "min_reward_values": [
+      -1849.567966,
+      -1864.279949
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.0003",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -740.67278786,
+        "success_rate": 0.0,
+        "performance_variance": 192.29101961554923,
+        "final_performance": -671.9958725,
+        "total_episodes": 1003,
+        "max_reward": -258.797383,
+        "min_reward": -1788.033367,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -350.49239970996604,
+        "test_std_reward": 231.50493690692088,
+        "test_rewards": [
+          -726.6973472361663,
+          -394.5802257364815,
+          -872.5964140053732,
+          -127.69178724071695,
+          -3.1216276894557216,
+          -0.925965555519431,
+          -257.3382719705141,
+          -395.3271567201148,
+          -261.07623415020106,
+          -389.27803850220323,
+          -260.0201919895282,
+          -538.836178380901,
+          -126.94344907574467,
+          -128.3117083012925,
+          -347.8885168487501,
+          -258.38173283743293,
+          -130.03088928448395,
+          -679.7782672163765,
+          -392.7124931359359,
+          -538.5197480750899
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0003"
+      },
+      {
+        "mean_episode_return": -574.5710532600001,
+        "success_rate": 0.1,
+        "performance_variance": 251.1199965135382,
+        "final_performance": -384.3703115,
+        "total_episodes": 1003,
+        "max_reward": -125.407188,
+        "min_reward": -1814.24171,
+        "sample_efficiency_300": 988,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -208.1054389552184,
+        "test_std_reward": 141.49257144347288,
+        "test_rewards": [
+          -257.07998492432307,
+          -0.5802154425615275,
+          -274.4399139085312,
+          -127.8066023274309,
+          -258.17756546666243,
+          -2.0741543277351058,
+          -255.03858498386978,
+          -128.87415614404156,
+          -0.5780531957409565,
+          -796.4906113900864,
+          -517.1351400871707,
+          -127.43258163682164,
+          -386.73758451792025,
+          -262.9859276810935,
+          -2.3894496912860075,
+          -1.5838274061204025,
+          -130.75634334321634,
+          -130.5150315381081,
+          -259.2569966143974,
+          -393.27441649137967
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0003"
+      }
+    ],
+    "test_mean_reward_mean": -279.2989193325922,
+    "test_mean_reward_std": 71.19348037737382,
+    "test_mean_reward_values": [
+      -350.49239970996604,
+      -208.1054389552184
+    ],
+    "final_performance_mean": -528.183092,
+    "final_performance_std": 143.8127805,
+    "final_performance_values": [
+      -671.9958725,
+      -384.3703115
+    ],
+    "mean_episode_return_mean": -657.62192056,
+    "mean_episode_return_std": 83.05086729999994,
+    "mean_episode_return_values": [
+      -740.67278786,
+      -574.5710532600001
+    ],
+    "success_rate_mean": 0.05,
+    "success_rate_std": 0.05,
+    "success_rate_values": [
+      0.0,
+      0.1
+    ],
+    "performance_variance_mean": 221.70550806454372,
+    "performance_variance_std": 29.41448844899449,
+    "performance_variance_values": [
+      192.29101961554923,
+      251.1199965135382
+    ],
+    "max_reward_mean": -192.10228550000002,
+    "max_reward_std": 66.6950975,
+    "max_reward_values": [
+      -258.797383,
+      -125.407188
+    ],
+    "min_reward_mean": -1801.1375385000001,
+    "min_reward_std": 13.104171500000007,
+    "min_reward_values": [
+      -1788.033367,
+      -1814.24171
+    ],
+    "sample_efficiency_300_mean": 988.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.001,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -784.1778793500001,
+        "success_rate": 0.0,
+        "performance_variance": 110.7881666606855,
+        "final_performance": -668.2341923000001,
+        "total_episodes": 1003,
+        "max_reward": -0.88129,
+        "min_reward": -1835.892833,
+        "sample_efficiency_300": 418,
+        "sample_efficiency_200": 493,
+        "test_mean_reward": -547.6170165922492,
+        "test_std_reward": 75.42613063149473,
+        "test_rewards": [
+          -727.7811951680754,
+          -507.81420575462283,
+          -500.42851908902895,
+          -501.74810913788525,
+          -502.7496778913595,
+          -505.22191959237006,
+          -500.09584237675926,
+          -503.04053325832075,
+          -614.7347554439341,
+          -504.75902962066175,
+          -619.7605315154661,
+          -502.0768681996109,
+          -628.5249813550976,
+          -506.1024061890471,
+          -509.31783580689176,
+          -504.2771525832587,
+          -617.8111304976964,
+          -659.2938773255069,
+          -589.9229409385883,
+          -694.7342703107356
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.001,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.001"
+      },
+      {
+        "mean_episode_return": -478.61250440000003,
+        "success_rate": 0.43,
+        "performance_variance": 450.3367033822025,
+        "final_performance": -278.75219350000003,
+        "total_episodes": 1003,
+        "max_reward": -0.594848,
+        "min_reward": -1853.502096,
+        "sample_efficiency_300": 428,
+        "sample_efficiency_200": 431,
+        "test_mean_reward": -298.44220908058776,
+        "test_std_reward": 284.4309810359836,
+        "test_rewards": [
+          -263.4879661956886,
+          -0.2943905091704164,
+          -251.9279895854332,
+          -363.7634548499408,
+          -972.4317161352694,
+          -123.5311243628677,
+          -117.51089426378715,
+          -909.8827743260022,
+          -123.51482744120163,
+          -125.82694963509189,
+          -0.2465608463754972,
+          -117.53764190769861,
+          -332.5598086284429,
+          -910.5638073933885,
+          -239.75486513563362,
+          -440.5245980657267,
+          -906.4343885678528,
+          -925.0420726178149,
+          -0.21600453752296306,
+          -258.85573543207465
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.001,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.001"
+      }
+    ],
+    "test_mean_reward_mean": -423.0296128364185,
+    "test_mean_reward_std": 124.58740375583074,
+    "test_mean_reward_values": [
+      -547.6170165922492,
+      -298.44220908058776
+    ],
+    "final_performance_mean": -473.49319290000005,
+    "final_performance_std": 194.74099940000005,
+    "final_performance_values": [
+      -668.2341923000001,
+      -278.75219350000003
+    ],
+    "mean_episode_return_mean": -631.3951918750001,
+    "mean_episode_return_std": 152.78268747500005,
+    "mean_episode_return_values": [
+      -784.1778793500001,
+      -478.61250440000003
+    ],
+    "success_rate_mean": 0.215,
+    "success_rate_std": 0.215,
+    "success_rate_values": [
+      0.0,
+      0.43
+    ],
+    "performance_variance_mean": 280.562435021444,
+    "performance_variance_std": 169.7742683607585,
+    "performance_variance_values": [
+      110.7881666606855,
+      450.3367033822025
+    ],
+    "max_reward_mean": -0.7380690000000001,
+    "max_reward_std": 0.143221,
+    "max_reward_values": [
+      -0.88129,
+      -0.594848
+    ],
+    "min_reward_mean": -1844.6974645,
+    "min_reward_std": 8.804631499999914,
+    "min_reward_values": [
+      -1835.892833,
+      -1853.502096
+    ],
+    "sample_efficiency_300_mean": 423.0,
+    "sample_efficiency_300_std": 5.0,
+    "sample_efficiency_300_success_rate": 1.0,
+    "sample_efficiency_200_mean": 462.0,
+    "sample_efficiency_200_std": 31.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.003",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -246.07912359000002,
+        "success_rate": 0.43,
+        "performance_variance": 178.71032595029058,
+        "final_performance": -229.36691380000002,
+        "total_episodes": 1003,
+        "max_reward": -0.576782,
+        "min_reward": -1788.033367,
+        "sample_efficiency_300": 242,
+        "sample_efficiency_200": 253,
+        "test_mean_reward": -380.8363532920645,
+        "test_std_reward": 377.5044577736157,
+        "test_rewards": [
+          -921.7369207380679,
+          -774.1950115926611,
+          -120.1886569967709,
+          -771.8727646615135,
+          -773.6061754261323,
+          -117.9801360336863,
+          -0.1815466716601072,
+          -0.30612237467289966,
+          -253.92607369679678,
+          -126.09401043270691,
+          -360.3142737775027,
+          -0.14588312413984456,
+          -238.23630685145218,
+          -0.29248171411326723,
+          -122.41233299184405,
+          -272.4125949708892,
+          -766.6186997183734,
+          -264.9331118506966,
+          -116.774211680181,
+          -771.0432627119353
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.003"
+      },
+      {
+        "mean_episode_return": -934.0561102600001,
+        "success_rate": 0.11,
+        "performance_variance": 437.35827598777155,
+        "final_performance": -846.2179988999999,
+        "total_episodes": 1003,
+        "max_reward": -1.212186,
+        "min_reward": -1814.24171,
+        "sample_efficiency_300": 225,
+        "sample_efficiency_200": 299,
+        "test_mean_reward": -911.1079294505762,
+        "test_std_reward": 467.65175128677146,
+        "test_rewards": [
+          -1282.9559270071845,
+          -263.6004573828712,
+          -135.30718265305222,
+          -3.2764914005255563,
+          -1262.958758493002,
+          -445.8289666643994,
+          -1372.5087088121493,
+          -412.4881925367555,
+          -1297.3055782924002,
+          -137.77272555207702,
+          -456.35533682976876,
+          -3.643867121469792,
+          -1121.8892804316738,
+          -993.6061403366725,
+          -941.3672833074676,
+          -941.192977623958,
+          -531.597686655767,
+          -5.6315937696625085,
+          -1196.5895493454752,
+          -1014.1292117746273
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.003"
+      }
+    ],
+    "test_mean_reward_mean": -645.9721413713203,
+    "test_mean_reward_std": 265.13578807925586,
+    "test_mean_reward_values": [
+      -380.8363532920645,
+      -911.1079294505762
+    ],
+    "final_performance_mean": -537.79245635,
+    "final_performance_std": 308.42554254999993,
+    "final_performance_values": [
+      -229.36691380000002,
+      -846.2179988999999
+    ],
+    "mean_episode_return_mean": -590.067616925,
+    "mean_episode_return_std": 343.98849333500004,
+    "mean_episode_return_values": [
+      -246.07912359000002,
+      -934.0561102600001
+    ],
+    "success_rate_mean": 0.27,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.43,
+      0.11
+    ],
+    "performance_variance_mean": 308.03430096903105,
+    "performance_variance_std": 129.3239750187405,
+    "performance_variance_values": [
+      178.71032595029058,
+      437.35827598777155
+    ],
+    "max_reward_mean": -0.8944840000000001,
+    "max_reward_std": 0.317702,
+    "max_reward_values": [
+      -0.576782,
+      -1.212186
+    ],
+    "min_reward_mean": -1801.1375385000001,
+    "min_reward_std": 13.104171500000007,
+    "min_reward_values": [
+      -1788.033367,
+      -1814.24171
+    ],
+    "sample_efficiency_300_mean": 233.5,
+    "sample_efficiency_300_std": 8.5,
+    "sample_efficiency_300_success_rate": 1.0,
+    "sample_efficiency_200_mean": 276.0,
+    "sample_efficiency_200_std": 23.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "gae_0.9",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -648.68178604,
+        "success_rate": 0.01,
+        "performance_variance": 226.82768823868793,
+        "final_performance": -502.8708601,
+        "total_episodes": 1003,
+        "max_reward": -130.550609,
+        "min_reward": -1828.490634,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -315.35580566152714,
+        "test_std_reward": 240.90186302371558,
+        "test_rewards": [
+          -557.1139979098602,
+          -258.83194280347664,
+          -0.6012050526717794,
+          -719.229930932345,
+          -264.3164617568692,
+          -126.85443261566473,
+          -399.4965762664128,
+          -273.3921528535531,
+          -574.5845882268081,
+          -128.23936372682866,
+          -0.30429920762824586,
+          -127.07462672099291,
+          -412.03159508631455,
+          -396.4645898665287,
+          -733.2778231703976,
+          -129.68424729556875,
+          -259.6200925870934,
+          -567.3723240625327,
+          -751.9522275223142,
+          -132.94726024713412
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.9"
+      },
+      {
+        "mean_episode_return": -377.3268087,
+        "success_rate": 0.33,
+        "performance_variance": 291.07986594308977,
+        "final_performance": -272.6592235,
+        "total_episodes": 1003,
+        "max_reward": -2.786902,
+        "min_reward": -1830.583669,
+        "sample_efficiency_300": 946,
+        "sample_efficiency_200": 950,
+        "test_mean_reward": -192.3772015458597,
+        "test_std_reward": 150.7924981375914,
+        "test_rewards": [
+          -129.5046172702606,
+          -128.60420671473887,
+          -396.1419145396929,
+          -127.65267216112882,
+          -394.3996309031708,
+          -276.059884659033,
+          -136.56048132684705,
+          -132.0506521418415,
+          -291.25900605370197,
+          -129.85557258980208,
+          -264.9236470809058,
+          -610.8115292967955,
+          -283.54405019001706,
+          -1.889199253296104,
+          -131.09446278283207,
+          -377.0030026678551,
+          -129.20037884381932,
+          -1.4127779173376003,
+          -440.6587969899818,
+          -134.5460583115487
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.9"
+      }
+    ],
+    "test_mean_reward_mean": -253.86650360369342,
+    "test_mean_reward_std": 61.489302057833726,
+    "test_mean_reward_values": [
+      -315.35580566152714,
+      -192.3772015458597
+    ],
+    "final_performance_mean": -387.7650418,
+    "final_performance_std": 115.10581830000001,
+    "final_performance_values": [
+      -502.8708601,
+      -272.6592235
+    ],
+    "mean_episode_return_mean": -513.00429737,
+    "mean_episode_return_std": 135.67748867,
+    "mean_episode_return_values": [
+      -648.68178604,
+      -377.3268087
+    ],
+    "success_rate_mean": 0.17,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.01,
+      0.33
+    ],
+    "performance_variance_mean": 258.9537770908888,
+    "performance_variance_std": 32.12608885220092,
+    "performance_variance_values": [
+      226.82768823868793,
+      291.07986594308977
+    ],
+    "max_reward_mean": -66.6687555,
+    "max_reward_std": 63.881853500000005,
+    "max_reward_values": [
+      -130.550609,
+      -2.786902
+    ],
+    "min_reward_mean": -1829.5371515000002,
+    "min_reward_std": 1.04651750000005,
+    "min_reward_values": [
+      -1828.490634,
+      -1830.583669
+    ],
+    "sample_efficiency_300_mean": 946.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 950.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "gae_0.95",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -740.67278786,
+        "success_rate": 0.0,
+        "performance_variance": 192.29101961554923,
+        "final_performance": -671.9958725,
+        "total_episodes": 1003,
+        "max_reward": -258.797383,
+        "min_reward": -1788.033367,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -387.32864393186765,
+        "test_std_reward": 224.69749069269542,
+        "test_rewards": [
+          -855.3929188472895,
+          -552.407375903474,
+          -126.40378185899007,
+          -701.2656375111453,
+          -130.04171086341415,
+          -870.1285718643526,
+          -257.4923483478299,
+          -394.1165101623811,
+          -389.17098949161874,
+          -391.4504664245747,
+          -9.375940689218238,
+          -572.4276053785982,
+          -128.9473988979927,
+          -282.0435145969279,
+          -827.45990314338,
+          -391.30393353602113,
+          -532.5104376958268,
+          -687.4033091941392,
+          -331.9702899205591,
+          -547.1215813244247
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.95"
+      },
+      {
+        "mean_episode_return": -574.5710532600001,
+        "success_rate": 0.1,
+        "performance_variance": 251.1199965135382,
+        "final_performance": -384.3703115,
+        "total_episodes": 1003,
+        "max_reward": -125.407188,
+        "min_reward": -1814.24171,
+        "sample_efficiency_300": 988,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -216.3577372587908,
+        "test_std_reward": 162.53714727910327,
+        "test_rewards": [
+          -128.63116452681717,
+          -258.09512869357,
+          -576.6905916815746,
+          -263.4764869518502,
+          -258.23937446872884,
+          -132.34054293457868,
+          -491.38614662675593,
+          -276.5005135193873,
+          -128.30320669912433,
+          -126.72434269528593,
+          -0.5605662085116767,
+          -131.60504820595375,
+          -0.375998530667524,
+          -128.57790816133056,
+          -1.0429738636773385,
+          -429.42997308547416,
+          -391.942429361066,
+          -266.40284284523955,
+          -126.19828546701794,
+          -413.16630809826876
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.95"
+      }
+    ],
+    "test_mean_reward_mean": -301.84319059532925,
+    "test_mean_reward_std": 85.48545333653843,
+    "test_mean_reward_values": [
+      -387.32864393186765,
+      -216.3577372587908
+    ],
+    "final_performance_mean": -528.183092,
+    "final_performance_std": 143.8127805,
+    "final_performance_values": [
+      -671.9958725,
+      -384.3703115
+    ],
+    "mean_episode_return_mean": -657.62192056,
+    "mean_episode_return_std": 83.05086729999994,
+    "mean_episode_return_values": [
+      -740.67278786,
+      -574.5710532600001
+    ],
+    "success_rate_mean": 0.05,
+    "success_rate_std": 0.05,
+    "success_rate_values": [
+      0.0,
+      0.1
+    ],
+    "performance_variance_mean": 221.70550806454372,
+    "performance_variance_std": 29.41448844899449,
+    "performance_variance_values": [
+      192.29101961554923,
+      251.1199965135382
+    ],
+    "max_reward_mean": -192.10228550000002,
+    "max_reward_std": 66.6950975,
+    "max_reward_values": [
+      -258.797383,
+      -125.407188
+    ],
+    "min_reward_mean": -1801.1375385000001,
+    "min_reward_std": 13.104171500000007,
+    "min_reward_values": [
+      -1788.033367,
+      -1814.24171
+    ],
+    "sample_efficiency_300_mean": 988.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.98,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "gae_0.98",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -924.55563946,
+        "success_rate": 0.0,
+        "performance_variance": 122.43672306915418,
+        "final_performance": -933.6713154000001,
+        "total_episodes": 1003,
+        "max_reward": -506.701841,
+        "min_reward": -1794.555021,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -897.3978339073249,
+        "test_std_reward": 50.65818506824951,
+        "test_rewards": [
+          -768.6982719667844,
+          -1045.1526868123615,
+          -924.860063773355,
+          -899.8048229300412,
+          -882.9276784287458,
+          -867.1623774393873,
+          -901.4051696732541,
+          -1025.9174936849695,
+          -894.6608648456701,
+          -890.0750865951417,
+          -1000.6279878127307,
+          -987.8190194458853,
+          -892.4182588910292,
+          -893.974943889543,
+          -840.4236888117871,
+          -931.676118470366,
+          -879.5763338535849,
+          -924.3774026131161,
+          -874.2863385650595,
+          -899.0896714785378
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.98,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.98"
+      },
+      {
+        "mean_episode_return": -918.98615686,
+        "success_rate": 0.0,
+        "performance_variance": 129.4411441021411,
+        "final_performance": -892.428208,
+        "total_episodes": 1003,
+        "max_reward": -629.628435,
+        "min_reward": -1843.975148,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -855.5543541359715,
+        "test_std_reward": 86.68098977361049,
+        "test_rewards": [
+          -953.4513444685863,
+          -586.757207989857,
+          -894.4515645253265,
+          -865.3890469942837,
+          -874.0821171025958,
+          -813.885378940444,
+          -772.0187789484048,
+          -736.297363214034,
+          -762.8828707710778,
+          -1159.22869502801,
+          -894.3089901761799,
+          -779.3984476122565,
+          -759.9034047484116,
+          -892.4725210901265,
+          -1017.2570395501035,
+          -770.2894697840967,
+          -803.2712513746974,
+          -890.6830662247837,
+          -758.5306168075077,
+          -764.4673914596032
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.98,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "gae_0.98"
+      }
+    ],
+    "test_mean_reward_mean": -876.4760940216481,
+    "test_mean_reward_std": 20.921739885676686,
+    "test_mean_reward_values": [
+      -897.3978339073249,
+      -855.5543541359715
+    ],
+    "final_performance_mean": -913.0497617000001,
+    "final_performance_std": 20.62155370000005,
+    "final_performance_values": [
+      -933.6713154000001,
+      -892.428208
+    ],
+    "mean_episode_return_mean": -921.77089816,
+    "mean_episode_return_std": 2.7847412999999506,
+    "mean_episode_return_values": [
+      -924.55563946,
+      -918.98615686
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 125.93893358564765,
+    "performance_variance_std": 3.502210516493456,
+    "performance_variance_values": [
+      122.43672306915418,
+      129.4411441021411
+    ],
+    "max_reward_mean": -568.165138,
+    "max_reward_std": 61.46329699999998,
+    "max_reward_values": [
+      -506.701841,
+      -629.628435
+    ],
+    "min_reward_mean": -1819.2650844999998,
+    "min_reward_std": 24.710063500000047,
+    "min_reward_values": [
+      -1794.555021,
+      -1843.975148
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.1,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "clip_0.1",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -763.6152926699999,
+        "success_rate": 0.0,
+        "performance_variance": 162.82068641368286,
+        "final_performance": -705.7042655,
+        "total_episodes": 1003,
+        "max_reward": -361.828625,
+        "min_reward": -1813.312735,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -586.3235187157989,
+        "test_std_reward": 136.42809994177986,
+        "test_rewards": [
+          -511.79255990222333,
+          -912.1837510430196,
+          -676.0652364036347,
+          -394.78289192722065,
+          -667.464997907825,
+          -553.6028333416011,
+          -467.74220231851854,
+          -510.37226151259455,
+          -510.80793272160156,
+          -512.1694037811443,
+          -257.075810044393,
+          -527.4528323586023,
+          -377.72486468795177,
+          -574.6916335257282,
+          -963.3144440970053,
+          -413.46788295730954,
+          -615.3773598705718,
+          -379.3805731557899,
+          -637.1012906304429,
+          -131.4691952970074
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.1,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.1"
+      },
+      {
+        "mean_episode_return": -479.3130721500001,
+        "success_rate": 0.31,
+        "performance_variance": 368.67148135630316,
+        "final_performance": -438.677189,
+        "total_episodes": 1003,
+        "max_reward": -3.063557,
+        "min_reward": -1816.788906,
+        "sample_efficiency_300": 970,
+        "sample_efficiency_200": 988,
+        "test_mean_reward": -258.0561247007328,
+        "test_std_reward": 199.29489800733649,
+        "test_rewards": [
+          -385.6819226075243,
+          -129.68187280950704,
+          -798.1286937653354,
+          -129.75943614790674,
+          -260.3242795348607,
+          -660.6417827883206,
+          -554.0225170476001,
+          -125.66582843268439,
+          -1.9748222406436846,
+          -125.36452669075108,
+          -126.28574661690173,
+          -403.3100825352196,
+          -126.36263161817348,
+          -261.9038953647477,
+          -129.6302492775393,
+          -272.23522763765646,
+          -395.5364284907624,
+          -0.34571043479594005,
+          -128.76225399923274,
+          -552.7037182055336
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.1,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.1"
+      }
+    ],
+    "test_mean_reward_mean": -422.18982170826587,
+    "test_mean_reward_std": 164.13369700753302,
+    "test_mean_reward_values": [
+      -586.3235187157989,
+      -258.0561247007328
+    ],
+    "final_performance_mean": -572.19072725,
+    "final_performance_std": 133.51353825,
+    "final_performance_values": [
+      -705.7042655,
+      -438.677189
+    ],
+    "mean_episode_return_mean": -621.46418241,
+    "mean_episode_return_std": 142.1511102599999,
+    "mean_episode_return_values": [
+      -763.6152926699999,
+      -479.3130721500001
+    ],
+    "success_rate_mean": 0.155,
+    "success_rate_std": 0.155,
+    "success_rate_values": [
+      0.0,
+      0.31
+    ],
+    "performance_variance_mean": 265.746083884993,
+    "performance_variance_std": 102.92539747131015,
+    "performance_variance_values": [
+      162.82068641368286,
+      368.67148135630316
+    ],
+    "max_reward_mean": -182.446091,
+    "max_reward_std": 179.382534,
+    "max_reward_values": [
+      -361.828625,
+      -3.063557
+    ],
+    "min_reward_mean": -1815.0508205,
+    "min_reward_std": 1.738085500000011,
+    "min_reward_values": [
+      -1813.312735,
+      -1816.788906
+    ],
+    "sample_efficiency_300_mean": 970.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 988.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "clip_0.2",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -648.68178604,
+        "success_rate": 0.01,
+        "performance_variance": 226.82768823868793,
+        "final_performance": -502.8708601,
+        "total_episodes": 1003,
+        "max_reward": -130.550609,
+        "min_reward": -1828.490634,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -238.3499418593703,
+        "test_std_reward": 214.9426652425825,
+        "test_rewards": [
+          -408.99079097421964,
+          -257.848073959875,
+          -401.54864140508204,
+          -262.261402283674,
+          -3.2447800861478795,
+          -129.24359634184762,
+          -405.4397171807662,
+          -127.5422818963594,
+          -131.8243288210062,
+          -127.00727399021903,
+          -131.19726128961665,
+          -843.4075561202749,
+          -728.3368700815282,
+          -130.19271271580115,
+          -131.68285015640137,
+          -130.4096158635554,
+          -732.12713656684,
+          -130.9824888299729,
+          -129.4634924828141,
+          -261.67913806538326
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.2"
+      },
+      {
+        "mean_episode_return": -377.3268087,
+        "success_rate": 0.33,
+        "performance_variance": 291.07986594308977,
+        "final_performance": -272.6592235,
+        "total_episodes": 1003,
+        "max_reward": -2.786902,
+        "min_reward": -1830.583669,
+        "sample_efficiency_300": 946,
+        "sample_efficiency_200": 950,
+        "test_mean_reward": -253.34739229196893,
+        "test_std_reward": 178.52464151073164,
+        "test_rewards": [
+          -271.964666785051,
+          -281.51875939182315,
+          -769.1760337128541,
+          -0.7069588762078618,
+          -133.04872023619416,
+          -256.6008499188607,
+          -126.26148068554227,
+          -128.6331319225374,
+          -395.2221524425847,
+          -1.9629738738426468,
+          -378.43598797304156,
+          -270.55773855979976,
+          -270.6884973168801,
+          -263.56601420997305,
+          -124.93673833599449,
+          -401.6599621749053,
+          -129.05666406630024,
+          -387.70226255931954,
+          -126.09615705052077,
+          -129.26572820996302
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.2"
+      }
+    ],
+    "test_mean_reward_mean": -245.8486670756696,
+    "test_mean_reward_std": 7.49872521629932,
+    "test_mean_reward_values": [
+      -238.3499418593703,
+      -253.34739229196893
+    ],
+    "final_performance_mean": -387.7650418,
+    "final_performance_std": 115.10581830000001,
+    "final_performance_values": [
+      -502.8708601,
+      -272.6592235
+    ],
+    "mean_episode_return_mean": -513.00429737,
+    "mean_episode_return_std": 135.67748867,
+    "mean_episode_return_values": [
+      -648.68178604,
+      -377.3268087
+    ],
+    "success_rate_mean": 0.17,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.01,
+      0.33
+    ],
+    "performance_variance_mean": 258.9537770908888,
+    "performance_variance_std": 32.12608885220092,
+    "performance_variance_values": [
+      226.82768823868793,
+      291.07986594308977
+    ],
+    "max_reward_mean": -66.6687555,
+    "max_reward_std": 63.881853500000005,
+    "max_reward_values": [
+      -130.550609,
+      -2.786902
+    ],
+    "min_reward_mean": -1829.5371515000002,
+    "min_reward_std": 1.04651750000005,
+    "min_reward_values": [
+      -1828.490634,
+      -1830.583669
+    ],
+    "sample_efficiency_300_mean": 946.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 950.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.3,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "clip_0.3",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -407.42938126999985,
+        "success_rate": 0.42,
+        "performance_variance": 427.0297175590338,
+        "final_performance": -531.2035106000001,
+        "total_episodes": 1003,
+        "max_reward": -0.821501,
+        "min_reward": -1810.198263,
+        "sample_efficiency_300": 933,
+        "sample_efficiency_200": 985,
+        "test_mean_reward": -403.776805450875,
+        "test_std_reward": 484.8605377805376,
+        "test_rewards": [
+          -260.75269368720467,
+          -390.5502920765226,
+          -1391.9895057569668,
+          -381.74911367932975,
+          -125.1970584206741,
+          -720.56061671989,
+          -129.80226884457366,
+          -1253.7849972543142,
+          -129.99559305573146,
+          -128.24893945795935,
+          -1.498380097157912,
+          -124.61614579101476,
+          -1095.4003586953124,
+          -1.461121633768116,
+          -270.83494938753216,
+          -712.4130116811243,
+          -1501.1216050441622,
+          -376.9994098792655,
+          -256.33048917861163,
+          -127.76720159980277
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.3,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.3"
+      },
+      {
+        "mean_episode_return": -619.34217435,
+        "success_rate": 0.28,
+        "performance_variance": 477.94372246830727,
+        "final_performance": -628.1674796000001,
+        "total_episodes": 1003,
+        "max_reward": -3.013069,
+        "min_reward": -1839.733713,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -643.653206124258,
+        "test_std_reward": 514.624504644967,
+        "test_rewards": [
+          -125.12506767987668,
+          -1041.2725555462139,
+          -127.96713187406412,
+          -595.5752067080617,
+          -254.38989609434222,
+          -261.7602163381633,
+          -255.77912844937413,
+          -1.8603642372027156,
+          -135.18296174432712,
+          -1092.3692408143434,
+          -785.6423256050157,
+          -945.4420774097016,
+          -131.11465271003365,
+          -132.10408361375312,
+          -1245.5530407189572,
+          -3.835069482968335,
+          -262.34441862127863,
+          -129.66297180886747,
+          -389.979767157422,
+          -257.90630352639414
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.3,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "clip_0.3"
+      }
+    ],
+    "test_mean_reward_mean": -523.7150057875665,
+    "test_mean_reward_std": 119.9382003366915,
+    "test_mean_reward_values": [
+      -403.776805450875,
+      -643.653206124258
+    ],
+    "final_performance_mean": -579.6854951,
+    "final_performance_std": 48.48198450000001,
+    "final_performance_values": [
+      -531.2035106000001,
+      -628.1674796000001
+    ],
+    "mean_episode_return_mean": -513.3857778099999,
+    "mean_episode_return_std": 105.9563965400001,
+    "mean_episode_return_values": [
+      -407.42938126999985,
+      -619.34217435
+    ],
+    "success_rate_mean": 0.35,
+    "success_rate_std": 0.06999999999999998,
+    "success_rate_values": [
+      0.42,
+      0.28
+    ],
+    "performance_variance_mean": 452.48672001367055,
+    "performance_variance_std": 25.457002454636722,
+    "performance_variance_values": [
+      427.0297175590338,
+      477.94372246830727
+    ],
+    "max_reward_mean": -1.9172850000000001,
+    "max_reward_std": 1.095784,
+    "max_reward_values": [
+      -0.821501,
+      -3.013069
+    ],
+    "min_reward_mean": -1824.965988,
+    "min_reward_std": 14.767725000000041,
+    "min_reward_values": [
+      -1810.198263,
+      -1839.733713
+    ],
+    "sample_efficiency_300_mean": 933.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 985.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        32,
+        32
+      ],
+      "value_arch": [
+        32,
+        32
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_32_32",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -912.37616671,
+        "success_rate": 0.0,
+        "performance_variance": 219.8759074603479,
+        "final_performance": -1018.3264737,
+        "total_episodes": 1003,
+        "max_reward": -520.306626,
+        "min_reward": -1819.562837,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -958.2404293317835,
+        "test_std_reward": 300.9890305232825,
+        "test_rewards": [
+          -945.418682184748,
+          -651.2602657664551,
+          -536.3181575410092,
+          -784.002046119245,
+          -651.6510200434244,
+          -525.1871108026037,
+          -1086.4176635747485,
+          -782.3962288418297,
+          -1545.2604134021392,
+          -1329.882619791895,
+          -669.3207042520949,
+          -781.9567062133378,
+          -993.366732908487,
+          -1035.167436492115,
+          -883.308842423859,
+          -684.6778062269741,
+          -994.8945161762449,
+          -1168.1406481479355,
+          -661.8487332673786,
+          -609.447237739348
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            32,
+            32
+          ],
+          "value_arch": [
+            32,
+            32
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_32_32"
+      },
+      {
+        "mean_episode_return": -989.20716946,
+        "success_rate": 0.0,
+        "performance_variance": 258.34142087391075,
+        "final_performance": -966.2418798000001,
+        "total_episodes": 1003,
+        "max_reward": -402.984286,
+        "min_reward": -1829.56486,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -962.4855020126328,
+        "test_std_reward": 241.3979582642612,
+        "test_rewards": [
+          -989.7543955809349,
+          -1205.2955865846807,
+          -696.2974014746139,
+          -1303.665092814597,
+          -968.6941680311568,
+          -1046.3937293774384,
+          -800.030936316768,
+          -1421.5794226061125,
+          -946.9535944766079,
+          -960.6605291878728,
+          -973.3987830492832,
+          -1020.2271389631344,
+          -805.0821693683704,
+          -778.6989546942698,
+          -808.0687414079063,
+          -977.8431157305133,
+          -1140.6400633836613,
+          -809.6982707797246,
+          -737.5477039804194,
+          -498.60898844691667
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            32,
+            32
+          ],
+          "value_arch": [
+            32,
+            32
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_32_32"
+      }
+    ],
+    "test_mean_reward_mean": -960.3629656722081,
+    "test_mean_reward_std": 2.122536340424631,
+    "test_mean_reward_values": [
+      -958.2404293317835,
+      -962.4855020126328
+    ],
+    "final_performance_mean": -992.28417675,
+    "final_performance_std": 26.042296949999923,
+    "final_performance_values": [
+      -1018.3264737,
+      -966.2418798000001
+    ],
+    "mean_episode_return_mean": -950.7916680850001,
+    "mean_episode_return_std": 38.41550137500002,
+    "mean_episode_return_values": [
+      -912.37616671,
+      -989.20716946
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 239.10866416712932,
+    "performance_variance_std": 19.23275670678143,
+    "performance_variance_values": [
+      219.8759074603479,
+      258.34142087391075
+    ],
+    "max_reward_mean": -461.645456,
+    "max_reward_std": 58.66117000000003,
+    "max_reward_values": [
+      -520.306626,
+      -402.984286
+    ],
+    "min_reward_mean": -1824.5638485,
+    "min_reward_std": 5.001011500000004,
+    "min_reward_values": [
+      -1819.562837,
+      -1829.56486
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64
+      ],
+      "value_arch": [
+        64,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_64_64",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -648.68178604,
+        "success_rate": 0.01,
+        "performance_variance": 226.82768823868793,
+        "final_performance": -502.8708601,
+        "total_episodes": 1003,
+        "max_reward": -130.550609,
+        "min_reward": -1828.490634,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -242.14293442238267,
+        "test_std_reward": 233.5271308331525,
+        "test_rewards": [
+          -260.6731436393237,
+          -259.5029377946865,
+          -134.1934353810192,
+          -734.5003176986475,
+          -4.49005872308987,
+          -591.3386600702715,
+          -129.49261074096327,
+          -560.7230342954423,
+          -260.00986974804306,
+          -543.9496101002669,
+          -129.1997442272592,
+          -131.70676803945844,
+          -134.67329876748195,
+          -131.30372316767827,
+          -129.0728924011217,
+          -130.09996969949444,
+          -128.90545082384682,
+          -130.96189140446413,
+          -264.6002167323748,
+          -262.9977627921601
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64"
+      },
+      {
+        "mean_episode_return": -377.3268087,
+        "success_rate": 0.33,
+        "performance_variance": 291.07986594308977,
+        "final_performance": -272.6592235,
+        "total_episodes": 1003,
+        "max_reward": -2.786902,
+        "min_reward": -1830.583669,
+        "sample_efficiency_300": 946,
+        "sample_efficiency_200": 950,
+        "test_mean_reward": -248.5239670551433,
+        "test_std_reward": 135.48684926579574,
+        "test_rewards": [
+          -0.39974222906754464,
+          -0.6786303652443532,
+          -471.5694920437821,
+          -128.80864115316237,
+          -639.9178591420629,
+          -269.72189750572636,
+          -262.93843767091676,
+          -272.7542906744406,
+          -256.28234044250854,
+          -128.6293697928243,
+          -129.914244784803,
+          -612.465082367877,
+          -441.7096855883431,
+          -127.40128723085628,
+          -681.4435484101251,
+          -394.30889389346817,
+          -135.77167924671585,
+          -2.137894372765085,
+          -129.87191216598092,
+          -585.4469606119878
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64
+          ],
+          "value_arch": [
+            64,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64"
+      }
+    ],
+    "test_mean_reward_mean": -245.33345073876296,
+    "test_mean_reward_std": 3.190516316380311,
+    "test_mean_reward_values": [
+      -242.14293442238267,
+      -248.5239670551433
+    ],
+    "final_performance_mean": -387.7650418,
+    "final_performance_std": 115.10581830000001,
+    "final_performance_values": [
+      -502.8708601,
+      -272.6592235
+    ],
+    "mean_episode_return_mean": -513.00429737,
+    "mean_episode_return_std": 135.67748867,
+    "mean_episode_return_values": [
+      -648.68178604,
+      -377.3268087
+    ],
+    "success_rate_mean": 0.17,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.01,
+      0.33
+    ],
+    "performance_variance_mean": 258.9537770908888,
+    "performance_variance_std": 32.12608885220092,
+    "performance_variance_values": [
+      226.82768823868793,
+      291.07986594308977
+    ],
+    "max_reward_mean": -66.6687555,
+    "max_reward_std": 63.881853500000005,
+    "max_reward_values": [
+      -130.550609,
+      -2.786902
+    ],
+    "min_reward_mean": -1829.5371515000002,
+    "min_reward_std": 1.04651750000005,
+    "min_reward_values": [
+      -1828.490634,
+      -1830.583669
+    ],
+    "sample_efficiency_300_mean": 946.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 950.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        128,
+        64
+      ],
+      "value_arch": [
+        128,
+        64
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_128_64",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -384.4539166,
+        "success_rate": 0.38,
+        "performance_variance": 333.8836127256479,
+        "final_performance": -438.6504301,
+        "total_episodes": 1003,
+        "max_reward": -0.642347,
+        "min_reward": -1825.393631,
+        "sample_efficiency_300": 914,
+        "sample_efficiency_200": 968,
+        "test_mean_reward": -443.92138829496497,
+        "test_std_reward": 373.73404149752497,
+        "test_rewards": [
+          -136.73677716641063,
+          -256.04730621947965,
+          -704.89158524342,
+          -129.75900186048568,
+          -0.48324064405260225,
+          -441.29356870383276,
+          -511.6806527403529,
+          -127.47908833871384,
+          -592.342198152377,
+          -1215.521274059604,
+          -1114.6845630240143,
+          -251.70270168586703,
+          -122.10339851169897,
+          -127.70532797403469,
+          -0.7952510326972714,
+          -264.6148203606366,
+          -859.9341928783981,
+          -874.8760384779953,
+          -392.6009972188372,
+          -1196.945098556362
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            128,
+            64
+          ],
+          "value_arch": [
+            128,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_128_64"
+      },
+      {
+        "mean_episode_return": -596.4891394199999,
+        "success_rate": 0.14,
+        "performance_variance": 351.1720619592849,
+        "final_performance": -414.75551029999997,
+        "total_episodes": 1003,
+        "max_reward": -6.763733,
+        "min_reward": -1831.804134,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -522.6466251970543,
+        "test_std_reward": 530.2636836644309,
+        "test_rewards": [
+          -127.53759354177521,
+          -1210.3403654122267,
+          -1043.9869602593428,
+          -130.9873937415374,
+          -1321.132675343635,
+          -1183.8786475496709,
+          -1140.2024602398944,
+          -0.48733407238587456,
+          -705.3183454633513,
+          -1039.6184545756105,
+          -446.11872971412043,
+          -1254.4509842708605,
+          -1151.0785166086562,
+          -126.50951772018496,
+          -1072.8471871233828,
+          -127.33431786769346,
+          -1491.3094873123669,
+          -1097.1384426546695,
+          -128.54642688336747,
+          -925.6763859434582
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            128,
+            64
+          ],
+          "value_arch": [
+            128,
+            64
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_128_64"
+      }
+    ],
+    "test_mean_reward_mean": -483.2840067460096,
+    "test_mean_reward_std": 39.36261845104465,
+    "test_mean_reward_values": [
+      -443.92138829496497,
+      -522.6466251970543
+    ],
+    "final_performance_mean": -426.7029702,
+    "final_performance_std": 11.947459900000013,
+    "final_performance_values": [
+      -438.6504301,
+      -414.75551029999997
+    ],
+    "mean_episode_return_mean": -490.47152800999993,
+    "mean_episode_return_std": 106.01761140999994,
+    "mean_episode_return_values": [
+      -384.4539166,
+      -596.4891394199999
+    ],
+    "success_rate_mean": 0.26,
+    "success_rate_std": 0.12,
+    "success_rate_values": [
+      0.38,
+      0.14
+    ],
+    "performance_variance_mean": 342.5278373424664,
+    "performance_variance_std": 8.64422461681852,
+    "performance_variance_values": [
+      333.8836127256479,
+      351.1720619592849
+    ],
+    "max_reward_mean": -3.70304,
+    "max_reward_std": 3.060693,
+    "max_reward_values": [
+      -0.642347,
+      -6.763733
+    ],
+    "min_reward_mean": -1828.5988825,
+    "min_reward_std": 3.2052515000000312,
+    "min_reward_values": [
+      -1825.393631,
+      -1831.804134
+    ],
+    "sample_efficiency_300_mean": 914.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": 968.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 2048,
+      "batch_size": 64,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.9,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "policy_arch": [
+        64,
+        64,
+        32
+      ],
+      "value_arch": [
+        64,
+        64,
+        32
+      ],
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_64_64_32",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -690.7277871699998,
+        "success_rate": 0.01,
+        "performance_variance": 241.3696018231141,
+        "final_performance": -599.3643928,
+        "total_episodes": 1003,
+        "max_reward": -128.342827,
+        "min_reward": -1825.421553,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -448.00359137562043,
+        "test_std_reward": 317.2215781722233,
+        "test_rewards": [
+          -1.1856392729781424,
+          -847.5221741585437,
+          -1.7656624621225785,
+          -133.2632864672516,
+          -133.31158163016693,
+          -963.2294381374552,
+          -130.21407817303344,
+          -3.7077810405357994,
+          -712.1207801713248,
+          -988.258457696414,
+          -132.07462125440034,
+          -399.5283450407876,
+          -129.00289648439852,
+          -134.62004164264997,
+          -262.3560649998916,
+          -835.6325083380367,
+          -1061.241805910165,
+          -129.61678154788856,
+          -552.8030724843873,
+          -132.00470522520487
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64,
+            32
+          ],
+          "value_arch": [
+            64,
+            64,
+            32
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64_32"
+      },
+      {
+        "mean_episode_return": -913.0109177799999,
+        "success_rate": 0.0,
+        "performance_variance": 163.36683910243033,
+        "final_performance": -850.0986255,
+        "total_episodes": 1003,
+        "max_reward": -535.253563,
+        "min_reward": -1814.559162,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -875.3360739367083,
+        "test_std_reward": 170.51369569313698,
+        "test_rewards": [
+          -935.7680022705215,
+          -748.3890082927799,
+          -958.0635198188809,
+          -692.3445612544263,
+          -1027.7537434767041,
+          -830.0955163367427,
+          -796.318202227748,
+          -528.5427848904442,
+          -754.1203827103674,
+          -799.0247212567249,
+          -741.0373424229467,
+          -716.6748352174048,
+          -1124.795536372,
+          -599.3010013433858,
+          -729.5150279983068,
+          -762.2350833498828,
+          -796.7217394876517,
+          -656.4254195793442,
+          -580.9880115343308,
+          -1174.614322908201
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 2048,
+          "batch_size": 64,
+          "n_epochs": 10,
+          "gamma": 0.99,
+          "gae_lambda": 0.9,
+          "clip_range": 0.2,
+          "ent_coef": 0.0,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "policy_arch": [
+            64,
+            64,
+            32
+          ],
+          "value_arch": [
+            64,
+            64,
+            32
+          ],
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64_32"
+      }
+    ],
+    "test_mean_reward_mean": -661.6698326561643,
+    "test_mean_reward_std": 213.66624128054394,
+    "test_mean_reward_values": [
+      -448.00359137562043,
+      -875.3360739367083
+    ],
+    "final_performance_mean": -724.73150915,
+    "final_performance_std": 125.36711635,
+    "final_performance_values": [
+      -599.3643928,
+      -850.0986255
+    ],
+    "mean_episode_return_mean": -801.8693524749999,
+    "mean_episode_return_std": 111.14156530500003,
+    "mean_episode_return_values": [
+      -690.7277871699998,
+      -913.0109177799999
+    ],
+    "success_rate_mean": 0.005,
+    "success_rate_std": 0.005,
+    "success_rate_values": [
+      0.01,
+      0.0
+    ],
+    "performance_variance_mean": 202.36822046277223,
+    "performance_variance_std": 39.00138136034188,
+    "performance_variance_values": [
+      241.3696018231141,
+      163.36683910243033
+    ],
+    "max_reward_mean": -331.79819499999996,
+    "max_reward_std": 203.455368,
+    "max_reward_values": [
+      -128.342827,
+      -535.253563
+    ],
+    "min_reward_mean": -1819.9903574999998,
+    "min_reward_std": 5.431195499999944,
+    "min_reward_values": [
+      -1825.421553,
+      -1814.559162
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  }
+]

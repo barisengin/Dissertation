@@ -1,0 +1,2869 @@
+[
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "lr_0.0001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 267.2629375368359,
+        "success_rate": 1.0,
+        "performance_variance": 16.150918570368834,
+        "final_performance": 263.17311180368176,
+        "total_episodes": 713,
+        "max_reward": 299.9751658154304,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 286,
+        "sample_efficiency_200": 289,
+        "test_mean_reward": 242.79825112602916,
+        "test_std_reward": 65.51390911278895,
+        "test_rewards": [
+          275.36379231802755,
+          259.2526284120993,
+          267.3966846433076,
+          278.72846649125484,
+          234.28883304064212,
+          247.45266114737316,
+          245.64148022575282,
+          269.13421274843625,
+          89.63026143523939,
+          275.0002288237993,
+          252.36396437013713,
+          281.6711386423925,
+          219.95867454260087,
+          266.3326429472171,
+          263.494909162123,
+          249.37149733611946,
+          241.16723724320295,
+          239.31652398835547,
+          282.0321660208149,
+          236.7916270957121
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.0001"
+      },
+      {
+        "mean_episode_return": 143.2547767417065,
+        "success_rate": 0.64,
+        "performance_variance": 177.27946212395733,
+        "final_performance": 255.7562147244033,
+        "total_episodes": 572,
+        "max_reward": 308.5641470915653,
+        "min_reward": -616.7277740321588,
+        "sample_efficiency_150": 276,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": 131.72539857004026,
+        "test_std_reward": 26.34039265599853,
+        "test_rewards": [
+          107.89452749489514,
+          116.87671742664939,
+          150.86253155422006,
+          107.91018573940185,
+          149.64286193787805,
+          134.48223585823374,
+          133.48195547569884,
+          -659.2621018720439,
+          -529.3480891060169,
+          102.69427634552082,
+          104.45867727172647,
+          124.64666745218265,
+          139.1578332810829,
+          139.007817237912,
+          230.9930779293356,
+          120.73904760700557,
+          145.14388762553574,
+          145.4537667848373,
+          81.0265395719203,
+          112.20285151114645
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.0001"
+      }
+    ],
+    "test_mean_reward_mean": 187.2618248480347,
+    "test_mean_reward_std": 55.53642627799445,
+    "test_mean_reward_values": [
+      242.79825112602916,
+      131.72539857004026
+    ],
+    "final_performance_mean": 259.46466326404254,
+    "final_performance_std": 3.7084485396392353,
+    "final_performance_values": [
+      263.17311180368176,
+      255.7562147244033
+    ],
+    "mean_episode_return_mean": 205.2588571392712,
+    "mean_episode_return_std": 62.00408039756471,
+    "mean_episode_return_values": [
+      267.2629375368359,
+      143.2547767417065
+    ],
+    "success_rate_mean": 0.8200000000000001,
+    "success_rate_std": 0.18,
+    "success_rate_values": [
+      1.0,
+      0.64
+    ],
+    "performance_variance_mean": 96.71519034716309,
+    "performance_variance_std": 80.56427177679426,
+    "performance_variance_values": [
+      16.150918570368834,
+      177.27946212395733
+    ],
+    "max_reward_mean": 304.2696564534979,
+    "max_reward_std": 4.294490638067458,
+    "max_reward_values": [
+      299.9751658154304,
+      308.5641470915653
+    ],
+    "min_reward_mean": -522.5543140399968,
+    "min_reward_std": 94.17345999216195,
+    "min_reward_values": [
+      -428.3808540478349,
+      -616.7277740321588
+    ],
+    "sample_efficiency_150_mean": 281.0,
+    "sample_efficiency_150_std": 5.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 284.0,
+    "sample_efficiency_200_std": 5.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.00063,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "lr_0.00063",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 8.690085890712446,
+        "success_rate": 0.26,
+        "performance_variance": 194.58151172121936,
+        "final_performance": -102.11618950520432,
+        "total_episodes": 628,
+        "max_reward": 306.13636974586836,
+        "min_reward": -883.7926675749477,
+        "sample_efficiency_150": 342,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -62.05208822801471,
+        "test_std_reward": 333.88394051718626,
+        "test_rewards": [
+          -158.4654658356348,
+          -92.335617628496,
+          -430.96927908137195,
+          32.09330831348049,
+          -29.59388662860404,
+          37.036280038920864,
+          47.71498733406392,
+          22.989133810674844,
+          -478.4148928766705,
+          60.211697450866296,
+          -453.1591472190888,
+          -110.79687397015904,
+          -95.01548960898002,
+          41.031195117196404,
+          61.55204060752786,
+          44.93366656056946,
+          -662.2958677256704,
+          -899.3383770644989,
+          -40.19152926070332,
+          238.7571741348785
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.00063,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.00063"
+      },
+      {
+        "mean_episode_return": 100.57065236234756,
+        "success_rate": 0.38,
+        "performance_variance": 154.33145915026688,
+        "final_performance": 208.81134140326463,
+        "total_episodes": 1004,
+        "max_reward": 319.9993031215393,
+        "min_reward": -452.5449601560831,
+        "sample_efficiency_150": 216,
+        "sample_efficiency_200": 228,
+        "test_mean_reward": 38.454777843103614,
+        "test_std_reward": 106.09018392918183,
+        "test_rewards": [
+          -87.84293183974958,
+          -31.139920387729212,
+          -1.4379980699708155,
+          -4.6281265070185915,
+          -44.206172918438135,
+          205.0556706946425,
+          0.6657491188375386,
+          -34.20875180647248,
+          -2.106212674075201,
+          -23.23692016028864,
+          -36.41602999479494,
+          -64.58028063463858,
+          -40.824733935701005,
+          14.170640697556468,
+          -17.515710381613545,
+          3.46897708135114,
+          16.306334137732573,
+          8.57680946540339,
+          -2.3920846801145856,
+          -49.07495876622341
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.00063,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.00063"
+      }
+    ],
+    "test_mean_reward_mean": -11.798655192455549,
+    "test_mean_reward_std": 50.25343303555916,
+    "test_mean_reward_values": [
+      -62.05208822801471,
+      38.454777843103614
+    ],
+    "final_performance_mean": 53.34757594903016,
+    "final_performance_std": 155.46376545423448,
+    "final_performance_values": [
+      -102.11618950520432,
+      208.81134140326463
+    ],
+    "mean_episode_return_mean": 54.63036912653,
+    "mean_episode_return_std": 45.94028323581755,
+    "mean_episode_return_values": [
+      8.690085890712446,
+      100.57065236234756
+    ],
+    "success_rate_mean": 0.32,
+    "success_rate_std": 0.06,
+    "success_rate_values": [
+      0.26,
+      0.38
+    ],
+    "performance_variance_mean": 174.4564854357431,
+    "performance_variance_std": 20.12502628547624,
+    "performance_variance_values": [
+      194.58151172121936,
+      154.33145915026688
+    ],
+    "max_reward_mean": 313.06783643370386,
+    "max_reward_std": 6.931466687835467,
+    "max_reward_values": [
+      306.13636974586836,
+      319.9993031215393
+    ],
+    "min_reward_mean": -668.1688138655154,
+    "min_reward_std": 215.6238537094323,
+    "min_reward_values": [
+      -883.7926675749477,
+      -452.5449601560831
+    ],
+    "sample_efficiency_150_mean": 279.0,
+    "sample_efficiency_150_std": 63.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 228.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "lr_0.001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 54.951354834257856,
+        "success_rate": 0.32,
+        "performance_variance": 178.8582646076414,
+        "final_performance": -113.10210648389184,
+        "total_episodes": 772,
+        "max_reward": 315.7974260444107,
+        "min_reward": -437.0165533814579,
+        "sample_efficiency_150": 250,
+        "sample_efficiency_200": 252,
+        "test_mean_reward": -11.22076154676979,
+        "test_std_reward": 84.4873174872226,
+        "test_rewards": [
+          -30.57506974840292,
+          31.994165180244103,
+          -29.520762345700604,
+          43.66465513434834,
+          57.25158818911307,
+          -19.304785760022057,
+          -37.588851977266,
+          -4.223986160206816,
+          4.501164024102852,
+          -16.249500142530565,
+          -20.211650053158962,
+          -274.19342540383377,
+          28.645802084821348,
+          20.757201502782614,
+          -230.25570551082265,
+          -30.127119269048432,
+          1.0075646604800714,
+          -23.523305880266182,
+          -23.869605693080494,
+          -7.671149244403991
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.001"
+      },
+      {
+        "mean_episode_return": -565.8676356041245,
+        "success_rate": 0.0,
+        "performance_variance": 155.38825042399765,
+        "final_performance": -519.901609737426,
+        "total_episodes": 1335,
+        "max_reward": 303.65022252298866,
+        "min_reward": -1110.0758706331253,
+        "sample_efficiency_150": 203,
+        "sample_efficiency_200": 205,
+        "test_mean_reward": -622.0925007741898,
+        "test_std_reward": 164.18984031554368,
+        "test_rewards": [
+          -597.4125245364075,
+          -506.3150309873223,
+          -388.4082746691947,
+          -981.3777481838041,
+          -516.940724043606,
+          -500.34813352930666,
+          -681.4886625063142,
+          -484.36069532259916,
+          -415.8253552069131,
+          -781.8888780923405,
+          -470.96736178731976,
+          -539.0187336957524,
+          -540.636507661168,
+          -604.4242538231817,
+          -414.3222980543217,
+          -477.6314618541152,
+          -374.8303363332442,
+          -406.213135108883,
+          -483.46160530478767,
+          -524.616322692649
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "lr_0.001"
+      }
+    ],
+    "test_mean_reward_mean": -316.65663116047983,
+    "test_mean_reward_std": 305.43586961371,
+    "test_mean_reward_values": [
+      -11.22076154676979,
+      -622.0925007741898
+    ],
+    "final_performance_mean": -316.50185811065893,
+    "final_performance_std": 203.3997516267671,
+    "final_performance_values": [
+      -113.10210648389184,
+      -519.901609737426
+    ],
+    "mean_episode_return_mean": -255.45814038493333,
+    "mean_episode_return_std": 310.4094952191912,
+    "mean_episode_return_values": [
+      54.951354834257856,
+      -565.8676356041245
+    ],
+    "success_rate_mean": 0.16,
+    "success_rate_std": 0.16,
+    "success_rate_values": [
+      0.32,
+      0.0
+    ],
+    "performance_variance_mean": 167.12325751581952,
+    "performance_variance_std": 11.73500709182187,
+    "performance_variance_values": [
+      178.8582646076414,
+      155.38825042399765
+    ],
+    "max_reward_mean": 309.7238242836997,
+    "max_reward_std": 6.073601760711028,
+    "max_reward_values": [
+      315.7974260444107,
+      303.65022252298866
+    ],
+    "min_reward_mean": -773.5462120072916,
+    "min_reward_std": 336.5296586258337,
+    "min_reward_values": [
+      -437.0165533814579,
+      -1110.0758706331253
+    ],
+    "sample_efficiency_150_mean": 226.5,
+    "sample_efficiency_150_std": 23.5,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 228.5,
+    "sample_efficiency_200_std": 23.5,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 50000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "buffer_50000",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -38.36729532507103,
+        "success_rate": 0.0,
+        "performance_variance": 62.966096625058185,
+        "final_performance": -89.35058592618444,
+        "total_episodes": 433,
+        "max_reward": 120.45926050655544,
+        "min_reward": -534.9049656279385,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -28.116320649493353,
+        "test_std_reward": 49.23562270972609,
+        "test_rewards": [
+          -41.15720126126665,
+          -91.21657576500274,
+          -76.85386810477138,
+          8.74084620044925,
+          -20.567216855981705,
+          -80.51516052333125,
+          -15.465480288840359,
+          -5.104167517544646,
+          -57.00726335717289,
+          10.951375941261624,
+          -2.2957655552024554,
+          41.12324073756263,
+          8.923500504728107,
+          -164.90690766701394,
+          -32.24135475944274,
+          41.950252904068506,
+          -133.0879280983043,
+          39.74942375496572,
+          17.600843599352938,
+          -19.80766178646041
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 50000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_50000"
+      },
+      {
+        "mean_episode_return": -56.34488509605513,
+        "success_rate": 0.0,
+        "performance_variance": 40.948251134015564,
+        "final_performance": -98.55870524568891,
+        "total_episodes": 443,
+        "max_reward": 43.931521352380514,
+        "min_reward": -444.21572414785624,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -66.23231557487034,
+        "test_std_reward": 29.215951673528696,
+        "test_rewards": [
+          -21.700390523698644,
+          -95.30151508260226,
+          -81.45870850359255,
+          -111.09146545620403,
+          -58.81926601889255,
+          -50.423909419400864,
+          -25.440561231492314,
+          -67.00800524989104,
+          -98.46501090665971,
+          -118.95021892708125,
+          -111.45846572820068,
+          -65.79515254552786,
+          -55.363601643140235,
+          -102.26307498871265,
+          -20.97377883016468,
+          -101.21545387872632,
+          -145.23805896562118,
+          -84.50708430944256,
+          -120.74185326287953,
+          -64.00230097831208
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 50000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_50000"
+      }
+    ],
+    "test_mean_reward_mean": -47.17431811218185,
+    "test_mean_reward_std": 19.057997462688494,
+    "test_mean_reward_values": [
+      -28.116320649493353,
+      -66.23231557487034
+    ],
+    "final_performance_mean": -93.95464558593667,
+    "final_performance_std": 4.604059659752238,
+    "final_performance_values": [
+      -89.35058592618444,
+      -98.55870524568891
+    ],
+    "mean_episode_return_mean": -47.35609021056308,
+    "mean_episode_return_std": 8.988794885492052,
+    "mean_episode_return_values": [
+      -38.36729532507103,
+      -56.34488509605513
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 51.957173879536874,
+    "performance_variance_std": 11.00892274552131,
+    "performance_variance_values": [
+      62.966096625058185,
+      40.948251134015564
+    ],
+    "max_reward_mean": 82.19539092946798,
+    "max_reward_std": 38.26386957708746,
+    "max_reward_values": [
+      120.45926050655544,
+      43.931521352380514
+    ],
+    "min_reward_mean": -489.5603448878974,
+    "min_reward_std": 45.34462074004114,
+    "min_reward_values": [
+      -534.9049656279385,
+      -444.21572414785624
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "buffer_100000",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 267.2629375368359,
+        "success_rate": 1.0,
+        "performance_variance": 16.150918570368834,
+        "final_performance": 263.17311180368176,
+        "total_episodes": 713,
+        "max_reward": 299.9751658154304,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 286,
+        "sample_efficiency_200": 289,
+        "test_mean_reward": 242.5990720235587,
+        "test_std_reward": 61.834489270884234,
+        "test_rewards": [
+          222.07262406953998,
+          229.10478150477587,
+          257.72535108833335,
+          145.81954917239315,
+          267.5490931521334,
+          255.85431299021545,
+          263.09719751641745,
+          261.65167628749003,
+          268.67069698112704,
+          247.72915905583625,
+          272.2644429794062,
+          271.3239766694868,
+          268.2024423354284,
+          276.34470576324327,
+          258.9412438849952,
+          272.70923885056015,
+          226.07278627318624,
+          263.983909815511,
+          261.23818623260354,
+          254.23646816330134
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_100000"
+      },
+      {
+        "mean_episode_return": 143.2547767417065,
+        "success_rate": 0.64,
+        "performance_variance": 177.27946212395733,
+        "final_performance": 255.7562147244033,
+        "total_episodes": 572,
+        "max_reward": 308.5641470915653,
+        "min_reward": -616.7277740321588,
+        "sample_efficiency_150": 276,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": 133.21653442310634,
+        "test_std_reward": 37.21982507947535,
+        "test_rewards": [
+          163.16844571713543,
+          113.38888864308643,
+          139.09049758059336,
+          142.66733513409565,
+          125.96173956900485,
+          127.32193773304212,
+          -647.0349114896665,
+          96.00128635712751,
+          149.2118422658024,
+          142.2133711672291,
+          126.6741077371656,
+          127.70858050055632,
+          104.7167393537083,
+          111.15577084977355,
+          115.35539530464055,
+          105.70353175994862,
+          117.90650094758772,
+          124.02818807503154,
+          126.17835464777224,
+          123.73941370445935
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_100000"
+      }
+    ],
+    "test_mean_reward_mean": 187.9078032233325,
+    "test_mean_reward_std": 54.69126880022618,
+    "test_mean_reward_values": [
+      242.5990720235587,
+      133.21653442310634
+    ],
+    "final_performance_mean": 259.46466326404254,
+    "final_performance_std": 3.7084485396392353,
+    "final_performance_values": [
+      263.17311180368176,
+      255.7562147244033
+    ],
+    "mean_episode_return_mean": 205.2588571392712,
+    "mean_episode_return_std": 62.00408039756471,
+    "mean_episode_return_values": [
+      267.2629375368359,
+      143.2547767417065
+    ],
+    "success_rate_mean": 0.8200000000000001,
+    "success_rate_std": 0.18,
+    "success_rate_values": [
+      1.0,
+      0.64
+    ],
+    "performance_variance_mean": 96.71519034716309,
+    "performance_variance_std": 80.56427177679426,
+    "performance_variance_values": [
+      16.150918570368834,
+      177.27946212395733
+    ],
+    "max_reward_mean": 304.2696564534979,
+    "max_reward_std": 4.294490638067458,
+    "max_reward_values": [
+      299.9751658154304,
+      308.5641470915653
+    ],
+    "min_reward_mean": -522.5543140399968,
+    "min_reward_std": 94.17345999216195,
+    "min_reward_values": [
+      -428.3808540478349,
+      -616.7277740321588
+    ],
+    "sample_efficiency_150_mean": 281.0,
+    "sample_efficiency_150_std": 5.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 284.0,
+    "sample_efficiency_200_std": 5.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 200000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "buffer_200000",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 247.49273283596912,
+        "success_rate": 0.94,
+        "performance_variance": 37.66261084015608,
+        "final_performance": 212.75160941975864,
+        "total_episodes": 654,
+        "max_reward": 313.0862728748473,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 277,
+        "sample_efficiency_200": 282,
+        "test_mean_reward": 46.32604851149283,
+        "test_std_reward": 90.52361269256636,
+        "test_rewards": [
+          255.29991447205794,
+          -7.671065504252016,
+          32.48519854993845,
+          156.6516356495871,
+          -26.025736753502066,
+          -12.947906876382232,
+          175.86570437192665,
+          0.8822164511966706,
+          -16.66665077520879,
+          -14.82639700314229,
+          47.87890045089404,
+          17.336955499037106,
+          237.43277892352782,
+          -6.8752480448555655,
+          4.2255128210995885,
+          -61.31350024579718,
+          -17.88300668698387,
+          2.7159434275728342,
+          8.335192247581402,
+          10.299494501881219
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 200000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_200000"
+      },
+      {
+        "mean_episode_return": -65.09567263567698,
+        "success_rate": 0.24,
+        "performance_variance": 197.67502070363068,
+        "final_performance": -168.81855966202275,
+        "total_episodes": 646,
+        "max_reward": 309.90371576074557,
+        "min_reward": -444.21572414785624,
+        "sample_efficiency_150": 277,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": -162.63872608266664,
+        "test_std_reward": 127.70544226125497,
+        "test_rewards": [
+          -254.8596060795715,
+          -14.459086720963894,
+          -222.81165470608784,
+          252.67539177358296,
+          -171.27965764267128,
+          -227.96047844258896,
+          -277.0006025615128,
+          -260.88753656254715,
+          -227.16931043583816,
+          -245.78098158867468,
+          -205.51930347473171,
+          -242.00789805843144,
+          -147.15268875205822,
+          -361.4308511414853,
+          -226.85003891873953,
+          -302.3576357594947,
+          -278.08409572820915,
+          -275.0655179215711,
+          -251.31239398749275,
+          -162.80014044179356
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 200000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "buffer_200000"
+      }
+    ],
+    "test_mean_reward_mean": -58.156338785586904,
+    "test_mean_reward_std": 104.48238729707973,
+    "test_mean_reward_values": [
+      46.32604851149283,
+      -162.63872608266664
+    ],
+    "final_performance_mean": 21.966524878867943,
+    "final_performance_std": 190.7850845408907,
+    "final_performance_values": [
+      212.75160941975864,
+      -168.81855966202275
+    ],
+    "mean_episode_return_mean": 91.19853010014607,
+    "mean_episode_return_std": 156.29420273582303,
+    "mean_episode_return_values": [
+      247.49273283596912,
+      -65.09567263567698
+    ],
+    "success_rate_mean": 0.59,
+    "success_rate_std": 0.35,
+    "success_rate_values": [
+      0.94,
+      0.24
+    ],
+    "performance_variance_mean": 117.66881577189338,
+    "performance_variance_std": 80.0062049317373,
+    "performance_variance_values": [
+      37.66261084015608,
+      197.67502070363068
+    ],
+    "max_reward_mean": 311.49499431779645,
+    "max_reward_std": 1.591278557050856,
+    "max_reward_values": [
+      313.0862728748473,
+      309.90371576074557
+    ],
+    "min_reward_mean": -436.29828909784555,
+    "min_reward_std": 7.917435050010681,
+    "min_reward_values": [
+      -428.3808540478349,
+      -444.21572414785624
+    ],
+    "sample_efficiency_150_mean": 277.0,
+    "sample_efficiency_150_std": 0.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 280.5,
+    "sample_efficiency_200_std": 1.5,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 64,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "batch_64",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 121.33452101613958,
+        "success_rate": 0.54,
+        "performance_variance": 167.15635802371045,
+        "final_performance": 226.95267860142138,
+        "total_episodes": 508,
+        "max_reward": 304.7356083376912,
+        "min_reward": -877.0988979722606,
+        "sample_efficiency_150": 336,
+        "sample_efficiency_200": 338,
+        "test_mean_reward": 262.78287656054107,
+        "test_std_reward": 33.245676265034916,
+        "test_rewards": [
+          276.10598786668874,
+          268.80862885692034,
+          269.2715848539034,
+          269.07085064563233,
+          228.75460733556233,
+          248.17701924288247,
+          277.92509746867825,
+          278.9230846934479,
+          285.63003287793634,
+          263.0574773255217,
+          267.81974807401457,
+          267.5857493390628,
+          258.9487855519558,
+          269.48174208735395,
+          261.6863473585283,
+          235.17822379160626,
+          284.3993190798547,
+          290.70389615479525,
+          270.741961340566,
+          281.2831652964095
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 64,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_64"
+      },
+      {
+        "mean_episode_return": -250.17238612089434,
+        "success_rate": 0.0,
+        "performance_variance": 42.70802986505663,
+        "final_performance": -256.0001554429182,
+        "total_episodes": 567,
+        "max_reward": 259.01075185090303,
+        "min_reward": -722.0954289427027,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -251.12836437372025,
+        "test_std_reward": 26.62276008051383,
+        "test_rewards": [
+          -262.4178607065252,
+          -220.83001845783713,
+          -255.19916697850505,
+          -230.8190046938543,
+          -210.44280262570908,
+          -277.6072693335272,
+          -272.0082247571147,
+          -297.9696663530301,
+          -287.12412673334524,
+          -286.6737435008629,
+          -272.5749391272647,
+          -258.1332787602551,
+          -264.6171243233724,
+          -194.4936546727521,
+          -232.70803516380784,
+          -247.7995413753464,
+          -230.52937598874422,
+          -227.6533464035025,
+          -214.48393645882658,
+          -257.67384583841806
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 64,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_64"
+      }
+    ],
+    "test_mean_reward_mean": 5.827256093410412,
+    "test_mean_reward_std": 256.95562046713064,
+    "test_mean_reward_values": [
+      262.78287656054107,
+      -251.12836437372025
+    ],
+    "final_performance_mean": -14.523738420748401,
+    "final_performance_std": 241.47641702216978,
+    "final_performance_values": [
+      226.95267860142138,
+      -256.0001554429182
+    ],
+    "mean_episode_return_mean": -64.41893255237738,
+    "mean_episode_return_std": 185.75345356851696,
+    "mean_episode_return_values": [
+      121.33452101613958,
+      -250.17238612089434
+    ],
+    "success_rate_mean": 0.27,
+    "success_rate_std": 0.27,
+    "success_rate_values": [
+      0.54,
+      0.0
+    ],
+    "performance_variance_mean": 104.93219394438354,
+    "performance_variance_std": 62.22416407932691,
+    "performance_variance_values": [
+      167.15635802371045,
+      42.70802986505663
+    ],
+    "max_reward_mean": 281.87318009429714,
+    "max_reward_std": 22.862428243394078,
+    "max_reward_values": [
+      304.7356083376912,
+      259.01075185090303
+    ],
+    "min_reward_mean": -799.5971634574817,
+    "min_reward_std": 77.50173451477895,
+    "min_reward_values": [
+      -877.0988979722606,
+      -722.0954289427027
+    ],
+    "sample_efficiency_150_mean": 336.0,
+    "sample_efficiency_150_std": 0.0,
+    "sample_efficiency_150_success_rate": 0.5,
+    "sample_efficiency_200_mean": 338.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "batch_128",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 267.2629375368359,
+        "success_rate": 1.0,
+        "performance_variance": 16.150918570368834,
+        "final_performance": 263.17311180368176,
+        "total_episodes": 713,
+        "max_reward": 299.9751658154304,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 286,
+        "sample_efficiency_200": 289,
+        "test_mean_reward": 242.73155816732591,
+        "test_std_reward": 42.54224512637144,
+        "test_rewards": [
+          236.8805066243538,
+          230.06930135032786,
+          274.9497139015242,
+          266.07264872943495,
+          260.1403014812891,
+          252.1505466294961,
+          253.46578897599153,
+          248.23673416777717,
+          215.6761054999499,
+          256.905438980693,
+          237.85217832513322,
+          120.59030955987664,
+          244.80990901279134,
+          262.86335602541124,
+          256.09605879771976,
+          256.29043578019616,
+          -24.843844530916428,
+          266.74017493600593,
+          237.83392756449967,
+          263.43896042364236
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_128"
+      },
+      {
+        "mean_episode_return": 143.2547767417065,
+        "success_rate": 0.64,
+        "performance_variance": 177.27946212395733,
+        "final_performance": 255.7562147244033,
+        "total_episodes": 572,
+        "max_reward": 308.5641470915653,
+        "min_reward": -616.7277740321588,
+        "sample_efficiency_150": 276,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": 117.39656186883803,
+        "test_std_reward": 37.90524667772088,
+        "test_rewards": [
+          102.925284424716,
+          110.29952747764372,
+          121.1000322979318,
+          143.35529221141488,
+          102.15375110262171,
+          99.17493704112186,
+          139.64622333784712,
+          86.99912235346804,
+          145.80984913012074,
+          126.12163710238144,
+          129.64374798176138,
+          141.00770927171453,
+          98.30812274849066,
+          116.70212222797812,
+          156.22786640712428,
+          114.90652244150334,
+          125.2834866947788,
+          117.61412116467673,
+          113.97599770029083,
+          132.59477277201051
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_128"
+      }
+    ],
+    "test_mean_reward_mean": 180.064060018082,
+    "test_mean_reward_std": 62.66749814924394,
+    "test_mean_reward_values": [
+      242.73155816732591,
+      117.39656186883803
+    ],
+    "final_performance_mean": 259.46466326404254,
+    "final_performance_std": 3.7084485396392353,
+    "final_performance_values": [
+      263.17311180368176,
+      255.7562147244033
+    ],
+    "mean_episode_return_mean": 205.2588571392712,
+    "mean_episode_return_std": 62.00408039756471,
+    "mean_episode_return_values": [
+      267.2629375368359,
+      143.2547767417065
+    ],
+    "success_rate_mean": 0.8200000000000001,
+    "success_rate_std": 0.18,
+    "success_rate_values": [
+      1.0,
+      0.64
+    ],
+    "performance_variance_mean": 96.71519034716309,
+    "performance_variance_std": 80.56427177679426,
+    "performance_variance_values": [
+      16.150918570368834,
+      177.27946212395733
+    ],
+    "max_reward_mean": 304.2696564534979,
+    "max_reward_std": 4.294490638067458,
+    "max_reward_values": [
+      299.9751658154304,
+      308.5641470915653
+    ],
+    "min_reward_mean": -522.5543140399968,
+    "min_reward_std": 94.17345999216195,
+    "min_reward_values": [
+      -428.3808540478349,
+      -616.7277740321588
+    ],
+    "sample_efficiency_150_mean": 281.0,
+    "sample_efficiency_150_std": 5.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 284.0,
+    "sample_efficiency_200_std": 5.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 256,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "batch_256",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 25.8805133736463,
+        "success_rate": 0.24,
+        "performance_variance": 149.7735337045487,
+        "final_performance": 24.5097991174328,
+        "total_episodes": 467,
+        "max_reward": 273.81208360835444,
+        "min_reward": -440.9143514931202,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": 0.20561134500267714,
+        "test_std_reward": 262.7233780843959,
+        "test_rewards": [
+          -370.55051109399693,
+          119.73860337549235,
+          29.817557555517748,
+          98.62891825717665,
+          192.76483900470268,
+          207.132091665504,
+          4.476535328794644,
+          147.49654607128724,
+          125.95375686359874,
+          80.72147788413315,
+          86.97848136823295,
+          -22.2064760426139,
+          91.18845757337581,
+          59.26391616733425,
+          184.77253123769322,
+          28.74508611005844,
+          -515.5538262492341,
+          165.3143807126601,
+          -1.085826790823969,
+          -528.8339461350272
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 256,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_256"
+      },
+      {
+        "mean_episode_return": -185.80363133090685,
+        "success_rate": 0.03,
+        "performance_variance": 232.60020850082728,
+        "final_performance": -240.37563600550712,
+        "total_episodes": 714,
+        "max_reward": 286.0320527639329,
+        "min_reward": -1383.2528060376644,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -64.35302153975354,
+        "test_std_reward": 155.71078357199798,
+        "test_rewards": [
+          -264.5395080386578,
+          -516.7145101395256,
+          -30.410936117825326,
+          -208.95571134113095,
+          41.0863134444972,
+          -264.84501393767414,
+          42.89108496630008,
+          -972.2632926398741,
+          -324.5531651748803,
+          -5803.571049836674,
+          21.989250958443293,
+          -441.7520233087375,
+          -369.531380478047,
+          -953.4144551451444,
+          -309.9349799440936,
+          -327.6068053833813,
+          4.560501865490172,
+          -360.7428449838664,
+          -346.147343617963,
+          -378.46400243372113
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 256,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "batch_256"
+      }
+    ],
+    "test_mean_reward_mean": -32.07370509737543,
+    "test_mean_reward_std": 32.27931644237811,
+    "test_mean_reward_values": [
+      0.20561134500267714,
+      -64.35302153975354
+    ],
+    "final_performance_mean": -107.93291844403716,
+    "final_performance_std": 132.44271756146998,
+    "final_performance_values": [
+      24.5097991174328,
+      -240.37563600550712
+    ],
+    "mean_episode_return_mean": -79.96155897863028,
+    "mean_episode_return_std": 105.84207235227657,
+    "mean_episode_return_values": [
+      25.8805133736463,
+      -185.80363133090685
+    ],
+    "success_rate_mean": 0.135,
+    "success_rate_std": 0.105,
+    "success_rate_values": [
+      0.24,
+      0.03
+    ],
+    "performance_variance_mean": 191.18687110268797,
+    "performance_variance_std": 41.41333739813929,
+    "performance_variance_values": [
+      149.7735337045487,
+      232.60020850082728
+    ],
+    "max_reward_mean": 279.92206818614363,
+    "max_reward_std": 6.10998457778922,
+    "max_reward_values": [
+      273.81208360835444,
+      286.0320527639329
+    ],
+    "min_reward_mean": -912.0835787653923,
+    "min_reward_std": 471.1692272722721,
+    "min_reward_values": [
+      -440.9143514931202,
+      -1383.2528060376644
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 500,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "target_500",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -170.23877195989394,
+        "success_rate": 0.0,
+        "performance_variance": 49.59214752897589,
+        "final_performance": -186.3589483452728,
+        "total_episodes": 660,
+        "max_reward": 211.11643358923527,
+        "min_reward": -2898.685042247176,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -192.0662002285857,
+        "test_std_reward": 25.41954239027035,
+        "test_rewards": [
+          -226.96516146927095,
+          -205.61157191528127,
+          -210.81063749325355,
+          -187.82649768443864,
+          -227.64265517011148,
+          -201.19169629308544,
+          -157.2627211660287,
+          -236.063925310792,
+          -248.95827582742515,
+          -219.66126429073415,
+          -220.48663835503768,
+          -199.38924419094616,
+          -234.34818872583003,
+          -214.86442826538308,
+          -238.7708945289186,
+          -181.92514448557512,
+          -173.40365516581448,
+          -162.62067784600907,
+          -224.9957670745462,
+          -170.57065490641017
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 500,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_500"
+      },
+      {
+        "mean_episode_return": -860.2931674849929,
+        "success_rate": 0.0,
+        "performance_variance": 489.7468845027782,
+        "final_performance": -621.6878119790344,
+        "total_episodes": 1507,
+        "max_reward": 83.38057249769918,
+        "min_reward": -3758.5123357623816,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -947.3158923023148,
+        "test_std_reward": 535.5494244201241,
+        "test_rewards": [
+          -696.1446855614681,
+          -792.2109423830221,
+          -630.8080492429218,
+          -640.0312144174144,
+          -578.7010713382543,
+          -788.4554794262117,
+          -705.8314589672448,
+          -2776.7725417718275,
+          -1283.3655183475357,
+          -1648.1672343367195,
+          -354.80943075651794,
+          -373.88913862914035,
+          -518.190950931574,
+          -410.6604749344922,
+          -543.1945177381299,
+          -2524.0252808769437,
+          -516.5373594390596,
+          -944.2190675370808,
+          -1319.7007798519091,
+          -885.9135342249878
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 500,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_500"
+      }
+    ],
+    "test_mean_reward_mean": -569.6910462654503,
+    "test_mean_reward_std": 377.62484603686454,
+    "test_mean_reward_values": [
+      -192.0662002285857,
+      -947.3158923023148
+    ],
+    "final_performance_mean": -404.0233801621536,
+    "final_performance_std": 217.6644318168808,
+    "final_performance_values": [
+      -186.3589483452728,
+      -621.6878119790344
+    ],
+    "mean_episode_return_mean": -515.2659697224434,
+    "mean_episode_return_std": 345.02719776254946,
+    "mean_episode_return_values": [
+      -170.23877195989394,
+      -860.2931674849929
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 269.66951601587704,
+    "performance_variance_std": 220.07736848690115,
+    "performance_variance_values": [
+      49.59214752897589,
+      489.7468845027782
+    ],
+    "max_reward_mean": 147.24850304346722,
+    "max_reward_std": 63.86793054576805,
+    "max_reward_values": [
+      211.11643358923527,
+      83.38057249769918
+    ],
+    "min_reward_mean": -3328.598689004779,
+    "min_reward_std": 429.9136467576027,
+    "min_reward_values": [
+      -2898.685042247176,
+      -3758.5123357623816
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "target_1000",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 267.2629375368359,
+        "success_rate": 1.0,
+        "performance_variance": 16.150918570368834,
+        "final_performance": 263.17311180368176,
+        "total_episodes": 713,
+        "max_reward": 299.9751658154304,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 286,
+        "sample_efficiency_200": 289,
+        "test_mean_reward": 253.21374728976738,
+        "test_std_reward": 12.196622733838373,
+        "test_rewards": [
+          265.84082540801694,
+          238.66450192486735,
+          223.50225001167763,
+          258.2191541022257,
+          247.11440021720165,
+          252.46156157002045,
+          136.8704446440113,
+          240.46746104911216,
+          229.52705065466827,
+          244.6224692049697,
+          260.59205617485947,
+          285.69876088624875,
+          266.43499881156066,
+          276.21604737197873,
+          146.6656826165095,
+          261.4890941229199,
+          231.5348852614366,
+          280.59466030500823,
+          268.848680793579,
+          219.8930962386467
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_1000"
+      },
+      {
+        "mean_episode_return": 143.2547767417065,
+        "success_rate": 0.64,
+        "performance_variance": 177.27946212395733,
+        "final_performance": 255.7562147244033,
+        "total_episodes": 572,
+        "max_reward": 308.5641470915653,
+        "min_reward": -616.7277740321588,
+        "sample_efficiency_150": 276,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": 82.0228743976273,
+        "test_std_reward": 154.20869328368502,
+        "test_rewards": [
+          108.72243704179222,
+          153.93746824798387,
+          123.20629191957794,
+          123.17241324958434,
+          118.65522733723846,
+          142.6016658671541,
+          84.45300600261992,
+          150.52447916901954,
+          70.06885665108416,
+          113.74032533559004,
+          91.00912095150328,
+          118.93085777355857,
+          137.75366102958648,
+          72.09599200969834,
+          103.2138941461476,
+          118.53649381835537,
+          133.94320009260343,
+          156.56430224073554,
+          100.85017024100962,
+          115.23727940082232
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_1000"
+      }
+    ],
+    "test_mean_reward_mean": 167.61831084369734,
+    "test_mean_reward_std": 85.59543644607004,
+    "test_mean_reward_values": [
+      253.21374728976738,
+      82.0228743976273
+    ],
+    "final_performance_mean": 259.46466326404254,
+    "final_performance_std": 3.7084485396392353,
+    "final_performance_values": [
+      263.17311180368176,
+      255.7562147244033
+    ],
+    "mean_episode_return_mean": 205.2588571392712,
+    "mean_episode_return_std": 62.00408039756471,
+    "mean_episode_return_values": [
+      267.2629375368359,
+      143.2547767417065
+    ],
+    "success_rate_mean": 0.8200000000000001,
+    "success_rate_std": 0.18,
+    "success_rate_values": [
+      1.0,
+      0.64
+    ],
+    "performance_variance_mean": 96.71519034716309,
+    "performance_variance_std": 80.56427177679426,
+    "performance_variance_values": [
+      16.150918570368834,
+      177.27946212395733
+    ],
+    "max_reward_mean": 304.2696564534979,
+    "max_reward_std": 4.294490638067458,
+    "max_reward_values": [
+      299.9751658154304,
+      308.5641470915653
+    ],
+    "min_reward_mean": -522.5543140399968,
+    "min_reward_std": 94.17345999216195,
+    "min_reward_values": [
+      -428.3808540478349,
+      -616.7277740321588
+    ],
+    "sample_efficiency_150_mean": 281.0,
+    "sample_efficiency_150_std": 5.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 284.0,
+    "sample_efficiency_200_std": 5.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 2000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "target_2000",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -31.750733779473606,
+        "success_rate": 0.0,
+        "performance_variance": 28.96446911689199,
+        "final_performance": -33.08765204926094,
+        "total_episodes": 451,
+        "max_reward": 60.96853742748499,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -51.280510441643855,
+        "test_std_reward": 28.056669430858744,
+        "test_rewards": [
+          -12.368044216234368,
+          -20.48614330852746,
+          -64.0144431946325,
+          -39.98441061993369,
+          -93.40881827300785,
+          -87.94989861630215,
+          -67.00883159728065,
+          -36.52164611669218,
+          -55.738078578877165,
+          -45.932693534519345,
+          -72.68018946198863,
+          -68.83235514144152,
+          -16.9333488247283,
+          -64.41064954066172,
+          -98.34511104627957,
+          -52.235055795346035,
+          -93.20931611460402,
+          -26.955097542859036,
+          -28.502950290822376,
+          -91.8057664138044
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 2000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_2000"
+      },
+      {
+        "mean_episode_return": -27.965500398396617,
+        "success_rate": 0.0,
+        "performance_variance": 28.939195936924907,
+        "final_performance": -57.346499356982534,
+        "total_episodes": 475,
+        "max_reward": 119.99732812977163,
+        "min_reward": -444.21572414785624,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -63.1452471112414,
+        "test_std_reward": 27.304854067891984,
+        "test_rewards": [
+          -72.40678299350131,
+          -12.457833024094244,
+          -66.11939724604838,
+          -45.456712571132684,
+          -9.696010735345274,
+          -76.19929972882426,
+          -59.790671778666706,
+          -40.78475222177791,
+          -35.215449977011396,
+          -45.16288583395248,
+          -29.27757786611456,
+          -123.85287479184886,
+          -50.63062073873097,
+          -84.17303146075675,
+          -20.644825097424672,
+          -34.81321646380558,
+          -57.87320370051808,
+          -74.65984946564357,
+          -49.84801633953276,
+          -61.725681662595875
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 2000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "target_2000"
+      }
+    ],
+    "test_mean_reward_mean": -57.21287877644263,
+    "test_mean_reward_std": 5.932368334798774,
+    "test_mean_reward_values": [
+      -51.280510441643855,
+      -63.1452471112414
+    ],
+    "final_performance_mean": -45.217075703121736,
+    "final_performance_std": 12.129423653860798,
+    "final_performance_values": [
+      -33.08765204926094,
+      -57.346499356982534
+    ],
+    "mean_episode_return_mean": -29.85811708893511,
+    "mean_episode_return_std": 1.8926166905384942,
+    "mean_episode_return_values": [
+      -31.750733779473606,
+      -27.965500398396617
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 28.951832526908447,
+    "performance_variance_std": 0.012636589983541668,
+    "performance_variance_values": [
+      28.96446911689199,
+      28.939195936924907
+    ],
+    "max_reward_mean": 90.48293277862831,
+    "max_reward_std": 29.51439535114332,
+    "max_reward_values": [
+      60.96853742748499,
+      119.99732812977163
+    ],
+    "min_reward_mean": -436.29828909784555,
+    "min_reward_std": 7.917435050010681,
+    "min_reward_values": [
+      -428.3808540478349,
+      -444.21572414785624
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        256,
+        256
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "arch_256_256",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -26.632511254670103,
+        "success_rate": 0.0,
+        "performance_variance": 28.129825200645886,
+        "final_performance": -23.70480931525526,
+        "total_episodes": 435,
+        "max_reward": 232.0505793532658,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -11.193262994890393,
+        "test_std_reward": 17.88616277598663,
+        "test_rewards": [
+          -50.18004084634447,
+          -21.616956857974643,
+          6.753312117446071,
+          24.253790235048513,
+          -41.056237665126716,
+          -52.416521217667004,
+          17.122545004358983,
+          -11.9788197763436,
+          -18.19081951412573,
+          -7.006152650268851,
+          -11.29583320261199,
+          7.227511114556392,
+          -30.181793348439523,
+          -43.55578790774643,
+          12.23604136160249,
+          15.849943925948306,
+          -1.2140164905768276,
+          -9.053565287127414,
+          -31.207721455283767,
+          -5.127310139405885
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            256,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_256_256"
+      },
+      {
+        "mean_episode_return": -53.522868451080775,
+        "success_rate": 0.0,
+        "performance_variance": 49.78215586733462,
+        "final_performance": -53.844617742847184,
+        "total_episodes": 426,
+        "max_reward": 95.97179539995636,
+        "min_reward": -444.21572414785624,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -45.050287550093344,
+        "test_std_reward": 20.947912737088785,
+        "test_rewards": [
+          -52.98196142365496,
+          -42.921596446740935,
+          -41.55995729190739,
+          -65.55491857889083,
+          -16.543406040772442,
+          -44.10922002823243,
+          -25.80850082376052,
+          -73.93872350958114,
+          -7.334245208678922,
+          -61.25328914570292,
+          -33.94708407857496,
+          -23.59981459983255,
+          -43.720323656060906,
+          -24.15983987402712,
+          -67.20867179165917,
+          -50.267065173302214,
+          -48.75783029934778,
+          -54.456759059208125,
+          -30.427966673691973,
+          -7.103417484917881
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            256,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_256_256"
+      }
+    ],
+    "test_mean_reward_mean": -28.121775272491867,
+    "test_mean_reward_std": 16.928512277601474,
+    "test_mean_reward_values": [
+      -11.193262994890393,
+      -45.050287550093344
+    ],
+    "final_performance_mean": -38.774713529051226,
+    "final_performance_std": 15.069904213795962,
+    "final_performance_values": [
+      -23.70480931525526,
+      -53.844617742847184
+    ],
+    "mean_episode_return_mean": -40.07768985287544,
+    "mean_episode_return_std": 13.445178598205336,
+    "mean_episode_return_values": [
+      -26.632511254670103,
+      -53.522868451080775
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 38.95599053399025,
+    "performance_variance_std": 10.826165333344369,
+    "performance_variance_values": [
+      28.129825200645886,
+      49.78215586733462
+    ],
+    "max_reward_mean": 164.01118737661108,
+    "max_reward_std": 68.03939197665471,
+    "max_reward_values": [
+      232.0505793532658,
+      95.97179539995636
+    ],
+    "min_reward_mean": -436.29828909784555,
+    "min_reward_std": 7.917435050010681,
+    "min_reward_values": [
+      -428.3808540478349,
+      -444.21572414785624
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "arch_512_512",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 267.2629375368359,
+        "success_rate": 1.0,
+        "performance_variance": 16.150918570368834,
+        "final_performance": 263.17311180368176,
+        "total_episodes": 713,
+        "max_reward": 299.9751658154304,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": 286,
+        "sample_efficiency_200": 289,
+        "test_mean_reward": 251.560229361832,
+        "test_std_reward": 13.004630773836785,
+        "test_rewards": [
+          265.67639123991825,
+          252.1344558103101,
+          242.80164618023545,
+          250.76187044714484,
+          267.19342303018016,
+          -14.172004641085408,
+          258.36942792717616,
+          101.80578356061139,
+          234.0640419292925,
+          255.56917795620518,
+          283.0460667107704,
+          245.3123414234211,
+          259.5912875846645,
+          255.99921518978434,
+          251.62999476099895,
+          256.2798851018037,
+          263.68731225848035,
+          285.99488354459794,
+          272.9087145686743,
+          250.3702947937613
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_512"
+      },
+      {
+        "mean_episode_return": 143.2547767417065,
+        "success_rate": 0.64,
+        "performance_variance": 177.27946212395733,
+        "final_performance": 255.7562147244033,
+        "total_episodes": 572,
+        "max_reward": 308.5641470915653,
+        "min_reward": -616.7277740321588,
+        "sample_efficiency_150": 276,
+        "sample_efficiency_200": 279,
+        "test_mean_reward": 110.59248387721019,
+        "test_std_reward": 41.20822275331501,
+        "test_rewards": [
+          109.14115822148052,
+          140.33022228446484,
+          145.93274661465708,
+          99.87050032318226,
+          133.61378577055595,
+          105.25380610665329,
+          141.2490977484069,
+          134.05487568355255,
+          106.85469059475973,
+          98.12069751508372,
+          118.46149873828972,
+          106.50535912087084,
+          113.85917826752808,
+          131.59310619555364,
+          93.88033689046132,
+          -620.7867623531557,
+          81.26674971670602,
+          112.33238353212569,
+          111.40615277339445,
+          140.4846323529503
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_512"
+      }
+    ],
+    "test_mean_reward_mean": 181.0763566195211,
+    "test_mean_reward_std": 70.48387274231091,
+    "test_mean_reward_values": [
+      251.560229361832,
+      110.59248387721019
+    ],
+    "final_performance_mean": 259.46466326404254,
+    "final_performance_std": 3.7084485396392353,
+    "final_performance_values": [
+      263.17311180368176,
+      255.7562147244033
+    ],
+    "mean_episode_return_mean": 205.2588571392712,
+    "mean_episode_return_std": 62.00408039756471,
+    "mean_episode_return_values": [
+      267.2629375368359,
+      143.2547767417065
+    ],
+    "success_rate_mean": 0.8200000000000001,
+    "success_rate_std": 0.18,
+    "success_rate_values": [
+      1.0,
+      0.64
+    ],
+    "performance_variance_mean": 96.71519034716309,
+    "performance_variance_std": 80.56427177679426,
+    "performance_variance_values": [
+      16.150918570368834,
+      177.27946212395733
+    ],
+    "max_reward_mean": 304.2696564534979,
+    "max_reward_std": 4.294490638067458,
+    "max_reward_values": [
+      299.9751658154304,
+      308.5641470915653
+    ],
+    "min_reward_mean": -522.5543140399968,
+    "min_reward_std": 94.17345999216195,
+    "min_reward_values": [
+      -428.3808540478349,
+      -616.7277740321588
+    ],
+    "sample_efficiency_150_mean": 281.0,
+    "sample_efficiency_150_std": 5.0,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 284.0,
+    "sample_efficiency_200_std": 5.0,
+    "sample_efficiency_200_success_rate": 1.0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        256
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "arch_512_256",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -19.199320416769186,
+        "success_rate": 0.0,
+        "performance_variance": 26.33066087032511,
+        "final_performance": -46.84359444716392,
+        "total_episodes": 437,
+        "max_reward": 82.97318296402227,
+        "min_reward": -428.3808540478349,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -19.391861333713315,
+        "test_std_reward": 29.03287840389408,
+        "test_rewards": [
+          -22.08965390363293,
+          17.45230653820247,
+          6.273682442824725,
+          19.45550964860943,
+          15.454839944190494,
+          17.454751153803034,
+          -35.389724244454854,
+          -5.269335719982399,
+          2.8972179929569046,
+          12.466504322994998,
+          -63.14145283842737,
+          -28.805867741578822,
+          -22.976530150634872,
+          -26.7819109892477,
+          -20.536626700835633,
+          -8.551734323831344,
+          -3.992870482919014,
+          -31.584527306063084,
+          -34.24585452593649,
+          -16.338799085140902
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_256"
+      },
+      {
+        "mean_episode_return": -59.394402291588555,
+        "success_rate": 0.01,
+        "performance_variance": 67.42782177511555,
+        "final_performance": -29.272808570135386,
+        "total_episodes": 441,
+        "max_reward": 218.84644822240807,
+        "min_reward": -444.21572414785624,
+        "sample_efficiency_150": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -12.282648540677474,
+        "test_std_reward": 25.227239569890713,
+        "test_rewards": [
+          2.7254507875385032,
+          18.364083546863185,
+          4.071466026236825,
+          -21.284209899432184,
+          15.768767453223525,
+          5.071894281028705,
+          -12.85764762545755,
+          -14.559677863440221,
+          3.4552876309442118,
+          -35.075027342951756,
+          -11.949478938716506,
+          12.797463601725243,
+          -17.801111719413825,
+          5.626328987191725,
+          -10.98321555918503,
+          -35.62566838572936,
+          -25.67278745029265,
+          -59.292613882732006,
+          -50.259667268131416,
+          -2.520513673411638
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_256"
+      }
+    ],
+    "test_mean_reward_mean": -15.837254937195395,
+    "test_mean_reward_std": 3.5546063965179204,
+    "test_mean_reward_values": [
+      -19.391861333713315,
+      -12.282648540677474
+    ],
+    "final_performance_mean": -38.05820150864965,
+    "final_performance_std": 8.785392938514269,
+    "final_performance_values": [
+      -46.84359444716392,
+      -29.272808570135386
+    ],
+    "mean_episode_return_mean": -39.29686135417887,
+    "mean_episode_return_std": 20.097540937409683,
+    "mean_episode_return_values": [
+      -19.199320416769186,
+      -59.394402291588555
+    ],
+    "success_rate_mean": 0.005,
+    "success_rate_std": 0.005,
+    "success_rate_values": [
+      0.0,
+      0.01
+    ],
+    "performance_variance_mean": 46.87924132272033,
+    "performance_variance_std": 20.548580452395218,
+    "performance_variance_values": [
+      26.33066087032511,
+      67.42782177511555
+    ],
+    "max_reward_mean": 150.90981559321517,
+    "max_reward_std": 67.9366326291929,
+    "max_reward_values": [
+      82.97318296402227,
+      218.84644822240807
+    ],
+    "min_reward_mean": -436.29828909784555,
+    "min_reward_std": 7.917435050010681,
+    "min_reward_values": [
+      -428.3808540478349,
+      -444.21572414785624
+    ],
+    "sample_efficiency_150_mean": null,
+    "sample_efficiency_150_std": null,
+    "sample_efficiency_150_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0001,
+      "buffer_size": 100000,
+      "learning_starts": 1000,
+      "batch_size": 128,
+      "gamma": 0.999,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_fraction": 0.12,
+      "exploration_final_eps": 0.02,
+      "max_grad_norm": 10,
+      "net_arch": [
+        512,
+        512,
+        256
+      ],
+      "total_timesteps": 300000
+    },
+    "config_name": "arch_512_512_256",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": 168.7985916317534,
+        "success_rate": 0.6,
+        "performance_variance": 120.33216812754597,
+        "final_performance": 248.13814223568733,
+        "total_episodes": 664,
+        "max_reward": 316.59332239666895,
+        "min_reward": -518.0367323569953,
+        "sample_efficiency_150": 406,
+        "sample_efficiency_200": 422,
+        "test_mean_reward": 247.2438449815548,
+        "test_std_reward": 74.0978539638257,
+        "test_rewards": [
+          274.3356371369114,
+          247.11726640175772,
+          309.35885123329365,
+          293.7776606473875,
+          264.96064506846574,
+          290.6667213327697,
+          252.85172004871146,
+          160.44924762089204,
+          289.4237486490638,
+          282.470559124493,
+          258.892866617579,
+          305.48454545495713,
+          267.6763472135092,
+          282.8431179373591,
+          264.59351836940596,
+          257.57965149596976,
+          269.4223324654679,
+          281.15532711471576,
+          247.20333895093117,
+          301.43850702563856
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_512_256"
+      },
+      {
+        "mean_episode_return": 64.31934920008605,
+        "success_rate": 0.31,
+        "performance_variance": 165.69193405160388,
+        "final_performance": -68.65562080641067,
+        "total_episodes": 582,
+        "max_reward": 312.48971023198817,
+        "min_reward": -473.1514613032341,
+        "sample_efficiency_150": 237,
+        "sample_efficiency_200": 248,
+        "test_mean_reward": -163.9677236580028,
+        "test_std_reward": 128.01147466151448,
+        "test_rewards": [
+          -10.128390340423332,
+          262.92681911598163,
+          -236.32818446573995,
+          -316.9827979601125,
+          -362.6086192186047,
+          -269.79902032285565,
+          -229.1551622264572,
+          247.3414305585295,
+          2.974023165010018,
+          -263.37047746417795,
+          -335.9290454956821,
+          11.896566255479543,
+          -307.65809370758006,
+          -302.6187434675232,
+          234.85336324966926,
+          -17.318034068579323,
+          -270.1255104939737,
+          -21.033048042025072,
+          -15.070551630853167,
+          -237.1759780749029
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0001,
+          "buffer_size": 100000,
+          "learning_starts": 1000,
+          "batch_size": 128,
+          "gamma": 0.999,
+          "train_freq": 4,
+          "target_update_interval": 1000,
+          "exploration_fraction": 0.12,
+          "exploration_final_eps": 0.02,
+          "max_grad_norm": 10,
+          "net_arch": [
+            512,
+            512,
+            256
+          ],
+          "total_timesteps": 300000
+        },
+        "config_name": "arch_512_512_256"
+      }
+    ],
+    "test_mean_reward_mean": 41.638060661775995,
+    "test_mean_reward_std": 205.6057843197788,
+    "test_mean_reward_values": [
+      247.2438449815548,
+      -163.9677236580028
+    ],
+    "final_performance_mean": 89.74126071463833,
+    "final_performance_std": 158.396881521049,
+    "final_performance_values": [
+      248.13814223568733,
+      -68.65562080641067
+    ],
+    "mean_episode_return_mean": 116.55897041591973,
+    "mean_episode_return_std": 52.23962121583368,
+    "mean_episode_return_values": [
+      168.7985916317534,
+      64.31934920008605
+    ],
+    "success_rate_mean": 0.45499999999999996,
+    "success_rate_std": 0.145,
+    "success_rate_values": [
+      0.6,
+      0.31
+    ],
+    "performance_variance_mean": 143.01205108957492,
+    "performance_variance_std": 22.679882962028955,
+    "performance_variance_values": [
+      120.33216812754597,
+      165.69193405160388
+    ],
+    "max_reward_mean": 314.54151631432853,
+    "max_reward_std": 2.0518060823403914,
+    "max_reward_values": [
+      316.59332239666895,
+      312.48971023198817
+    ],
+    "min_reward_mean": -495.5940968301147,
+    "min_reward_std": 22.442635526880622,
+    "min_reward_values": [
+      -518.0367323569953,
+      -473.1514613032341
+    ],
+    "sample_efficiency_150_mean": 321.5,
+    "sample_efficiency_150_std": 84.5,
+    "sample_efficiency_150_success_rate": 1.0,
+    "sample_efficiency_200_mean": 335.0,
+    "sample_efficiency_200_std": 87.0,
+    "sample_efficiency_200_success_rate": 1.0
+  }
+]

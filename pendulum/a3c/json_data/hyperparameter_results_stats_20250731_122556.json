@@ -1,0 +1,2773 @@
+[
+  {
+    "config": {
+      "learning_rate": 0.0003,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 8,
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.0003",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1433.9468084366783,
+        "success_rate": 0.0,
+        "performance_variance": 198.90997026952962,
+        "final_performance": -1301.280891620717,
+        "total_episodes": 125,
+        "max_reward": -638.6412794699427,
+        "min_reward": -1882.7061557769775,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1225.185170529224,
+        "test_std_reward": 130.8788099827508,
+        "test_rewards": [
+          -1496.924577422736,
+          -1227.4187522342527,
+          -1107.8778920469006,
+          -1306.841293828561,
+          -1297.327647464928,
+          -1179.7559619102494,
+          -1233.877294475906,
+          -1282.2493851477543,
+          -1303.2163874952244,
+          -1319.3140135036865,
+          -1159.931204647707,
+          -1143.6038839494834,
+          -1243.2716071793839,
+          -1491.0684947338732,
+          -1317.2371109140224,
+          -1488.7046888798982,
+          -1169.5791776825895,
+          -1225.684966643732,
+          -1492.0904359978085,
+          -1306.2598156158788
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0003"
+      },
+      {
+        "mean_episode_return": -1511.6033706531673,
+        "success_rate": 0.0,
+        "performance_variance": 158.79741009928946,
+        "final_performance": -1472.1181957498193,
+        "total_episodes": 125,
+        "max_reward": -965.7200937978923,
+        "min_reward": -1842.658483505249,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1201.056552428566,
+        "test_std_reward": 249.2375749471653,
+        "test_rewards": [
+          -1158.2842616969174,
+          -1264.1031131510538,
+          -780.0722891539959,
+          -1363.1695527022407,
+          -776.3942764713984,
+          -1455.7828191294786,
+          -1518.7344464222517,
+          -1448.736931548179,
+          -1508.8123251946329,
+          -1500.2593199629857,
+          -1338.9982559547298,
+          -779.5518963526624,
+          -1387.053259794101,
+          -1515.6327720413306,
+          -1497.6348546234412,
+          -1186.7524447031205,
+          -1282.069729862518,
+          -772.8465423563621,
+          -1371.0367772445434,
+          -1257.582458660861
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0003,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0003"
+      }
+    ],
+    "test_mean_reward_mean": -1213.120861478895,
+    "test_mean_reward_std": 12.06430905032903,
+    "test_mean_reward_values": [
+      -1225.185170529224,
+      -1201.056552428566
+    ],
+    "final_performance_mean": -1386.699543685268,
+    "final_performance_std": 85.41865206455111,
+    "final_performance_values": [
+      -1301.280891620717,
+      -1472.1181957498193
+    ],
+    "mean_episode_return_mean": -1472.7750895449228,
+    "mean_episode_return_std": 38.82828110824448,
+    "mean_episode_return_values": [
+      -1433.9468084366783,
+      -1511.6033706531673
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 178.85369018440954,
+    "performance_variance_std": 20.05628008512008,
+    "performance_variance_values": [
+      198.90997026952962,
+      158.79741009928946
+    ],
+    "max_reward_mean": -802.1806866339175,
+    "max_reward_std": 163.53940716397483,
+    "max_reward_values": [
+      -638.6412794699427,
+      -965.7200937978923
+    ],
+    "min_reward_mean": -1862.6823196411133,
+    "min_reward_std": 20.023836135864258,
+    "min_reward_values": [
+      -1882.7061557769775,
+      -1842.658483505249
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 8,
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.0007",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1216.8287518448667,
+        "success_rate": 0.0,
+        "performance_variance": 280.90256147691076,
+        "final_performance": -1269.0734929069877,
+        "total_episodes": 125,
+        "max_reward": -394.72473530384013,
+        "min_reward": -1829.5353336334229,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1378.0995656549464,
+        "test_std_reward": 120.95839196708435,
+        "test_rewards": [
+          -1540.8484530996218,
+          -1195.8282114013118,
+          -1550.946387459167,
+          -1354.4847886150321,
+          -1337.1682008248247,
+          -1497.8227889787338,
+          -1550.698132882318,
+          -1417.058551356113,
+          -1514.93009012235,
+          -1559.0418021876446,
+          -1255.2385077589688,
+          -1129.0973623422967,
+          -1410.6973087798194,
+          -1087.1494814299144,
+          -1471.818299972309,
+          -1550.6919308511908,
+          -1546.5318710658464,
+          -1489.9307398089275,
+          -1051.6957781015085,
+          -1541.1171256340676
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0007"
+      },
+      {
+        "mean_episode_return": -1221.6035454168368,
+        "success_rate": 0.01,
+        "performance_variance": 294.05819896729844,
+        "final_performance": -753.0134045501829,
+        "total_episodes": 125,
+        "max_reward": -132.91331446613185,
+        "min_reward": -1860.5680141448975,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -680.4819103523914,
+        "test_std_reward": 569.0789245651266,
+        "test_rewards": [
+          -269.1382130797793,
+          -269.6536295185145,
+          -132.97801334895257,
+          -542.8830647504245,
+          -131.84446806518136,
+          -667.2613785308671,
+          -273.8653063762622,
+          -0.25447138203445274,
+          -2.3846136010035295,
+          -0.19306690181665598,
+          -134.5304405144013,
+          -133.01285046959336,
+          -133.76036651473876,
+          -1.2193223498474233,
+          -0.3859097864190341,
+          -266.44186905668886,
+          -405.1772558330118,
+          -0.2515713522692471,
+          -1.0631008439269862,
+          -415.2798117806705
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.0007"
+      }
+    ],
+    "test_mean_reward_mean": -1029.290738003669,
+    "test_mean_reward_std": 348.8088276512775,
+    "test_mean_reward_values": [
+      -1378.0995656549464,
+      -680.4819103523914
+    ],
+    "final_performance_mean": -1011.0434487285853,
+    "final_performance_std": 258.03004417840236,
+    "final_performance_values": [
+      -1269.0734929069877,
+      -753.0134045501829
+    ],
+    "mean_episode_return_mean": -1219.2161486308519,
+    "mean_episode_return_std": 2.387396785985061,
+    "mean_episode_return_values": [
+      -1216.8287518448667,
+      -1221.6035454168368
+    ],
+    "success_rate_mean": 0.005,
+    "success_rate_std": 0.005,
+    "success_rate_values": [
+      0.0,
+      0.01
+    ],
+    "performance_variance_mean": 287.4803802221046,
+    "performance_variance_std": 6.577818745193838,
+    "performance_variance_values": [
+      280.90256147691076,
+      294.05819896729844
+    ],
+    "max_reward_mean": -263.819024884986,
+    "max_reward_std": 130.90571041885414,
+    "max_reward_values": [
+      -394.72473530384013,
+      -132.91331446613185
+    ],
+    "min_reward_mean": -1845.0516738891602,
+    "min_reward_std": 15.516340255737305,
+    "min_reward_values": [
+      -1829.5353336334229,
+      -1860.5680141448975
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.001,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 8,
+      "total_timesteps": 200000
+    },
+    "config_name": "lr_0.001",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1402.8357950609504,
+        "success_rate": 0.0,
+        "performance_variance": 242.2746645448558,
+        "final_performance": -1128.1980380304158,
+        "total_episodes": 125,
+        "max_reward": -637.9975948259234,
+        "min_reward": -1839.2881898880005,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1172.7253670109435,
+        "test_std_reward": 221.7117255871714,
+        "test_rewards": [
+          -1495.082297938189,
+          -915.1590717322991,
+          -1498.7306388381608,
+          -1366.8408404594122,
+          -1093.7212202950723,
+          -902.262650775753,
+          -1480.5622003410167,
+          -1398.954496406075,
+          -1444.0695930630231,
+          -1471.0556872340255,
+          -1424.7678790230887,
+          -912.8509250815775,
+          -849.4486568423613,
+          -1494.4335591136312,
+          -630.1333381216898,
+          -911.085713077301,
+          -1499.5328390851746,
+          -1500.4285532545114,
+          -913.934348879673,
+          -1417.866878309149
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.001,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.001"
+      },
+      {
+        "mean_episode_return": -1313.441659167863,
+        "success_rate": 0.0,
+        "performance_variance": 272.75749386908296,
+        "final_performance": -1385.6243457064033,
+        "total_episodes": 125,
+        "max_reward": -583.7928562706802,
+        "min_reward": -1832.147005558014,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1133.509495785908,
+        "test_std_reward": 408.4780599971646,
+        "test_rewards": [
+          -1522.7838073348244,
+          -960.8335882178972,
+          -1181.5210441493796,
+          -1472.942431986181,
+          -21.683409302710714,
+          -1468.1451608336336,
+          -1150.0489450321506,
+          -133.7280567056551,
+          -994.8767281331036,
+          -1304.4980819535292,
+          -746.2305176375232,
+          -1490.909416671192,
+          -1638.0478843151263,
+          -1189.293390735087,
+          -947.8401074335804,
+          -1245.5792750136495,
+          -1343.0358453093993,
+          -754.9740801767125,
+          -1495.3834062237136,
+          -786.2830752522477
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.001,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "lr_0.001"
+      }
+    ],
+    "test_mean_reward_mean": -1153.1174313984257,
+    "test_mean_reward_std": 19.607935612517736,
+    "test_mean_reward_values": [
+      -1172.7253670109435,
+      -1133.509495785908
+    ],
+    "final_performance_mean": -1256.9111918684096,
+    "final_performance_std": 128.7131538379938,
+    "final_performance_values": [
+      -1128.1980380304158,
+      -1385.6243457064033
+    ],
+    "mean_episode_return_mean": -1358.1387271144067,
+    "mean_episode_return_std": 44.69706794654371,
+    "mean_episode_return_values": [
+      -1402.8357950609504,
+      -1313.441659167863
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 257.5160792069694,
+    "performance_variance_std": 15.241414662113584,
+    "performance_variance_values": [
+      242.2746645448558,
+      272.75749386908296
+    ],
+    "max_reward_mean": -610.8952255483018,
+    "max_reward_std": 27.10236927762162,
+    "max_reward_values": [
+      -637.9975948259234,
+      -583.7928562706802
+    ],
+    "min_reward_mean": -1835.7175977230072,
+    "min_reward_std": 3.570592164993286,
+    "min_reward_values": [
+      -1839.2881898880005,
+      -1832.147005558014
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "envs_4",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -704.3033977613552,
+        "success_rate": 0.3,
+        "performance_variance": 564.3374883286676,
+        "final_performance": -1157.3769597581588,
+        "total_episodes": 250,
+        "max_reward": -1.1781884222582448,
+        "min_reward": -1847.5622310638428,
+        "sample_efficiency_300": 181,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1170.864244458964,
+        "test_std_reward": 561.5331762071062,
+        "test_rewards": [
+          -1446.2896537245458,
+          -1443.1704320869019,
+          -1152.0986981676629,
+          -1591.2222703469881,
+          -1451.367873740904,
+          -1550.1218560153682,
+          -1511.3783339529043,
+          -1497.9394994450372,
+          -1159.178580470259,
+          -1441.4723422813884,
+          -293.19626003600973,
+          -1511.6673067472468,
+          -1220.2701219368016,
+          -2.158619767185363,
+          -129.41543839176313,
+          -1594.2847512043354,
+          -135.36546075381088,
+          -1309.2822652621091,
+          -1535.4786718197095,
+          -136.69549652013677
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_4"
+      },
+      {
+        "mean_episode_return": -912.8567236697266,
+        "success_rate": 0.33,
+        "performance_variance": 596.9200627936715,
+        "final_performance": -1078.3661571615144,
+        "total_episodes": 250,
+        "max_reward": -0.7897827623819467,
+        "min_reward": -1841.5514345169067,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -565.7825186311093,
+        "test_std_reward": 524.7595378910679,
+        "test_rewards": [
+          -1401.3065980617782,
+          -1059.619755108756,
+          -123.0144682336958,
+          -130.67191398308847,
+          -1.3086791571043506,
+          -801.7987002143785,
+          -1494.327699048365,
+          -124.94428054471443,
+          -3.240621218366176,
+          -133.4803802310031,
+          -810.4039038819583,
+          -1166.5351345522652,
+          -1403.4928397059473,
+          -119.14616615208554,
+          -123.66222688630955,
+          -132.43698462435432,
+          -1098.2317695394083,
+          -122.8213999499204,
+          -1334.3666105993682,
+          -974.0923188819531
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_4"
+      }
+    ],
+    "test_mean_reward_mean": -868.3233815450367,
+    "test_mean_reward_std": 302.5408629139274,
+    "test_mean_reward_values": [
+      -1170.864244458964,
+      -565.7825186311093
+    ],
+    "final_performance_mean": -1117.8715584598367,
+    "final_performance_std": 39.50540129832223,
+    "final_performance_values": [
+      -1157.3769597581588,
+      -1078.3661571615144
+    ],
+    "mean_episode_return_mean": -808.5800607155409,
+    "mean_episode_return_std": 104.27666295418572,
+    "mean_episode_return_values": [
+      -704.3033977613552,
+      -912.8567236697266
+    ],
+    "success_rate_mean": 0.315,
+    "success_rate_std": 0.015000000000000013,
+    "success_rate_values": [
+      0.3,
+      0.33
+    ],
+    "performance_variance_mean": 580.6287755611695,
+    "performance_variance_std": 16.29128723250193,
+    "performance_variance_values": [
+      564.3374883286676,
+      596.9200627936715
+    ],
+    "max_reward_mean": -0.9839855923200957,
+    "max_reward_std": 0.19420282993814908,
+    "max_reward_values": [
+      -1.1781884222582448,
+      -0.7897827623819467
+    ],
+    "min_reward_mean": -1844.5568327903748,
+    "min_reward_std": 3.0053982734680176,
+    "min_reward_values": [
+      -1847.5622310638428,
+      -1841.5514345169067
+    ],
+    "sample_efficiency_300_mean": 181.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 8,
+      "total_timesteps": 200000
+    },
+    "config_name": "envs_8",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1216.8287518448667,
+        "success_rate": 0.0,
+        "performance_variance": 280.90256147691076,
+        "final_performance": -1269.0734929069877,
+        "total_episodes": 125,
+        "max_reward": -394.72473530384013,
+        "min_reward": -1829.5353336334229,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1343.8777483355254,
+        "test_std_reward": 219.99837247295898,
+        "test_rewards": [
+          -1348.3905944874616,
+          -1543.277092964919,
+          -1293.9231374474275,
+          -1422.5498136011856,
+          -1295.1869430479114,
+          -1531.7766145359328,
+          -1154.0686102164536,
+          -1294.3778406198473,
+          -1490.8645670017327,
+          -1036.3804079729175,
+          -1545.49377796051,
+          -1296.0189759924178,
+          -1492.656418013314,
+          -1497.8926516680833,
+          -1507.1500612821246,
+          -1516.3276780679143,
+          -1417.8054213332975,
+          -1543.9265565128626,
+          -1556.8848102752913,
+          -1177.250527517345
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_8"
+      },
+      {
+        "mean_episode_return": -1221.6035454168368,
+        "success_rate": 0.01,
+        "performance_variance": 294.05819896729844,
+        "final_performance": -753.0134045501829,
+        "total_episodes": 125,
+        "max_reward": -132.91331446613185,
+        "min_reward": -1860.5680141448975,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -627.9512918857566,
+        "test_std_reward": 541.3138168771001,
+        "test_rewards": [
+          -690.4066316308594,
+          -266.8947645793152,
+          -135.58064339967527,
+          -832.3367525112699,
+          -130.46403825790472,
+          -405.1759283999113,
+          -1508.592253102189,
+          -1506.020581705415,
+          -412.2167797336781,
+          -1492.924299697144,
+          -1493.5157302929579,
+          -670.2755307493467,
+          -667.8215113602532,
+          -132.00710882564167,
+          -135.52958866092322,
+          -420.7967196066223,
+          -136.1395576698657,
+          -952.5185401324319,
+          -690.6039226709429,
+          -665.612157605092
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 8,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_8"
+      }
+    ],
+    "test_mean_reward_mean": -985.914520110641,
+    "test_mean_reward_std": 357.9632282248844,
+    "test_mean_reward_values": [
+      -1343.8777483355254,
+      -627.9512918857566
+    ],
+    "final_performance_mean": -1011.0434487285853,
+    "final_performance_std": 258.03004417840236,
+    "final_performance_values": [
+      -1269.0734929069877,
+      -753.0134045501829
+    ],
+    "mean_episode_return_mean": -1219.2161486308519,
+    "mean_episode_return_std": 2.387396785985061,
+    "mean_episode_return_values": [
+      -1216.8287518448667,
+      -1221.6035454168368
+    ],
+    "success_rate_mean": 0.005,
+    "success_rate_std": 0.005,
+    "success_rate_values": [
+      0.0,
+      0.01
+    ],
+    "performance_variance_mean": 287.4803802221046,
+    "performance_variance_std": 6.577818745193838,
+    "performance_variance_values": [
+      280.90256147691076,
+      294.05819896729844
+    ],
+    "max_reward_mean": -263.819024884986,
+    "max_reward_std": 130.90571041885414,
+    "max_reward_values": [
+      -394.72473530384013,
+      -132.91331446613185
+    ],
+    "min_reward_mean": -1845.0516738891602,
+    "min_reward_std": 15.516340255737305,
+    "min_reward_values": [
+      -1829.5353336334229,
+      -1860.5680141448975
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 16,
+      "total_timesteps": 200000
+    },
+    "config_name": "envs_16",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1346.424627930016,
+        "success_rate": 0.0,
+        "performance_variance": 221.44876211162338,
+        "final_performance": -1222.7249640036375,
+        "total_episodes": 62,
+        "max_reward": -777.1097025237978,
+        "min_reward": -1835.4662075042725,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1143.2933383803816,
+        "test_std_reward": 258.67336692056784,
+        "test_rewards": [
+          -1402.3292580670507,
+          -1426.6674731715625,
+          -900.2816446790686,
+          -994.6327028232095,
+          -731.6171061621711,
+          -992.4763540237707,
+          -1041.9154977408264,
+          -904.5846620084453,
+          -1179.4215034224158,
+          -836.3614670487029,
+          -1498.3377251855302,
+          -1182.1177422375924,
+          -1356.7773880182995,
+          -1042.0803639767876,
+          -1493.8449068944724,
+          -837.2833861154768,
+          -820.8744730872235,
+          -1008.1862950445217,
+          -1459.8213526599177,
+          -1336.2373998077935
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 16,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_16"
+      },
+      {
+        "mean_episode_return": -1429.0777600292688,
+        "success_rate": 0.0,
+        "performance_variance": 219.26344740462886,
+        "final_performance": -1258.2417971260845,
+        "total_episodes": 62,
+        "max_reward": -918.6211469471455,
+        "min_reward": -1849.9389805793762,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1247.6573117904366,
+        "test_std_reward": 167.438232822028,
+        "test_rewards": [
+          -1493.243319346241,
+          -961.8727422655084,
+          -1333.915547121274,
+          -853.3616543255158,
+          -1116.216834684256,
+          -1276.8145113253934,
+          -1124.3037409228568,
+          -1481.6999122213003,
+          -1494.3298183440136,
+          -1162.158675213651,
+          -1412.6198222114817,
+          -1243.4054529491448,
+          -1112.000134048216,
+          -1220.7324132118865,
+          -1247.0929636417209,
+          -1311.217662020468,
+          -1103.6834005173425,
+          -1192.402666277336,
+          -1513.4282318492378,
+          -1498.7131345546084
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 16,
+          "total_timesteps": 200000
+        },
+        "config_name": "envs_16"
+      }
+    ],
+    "test_mean_reward_mean": -1195.4753250854092,
+    "test_mean_reward_std": 52.1819867050275,
+    "test_mean_reward_values": [
+      -1143.2933383803816,
+      -1247.6573117904366
+    ],
+    "final_performance_mean": -1240.483380564861,
+    "final_performance_std": 17.7584165612235,
+    "final_performance_values": [
+      -1222.7249640036375,
+      -1258.2417971260845
+    ],
+    "mean_episode_return_mean": -1387.7511939796423,
+    "mean_episode_return_std": 41.32656604962642,
+    "mean_episode_return_values": [
+      -1346.424627930016,
+      -1429.0777600292688
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 220.35610475812612,
+    "performance_variance_std": 1.092657353497259,
+    "performance_variance_values": [
+      221.44876211162338,
+      219.26344740462886
+    ],
+    "max_reward_mean": -847.8654247354716,
+    "max_reward_std": 70.75572221167386,
+    "max_reward_values": [
+      -777.1097025237978,
+      -918.6211469471455
+    ],
+    "min_reward_mean": -1842.7025940418243,
+    "min_reward_std": 7.23638653755188,
+    "min_reward_values": [
+      -1835.4662075042725,
+      -1849.9389805793762
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "steps_5",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -704.3033977613552,
+        "success_rate": 0.3,
+        "performance_variance": 564.3374883286676,
+        "final_performance": -1157.3769597581588,
+        "total_episodes": 250,
+        "max_reward": -1.1781884222582448,
+        "min_reward": -1847.5622310638428,
+        "sample_efficiency_300": 181,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1136.6111556050369,
+        "test_std_reward": 607.66624253172,
+        "test_rewards": [
+          -2.9140074946240926,
+          -1570.7995639534377,
+          -1491.323102485176,
+          -412.99994699882154,
+          -1164.628697759651,
+          -414.2214381641141,
+          -1450.18201278752,
+          -1156.67505445201,
+          -1552.0899004804503,
+          -1540.4690470894536,
+          -132.95661717352226,
+          -1533.966040911517,
+          -1277.3245261177794,
+          -136.99590760937485,
+          -1497.2375121554037,
+          -1542.4443894402957,
+          -1475.9119747441807,
+          -1261.0195228002196,
+          -1166.740027679731,
+          -1540.1886992949624
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_5"
+      },
+      {
+        "mean_episode_return": -912.8567236697266,
+        "success_rate": 0.33,
+        "performance_variance": 596.9200627936715,
+        "final_performance": -1078.3661571615144,
+        "total_episodes": 250,
+        "max_reward": -0.7897827623819467,
+        "min_reward": -1841.5514345169067,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -919.7745926458913,
+        "test_std_reward": 634.5116105053202,
+        "test_rewards": [
+          -1445.1940828056177,
+          -1444.739413289306,
+          -1410.1587186362444,
+          -1.5269268510723135,
+          -1185.382888552801,
+          -119.0756850820215,
+          -1097.7320959100743,
+          -820.2155641743565,
+          -1169.163972753454,
+          -1.152477522188206,
+          -940.9561819919609,
+          -2.0297323581188444,
+          -1496.2742455628909,
+          -132.0946674355669,
+          -1086.7985643030918,
+          -1.3854689859956568,
+          -1300.6618065942453,
+          -1493.9751030346129,
+          -1268.822503127727,
+          -1.0521177085121056
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 5,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_5"
+      }
+    ],
+    "test_mean_reward_mean": -1028.1928741254642,
+    "test_mean_reward_std": 108.41828147957278,
+    "test_mean_reward_values": [
+      -1136.6111556050369,
+      -919.7745926458913
+    ],
+    "final_performance_mean": -1117.8715584598367,
+    "final_performance_std": 39.50540129832223,
+    "final_performance_values": [
+      -1157.3769597581588,
+      -1078.3661571615144
+    ],
+    "mean_episode_return_mean": -808.5800607155409,
+    "mean_episode_return_std": 104.27666295418572,
+    "mean_episode_return_values": [
+      -704.3033977613552,
+      -912.8567236697266
+    ],
+    "success_rate_mean": 0.315,
+    "success_rate_std": 0.015000000000000013,
+    "success_rate_values": [
+      0.3,
+      0.33
+    ],
+    "performance_variance_mean": 580.6287755611695,
+    "performance_variance_std": 16.29128723250193,
+    "performance_variance_values": [
+      564.3374883286676,
+      596.9200627936715
+    ],
+    "max_reward_mean": -0.9839855923200957,
+    "max_reward_std": 0.19420282993814908,
+    "max_reward_values": [
+      -1.1781884222582448,
+      -0.7897827623819467
+    ],
+    "min_reward_mean": -1844.5568327903748,
+    "min_reward_std": 3.0053982734680176,
+    "min_reward_values": [
+      -1847.5622310638428,
+      -1841.5514345169067
+    ],
+    "sample_efficiency_300_mean": 181.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "steps_10",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -788.4976793259729,
+        "success_rate": 0.16,
+        "performance_variance": 434.0934646960322,
+        "final_performance": -756.3122608315385,
+        "total_episodes": 250,
+        "max_reward": -1.3553483281139052,
+        "min_reward": -1831.5992999076843,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -390.4988948877168,
+        "test_std_reward": 232.75213168907354,
+        "test_rewards": [
+          -572.5821005091026,
+          -784.0484752115863,
+          -133.30785699247846,
+          -268.18621338556,
+          -598.8850246480063,
+          -827.9028468635935,
+          -407.73687811260106,
+          -773.7961881996778,
+          -546.4628064281002,
+          -133.53644281284573,
+          -547.4222787891217,
+          -823.201444524475,
+          -1.0433697931605133,
+          -545.8820948299336,
+          -0.049494767865006756,
+          -408.6377102747524,
+          -132.81825133068924,
+          -720.2395299043384,
+          -408.9383954887138,
+          -575.6071155146124
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_10"
+      },
+      {
+        "mean_episode_return": -984.6091202632011,
+        "success_rate": 0.04,
+        "performance_variance": 380.4387217279284,
+        "final_performance": -1149.460937131918,
+        "total_episodes": 250,
+        "max_reward": -4.5223147426731884,
+        "min_reward": -1813.6788630485535,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1100.2680735320785,
+        "test_std_reward": 239.39908673133067,
+        "test_rewards": [
+          -1496.117736987306,
+          -1132.879057805978,
+          -750.8827397114045,
+          -1329.3807048678214,
+          -827.4351176547117,
+          -983.0701271058606,
+          -976.9660277508503,
+          -1201.4438056276358,
+          -820.5609533685149,
+          -1212.9029108596103,
+          -1010.1463827194993,
+          -1313.768861842964,
+          -1156.7476814623137,
+          -1208.8864348305838,
+          -1194.1139839821392,
+          -998.4690281839235,
+          -955.1293345662122,
+          -962.2212814784168,
+          -1316.2878466986738,
+          -841.1534008053235
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_10"
+      }
+    ],
+    "test_mean_reward_mean": -745.3834842098977,
+    "test_mean_reward_std": 354.88458932218083,
+    "test_mean_reward_values": [
+      -390.4988948877168,
+      -1100.2680735320785
+    ],
+    "final_performance_mean": -952.8865989817282,
+    "final_performance_std": 196.5743381501897,
+    "final_performance_values": [
+      -756.3122608315385,
+      -1149.460937131918
+    ],
+    "mean_episode_return_mean": -886.553399794587,
+    "mean_episode_return_std": 98.05572046861414,
+    "mean_episode_return_values": [
+      -788.4976793259729,
+      -984.6091202632011
+    ],
+    "success_rate_mean": 0.1,
+    "success_rate_std": 0.060000000000000005,
+    "success_rate_values": [
+      0.16,
+      0.04
+    ],
+    "performance_variance_mean": 407.2660932119803,
+    "performance_variance_std": 26.827371484051895,
+    "performance_variance_values": [
+      434.0934646960322,
+      380.4387217279284
+    ],
+    "max_reward_mean": -2.938831535393547,
+    "max_reward_std": 1.5834832072796416,
+    "max_reward_values": [
+      -1.3553483281139052,
+      -4.5223147426731884
+    ],
+    "min_reward_mean": -1822.639081478119,
+    "min_reward_std": 8.96021842956543,
+    "min_reward_values": [
+      -1831.5992999076843,
+      -1813.6788630485535
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 20,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "steps_20",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1107.5804966672567,
+        "success_rate": 0.0,
+        "performance_variance": 228.4353128849761,
+        "final_performance": -971.6380124925636,
+        "total_episodes": 250,
+        "max_reward": -721.010813026689,
+        "min_reward": -1786.4911251068115,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1004.6833166797471,
+        "test_std_reward": 48.59207693764548,
+        "test_rewards": [
+          -925.3793728072077,
+          -1003.1316503838134,
+          -1051.0590289149848,
+          -1004.6637552345225,
+          -1019.8200352061122,
+          -1103.5352976171434,
+          -923.7391216719485,
+          -1007.4517486728363,
+          -1037.135214867178,
+          -1005.5935625782523,
+          -1014.1797668297462,
+          -1006.7157703687805,
+          -996.021383437001,
+          -932.7009314498019,
+          -1038.8616121531234,
+          -943.3844390021746,
+          -1034.95457003239,
+          -1056.6541020757834,
+          -1002.5062721156421,
+          -900.9889678420822
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 20,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_20"
+      },
+      {
+        "mean_episode_return": -1064.0574893297983,
+        "success_rate": 0.0,
+        "performance_variance": 240.66300506640425,
+        "final_performance": -929.9575081024057,
+        "total_episodes": 250,
+        "max_reward": -646.337693002075,
+        "min_reward": -1805.933970451355,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -847.031238237163,
+        "test_std_reward": 189.12115071929665,
+        "test_rewards": [
+          -1220.3917789722698,
+          -1307.459823287574,
+          -1014.5251284540726,
+          -752.8345999754558,
+          -511.19679682682784,
+          -657.5045385027454,
+          -878.378220145333,
+          -767.3820898896685,
+          -778.6391468576627,
+          -774.3393790083022,
+          -1024.2862429797128,
+          -776.6300671966417,
+          -912.15894943179,
+          -905.2987352675199,
+          -761.9533152302632,
+          -1115.7220475568126,
+          -889.4496641526343,
+          -511.6117300310827,
+          -899.6502604668351,
+          -1060.5203820908966
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 20,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "steps_20"
+      }
+    ],
+    "test_mean_reward_mean": -925.8572774584551,
+    "test_mean_reward_std": 78.82603922129204,
+    "test_mean_reward_values": [
+      -1004.6833166797471,
+      -847.031238237163
+    ],
+    "final_performance_mean": -950.7977602974846,
+    "final_performance_std": 20.84025219507896,
+    "final_performance_values": [
+      -971.6380124925636,
+      -929.9575081024057
+    ],
+    "mean_episode_return_mean": -1085.8189929985274,
+    "mean_episode_return_std": 21.761503668729233,
+    "mean_episode_return_values": [
+      -1107.5804966672567,
+      -1064.0574893297983
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 234.54915897569018,
+    "performance_variance_std": 6.113846090714077,
+    "performance_variance_values": [
+      228.4353128849761,
+      240.66300506640425
+    ],
+    "max_reward_mean": -683.674253014382,
+    "max_reward_std": 37.33656001230702,
+    "max_reward_values": [
+      -721.010813026689,
+      -646.337693002075
+    ],
+    "min_reward_mean": -1796.2125477790833,
+    "min_reward_std": 9.721422672271729,
+    "min_reward_values": [
+      -1786.4911251068115,
+      -1805.933970451355
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.0,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "ent_0.0",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -788.4976793259729,
+        "success_rate": 0.16,
+        "performance_variance": 434.0934646960322,
+        "final_performance": -756.3122608315385,
+        "total_episodes": 250,
+        "max_reward": -1.3553483281139052,
+        "min_reward": -1831.5992999076843,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -396.05998811572954,
+        "test_std_reward": 246.83036630730305,
+        "test_rewards": [
+          -132.29574100710883,
+          -135.3136367946623,
+          -719.3614310948075,
+          -266.93953098793816,
+          -266.99403674288453,
+          -408.22153425834955,
+          -668.7056327833288,
+          -708.8602258768913,
+          -1244.5673711505553,
+          -0.14587416826014996,
+          -0.3870701301102376,
+          -130.4815671218102,
+          -705.6375734560311,
+          -694.7501432891462,
+          -133.01268085427347,
+          -696.3033441956844,
+          -132.78554140427764,
+          -723.752475188239,
+          -942.6031317811271,
+          -565.1568818912633
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.0"
+      },
+      {
+        "mean_episode_return": -984.6091202632011,
+        "success_rate": 0.04,
+        "performance_variance": 380.4387217279284,
+        "final_performance": -1149.460937131918,
+        "total_episodes": 250,
+        "max_reward": -4.5223147426731884,
+        "min_reward": -1813.6788630485535,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -972.7937181276502,
+        "test_std_reward": 190.93767820530832,
+        "test_rewards": [
+          -780.644157933921,
+          -759.3541844900042,
+          -1190.3008919452957,
+          -1201.3086632482639,
+          -1005.4525170155734,
+          -1209.403154773967,
+          -931.6146024491856,
+          -1205.055238297069,
+          -828.4843271813451,
+          -1121.3243019393678,
+          -824.7506916317226,
+          -1127.2660595337368,
+          -1102.7927488744506,
+          -969.1501822519165,
+          -836.3312363746475,
+          -1194.5148114050019,
+          -809.164914424733,
+          -1156.786544188624,
+          -934.2275225700591,
+          -1139.9703490773513
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.0,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.0"
+      }
+    ],
+    "test_mean_reward_mean": -684.4268531216899,
+    "test_mean_reward_std": 288.36686500596034,
+    "test_mean_reward_values": [
+      -396.05998811572954,
+      -972.7937181276502
+    ],
+    "final_performance_mean": -952.8865989817282,
+    "final_performance_std": 196.5743381501897,
+    "final_performance_values": [
+      -756.3122608315385,
+      -1149.460937131918
+    ],
+    "mean_episode_return_mean": -886.553399794587,
+    "mean_episode_return_std": 98.05572046861414,
+    "mean_episode_return_values": [
+      -788.4976793259729,
+      -984.6091202632011
+    ],
+    "success_rate_mean": 0.1,
+    "success_rate_std": 0.060000000000000005,
+    "success_rate_values": [
+      0.16,
+      0.04
+    ],
+    "performance_variance_mean": 407.2660932119803,
+    "performance_variance_std": 26.827371484051895,
+    "performance_variance_values": [
+      434.0934646960322,
+      380.4387217279284
+    ],
+    "max_reward_mean": -2.938831535393547,
+    "max_reward_std": 1.5834832072796416,
+    "max_reward_values": [
+      -1.3553483281139052,
+      -4.5223147426731884
+    ],
+    "min_reward_mean": -1822.639081478119,
+    "min_reward_std": 8.96021842956543,
+    "min_reward_values": [
+      -1831.5992999076843,
+      -1813.6788630485535
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.01,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "ent_0.01",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -578.6616874043311,
+        "success_rate": 0.21,
+        "performance_variance": 369.50693970023235,
+        "final_performance": -288.5641647461322,
+        "total_episodes": 250,
+        "max_reward": -1.7588318387715844,
+        "min_reward": -1824.6063585281372,
+        "sample_efficiency_300": 240,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -551.9887438063976,
+        "test_std_reward": 525.8313688384748,
+        "test_rewards": [
+          -276.31479022579396,
+          -138.66719244848053,
+          -691.9653143482161,
+          -895.8824260856042,
+          -560.1800432628287,
+          -764.9481958131241,
+          -559.9806797233905,
+          -707.8407467221134,
+          -135.43754435297734,
+          -2.780495987379649,
+          -549.3808198294169,
+          -140.81174255410988,
+          -136.97580232429715,
+          -410.16327349039335,
+          -543.7547155537874,
+          -911.6701347411127,
+          -767.710434127579,
+          -551.9303287377506,
+          -407.07448727698124,
+          -139.67214368047513
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.01,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.01"
+      },
+      {
+        "mean_episode_return": -970.007017432219,
+        "success_rate": 0.03,
+        "performance_variance": 437.41986145101725,
+        "final_performance": -614.6746748135017,
+        "total_episodes": 250,
+        "max_reward": -4.632789175026119,
+        "min_reward": -1816.7555799484253,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -741.5281207084423,
+        "test_std_reward": 322.6841459210466,
+        "test_rewards": [
+          -1028.4913892106233,
+          -1034.4696004725151,
+          -838.5920064745434,
+          -955.6020320931794,
+          -4.5048898342837225,
+          -841.1482295267522,
+          -825.124612570056,
+          -1000.8090204199706,
+          -3.8974019820057286,
+          -3.772434554644502,
+          -838.9203354497319,
+          -677.8385811514344,
+          -1024.9489856437597,
+          -941.5295477903372,
+          -933.3792153377636,
+          -691.1597458636558,
+          -867.8694103740172,
+          -934.9244622956801,
+          -681.0362393508775,
+          -547.5105351576526
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.01,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.01"
+      }
+    ],
+    "test_mean_reward_mean": -646.7584322574199,
+    "test_mean_reward_std": 94.76968845102238,
+    "test_mean_reward_values": [
+      -551.9887438063976,
+      -741.5281207084423
+    ],
+    "final_performance_mean": -451.61941977981695,
+    "final_performance_std": 163.05525503368477,
+    "final_performance_values": [
+      -288.5641647461322,
+      -614.6746748135017
+    ],
+    "mean_episode_return_mean": -774.3343524182751,
+    "mean_episode_return_std": 195.6726650139439,
+    "mean_episode_return_values": [
+      -578.6616874043311,
+      -970.007017432219
+    ],
+    "success_rate_mean": 0.12,
+    "success_rate_std": 0.09,
+    "success_rate_values": [
+      0.21,
+      0.03
+    ],
+    "performance_variance_mean": 403.4634005756248,
+    "performance_variance_std": 33.95646087539245,
+    "performance_variance_values": [
+      369.50693970023235,
+      437.41986145101725
+    ],
+    "max_reward_mean": -3.1958105068988516,
+    "max_reward_std": 1.4369786681272672,
+    "max_reward_values": [
+      -1.7588318387715844,
+      -4.632789175026119
+    ],
+    "min_reward_mean": -1820.6809692382812,
+    "min_reward_std": 3.925389289855957,
+    "min_reward_values": [
+      -1824.6063585281372,
+      -1816.7555799484253
+    ],
+    "sample_efficiency_300_mean": 240.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.1,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "ent_0.1",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -629.3000328936114,
+        "success_rate": 0.18,
+        "performance_variance": 358.0977670256819,
+        "final_performance": -287.52982124671905,
+        "total_episodes": 250,
+        "max_reward": -1.8436540126785985,
+        "min_reward": -1832.99511384964,
+        "sample_efficiency_300": 236,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -365.6264526660498,
+        "test_std_reward": 374.49820025713734,
+        "test_rewards": [
+          -433.9391902125691,
+          -134.99943003940146,
+          -689.1179814760377,
+          -129.61489856187814,
+          -130.26427276210026,
+          -406.24189826735625,
+          -2.464431702094881,
+          -420.3137067186948,
+          -409.19683439479127,
+          -412.48641534105076,
+          -275.0445715778511,
+          -131.94968054485824,
+          -131.34452322636625,
+          -134.8400985339388,
+          -131.2768522629966,
+          -691.9683034476756,
+          -398.33163252399464,
+          -274.6259086260598,
+          -416.84768435217774,
+          -0.6956092124062166
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.1"
+      },
+      {
+        "mean_episode_return": -1063.2072949538558,
+        "success_rate": 0.0,
+        "performance_variance": 271.4919398443473,
+        "final_performance": -1105.8497322665062,
+        "total_episodes": 250,
+        "max_reward": -361.7909454270266,
+        "min_reward": -1814.5218324661255,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -780.9937527996256,
+        "test_std_reward": 440.40721122516715,
+        "test_rewards": [
+          -799.2217283599382,
+          -1031.2708520335789,
+          -275.6352857194974,
+          -403.1047606309089,
+          -292.3587897897959,
+          -788.8766762942284,
+          -285.98597218450294,
+          -402.82036891211726,
+          -364.6952482796647,
+          -401.1795159116961,
+          -1069.8334632360495,
+          -1494.1361514727573,
+          -914.6924424105314,
+          -402.5397910567237,
+          -1520.0192849329485,
+          -399.60105821034693,
+          -324.12525625159054,
+          -915.24097545061,
+          -275.54172240533126,
+          -397.79372310043743
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "ent_0.1"
+      }
+    ],
+    "test_mean_reward_mean": -573.3101027328377,
+    "test_mean_reward_std": 207.6836500667879,
+    "test_mean_reward_values": [
+      -365.6264526660498,
+      -780.9937527996256
+    ],
+    "final_performance_mean": -696.6897767566127,
+    "final_performance_std": 409.15995550989356,
+    "final_performance_values": [
+      -287.52982124671905,
+      -1105.8497322665062
+    ],
+    "mean_episode_return_mean": -846.2536639237336,
+    "mean_episode_return_std": 216.9536310301222,
+    "mean_episode_return_values": [
+      -629.3000328936114,
+      -1063.2072949538558
+    ],
+    "success_rate_mean": 0.09,
+    "success_rate_std": 0.09,
+    "success_rate_values": [
+      0.18,
+      0.0
+    ],
+    "performance_variance_mean": 314.7948534350146,
+    "performance_variance_std": 43.30291359066729,
+    "performance_variance_values": [
+      358.0977670256819,
+      271.4919398443473
+    ],
+    "max_reward_mean": -181.8172997198526,
+    "max_reward_std": 179.973645707174,
+    "max_reward_values": [
+      -1.8436540126785985,
+      -361.7909454270266
+    ],
+    "min_reward_mean": -1823.7584731578827,
+    "min_reward_std": 9.236640691757202,
+    "min_reward_values": [
+      -1832.99511384964,
+      -1814.5218324661255
+    ],
+    "sample_efficiency_300_mean": 236.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.1,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        32,
+        32
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_32_32",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -1203.8589204223556,
+        "success_rate": 0.0,
+        "performance_variance": 230.28901077766034,
+        "final_performance": -968.4597490661515,
+        "total_episodes": 250,
+        "max_reward": -398.44612253957894,
+        "min_reward": -1844.7094860076904,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1226.98496135436,
+        "test_std_reward": 191.05972447678133,
+        "test_rewards": [
+          -1303.758858545382,
+          -1310.7248247527257,
+          -1259.655038192937,
+          -1243.5319295960799,
+          -1377.6111165519837,
+          -1450.7274270954301,
+          -950.3368876291104,
+          -1228.3061113341948,
+          -1312.3259796451164,
+          -1176.8151813331706,
+          -1247.4069971686963,
+          -1279.104495273771,
+          -1505.5662035151017,
+          -1190.1253243086207,
+          -1287.771244370532,
+          -1496.7624973671088,
+          -1491.7585849209993,
+          -1227.4013629355995,
+          -1309.0172383242514,
+          -1317.0613003473875
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            32,
+            32
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_32_32"
+      },
+      {
+        "mean_episode_return": -1179.0137961600142,
+        "success_rate": 0.0,
+        "performance_variance": 235.56045704326104,
+        "final_performance": -1035.3727122507057,
+        "total_episodes": 250,
+        "max_reward": -566.9223997783847,
+        "min_reward": -1809.0709590911865,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -892.354019601061,
+        "test_std_reward": 378.52064083645615,
+        "test_rewards": [
+          -804.9358571292345,
+          -803.1106316898412,
+          -569.5590373339026,
+          -660.6157894613287,
+          -526.102210625969,
+          -134.99667251957968,
+          -1301.7263070057131,
+          -1507.6684076663523,
+          -913.6667502624967,
+          -525.5184691153745,
+          -521.9304810040136,
+          -521.8349996818537,
+          -838.242274998145,
+          -524.0872368257002,
+          -639.7027254876177,
+          -770.0365612122995,
+          -271.6099690022331,
+          -1040.4083967024692,
+          -1497.5971447158827,
+          -1497.4817591973892
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            32,
+            32
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_32_32"
+      }
+    ],
+    "test_mean_reward_mean": -1059.6694904777105,
+    "test_mean_reward_std": 167.31547087664944,
+    "test_mean_reward_values": [
+      -1226.98496135436,
+      -892.354019601061
+    ],
+    "final_performance_mean": -1001.9162306584286,
+    "final_performance_std": 33.4564815922771,
+    "final_performance_values": [
+      -968.4597490661515,
+      -1035.3727122507057
+    ],
+    "mean_episode_return_mean": -1191.436358291185,
+    "mean_episode_return_std": 12.422562131170707,
+    "mean_episode_return_values": [
+      -1203.8589204223556,
+      -1179.0137961600142
+    ],
+    "success_rate_mean": 0.0,
+    "success_rate_std": 0.0,
+    "success_rate_values": [
+      0.0,
+      0.0
+    ],
+    "performance_variance_mean": 232.9247339104607,
+    "performance_variance_std": 2.6357231328003508,
+    "performance_variance_values": [
+      230.28901077766034,
+      235.56045704326104
+    ],
+    "max_reward_mean": -482.6842611589818,
+    "max_reward_std": 84.23813861940289,
+    "max_reward_values": [
+      -398.44612253957894,
+      -566.9223997783847
+    ],
+    "min_reward_mean": -1826.8902225494385,
+    "min_reward_std": 17.819263458251953,
+    "min_reward_values": [
+      -1844.7094860076904,
+      -1809.0709590911865
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.1,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_64_64",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -629.3000328936114,
+        "success_rate": 0.18,
+        "performance_variance": 358.0977670256819,
+        "final_performance": -287.52982124671905,
+        "total_episodes": 250,
+        "max_reward": -1.8436540126785985,
+        "min_reward": -1832.99511384964,
+        "sample_efficiency_300": 236,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -404.8704283107269,
+        "test_std_reward": 357.81873985546275,
+        "test_rewards": [
+          -1496.304232496957,
+          -270.94284776733144,
+          -133.8086999669779,
+          -132.2553228839682,
+          -403.7022910142184,
+          -624.3767187788482,
+          -575.0779709053262,
+          -271.67067109002716,
+          -136.15681263030453,
+          -0.3729562142548541,
+          -568.8092940678458,
+          -131.7953339336565,
+          -269.0865941572336,
+          -670.9384611819868,
+          -1256.550187701576,
+          -1492.9549724031751,
+          -569.8655574795921,
+          -576.2234799650715,
+          -134.14516964525208,
+          -134.68157776033343
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64"
+      },
+      {
+        "mean_episode_return": -1063.2072949538558,
+        "success_rate": 0.0,
+        "performance_variance": 271.4919398443473,
+        "final_performance": -1105.8497322665062,
+        "total_episodes": 250,
+        "max_reward": -361.7909454270266,
+        "min_reward": -1814.5218324661255,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -801.7813308363314,
+        "test_std_reward": 447.96237462156876,
+        "test_rewards": [
+          -400.7213907725802,
+          -402.6367738261101,
+          -402.5722254549352,
+          -1501.3182739985666,
+          -1504.6192508677846,
+          -385.6072748197051,
+          -1052.397486823154,
+          -1493.5016753842842,
+          -1048.311748279471,
+          -395.7645779676741,
+          -399.6981754754653,
+          -402.5551288423265,
+          -1326.0200606923552,
+          -1491.3635167200214,
+          -400.229003803703,
+          -1107.161418780773,
+          -1022.3254250841733,
+          -921.2978450653702,
+          -273.80000890372423,
+          -1049.3129744825321
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64"
+      }
+    ],
+    "test_mean_reward_mean": -603.3258795735292,
+    "test_mean_reward_std": 198.45545126280228,
+    "test_mean_reward_values": [
+      -404.8704283107269,
+      -801.7813308363314
+    ],
+    "final_performance_mean": -696.6897767566127,
+    "final_performance_std": 409.15995550989356,
+    "final_performance_values": [
+      -287.52982124671905,
+      -1105.8497322665062
+    ],
+    "mean_episode_return_mean": -846.2536639237336,
+    "mean_episode_return_std": 216.9536310301222,
+    "mean_episode_return_values": [
+      -629.3000328936114,
+      -1063.2072949538558
+    ],
+    "success_rate_mean": 0.09,
+    "success_rate_std": 0.09,
+    "success_rate_values": [
+      0.18,
+      0.0
+    ],
+    "performance_variance_mean": 314.7948534350146,
+    "performance_variance_std": 43.30291359066729,
+    "performance_variance_values": [
+      358.0977670256819,
+      271.4919398443473
+    ],
+    "max_reward_mean": -181.8172997198526,
+    "max_reward_std": 179.973645707174,
+    "max_reward_values": [
+      -1.8436540126785985,
+      -361.7909454270266
+    ],
+    "min_reward_mean": -1823.7584731578827,
+    "min_reward_std": 9.236640691757202,
+    "min_reward_values": [
+      -1832.99511384964,
+      -1814.5218324661255
+    ],
+    "sample_efficiency_300_mean": 236.0,
+    "sample_efficiency_300_std": 0.0,
+    "sample_efficiency_300_success_rate": 0.5,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.1,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        128,
+        64
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_128_64",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -751.5275238456989,
+        "success_rate": 0.21,
+        "performance_variance": 525.4262352575422,
+        "final_performance": -747.4102318317862,
+        "total_episodes": 250,
+        "max_reward": -1.6661938577453839,
+        "min_reward": -1819.0688734054565,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -853.9192240089731,
+        "test_std_reward": 605.8159499981701,
+        "test_rewards": [
+          -1293.7207262513834,
+          -0.6445511765207728,
+          -267.1143388185638,
+          -1356.6748989088298,
+          -524.2295745133576,
+          -266.16793652839783,
+          -1522.41787842144,
+          -1250.0854007008181,
+          -1463.472145018103,
+          -0.306660924224803,
+          -1376.263186046713,
+          -1322.650298910284,
+          -1248.9964104436965,
+          -1501.1035355978454,
+          -1.0233726333171744,
+          -1230.130410673262,
+          -1450.7267165943356,
+          -126.81272949110499,
+          -1524.5789059061783,
+          -1.4056748901402976
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            128,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_128_64"
+      },
+      {
+        "mean_episode_return": -1348.8433280655927,
+        "success_rate": 0.0,
+        "performance_variance": 334.7920161634351,
+        "final_performance": -1190.042381439812,
+        "total_episodes": 250,
+        "max_reward": -398.01621723905555,
+        "min_reward": -1811.8448162078857,
+        "sample_efficiency_300": null,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -1075.9685394411965,
+        "test_std_reward": 574.2193152588142,
+        "test_rewards": [
+          -155.90978147174005,
+          -1487.0084271836224,
+          -540.6904467045421,
+          -942.4254087168,
+          -1047.8194936602604,
+          -1045.8030598436392,
+          -1008.8069092839438,
+          -568.5689404539988,
+          -1072.10413416387,
+          -868.1833052770337,
+          -1496.7504631307036,
+          -1068.0003308796415,
+          -1024.1511263049495,
+          -880.9581771663429,
+          -1509.2127440679626,
+          -12.654750742965042,
+          -988.2846986655721,
+          -1077.0584968430367,
+          -860.8298029283134,
+          -1491.2404171216817
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            128,
+            64
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_128_64"
+      }
+    ],
+    "test_mean_reward_mean": -964.9438817250848,
+    "test_mean_reward_std": 111.02465771611173,
+    "test_mean_reward_values": [
+      -853.9192240089731,
+      -1075.9685394411965
+    ],
+    "final_performance_mean": -968.7263066357991,
+    "final_performance_std": 221.31607480401294,
+    "final_performance_values": [
+      -747.4102318317862,
+      -1190.042381439812
+    ],
+    "mean_episode_return_mean": -1050.1854259556458,
+    "mean_episode_return_std": 298.6579021099469,
+    "mean_episode_return_values": [
+      -751.5275238456989,
+      -1348.8433280655927
+    ],
+    "success_rate_mean": 0.105,
+    "success_rate_std": 0.105,
+    "success_rate_values": [
+      0.21,
+      0.0
+    ],
+    "performance_variance_mean": 430.1091257104887,
+    "performance_variance_std": 95.31710954705355,
+    "performance_variance_values": [
+      525.4262352575422,
+      334.7920161634351
+    ],
+    "max_reward_mean": -199.84120554840047,
+    "max_reward_std": 198.17501169065508,
+    "max_reward_values": [
+      -1.6661938577453839,
+      -398.01621723905555
+    ],
+    "min_reward_mean": -1815.4568448066711,
+    "min_reward_std": 3.6120285987854004,
+    "min_reward_values": [
+      -1819.0688734054565,
+      -1811.8448162078857
+    ],
+    "sample_efficiency_300_mean": null,
+    "sample_efficiency_300_std": null,
+    "sample_efficiency_300_success_rate": 0,
+    "sample_efficiency_200_mean": null,
+    "sample_efficiency_200_std": null,
+    "sample_efficiency_200_success_rate": 0
+  },
+  {
+    "config": {
+      "learning_rate": 0.0007,
+      "n_steps": 10,
+      "gamma": 0.99,
+      "gae_lambda": 1.0,
+      "ent_coef": 0.1,
+      "vf_coef": 0.25,
+      "max_grad_norm": 0.5,
+      "net_arch": [
+        64,
+        64,
+        32
+      ],
+      "n_envs": 4,
+      "total_timesteps": 200000
+    },
+    "config_name": "arch_64_64_32",
+    "num_seeds": 2,
+    "seed_results": [
+      {
+        "mean_episode_return": -438.90847159359805,
+        "success_rate": 0.41,
+        "performance_variance": 429.6571087374463,
+        "final_performance": -213.40835606790716,
+        "total_episodes": 250,
+        "max_reward": -1.1889261985861594,
+        "min_reward": -1807.8846244812012,
+        "sample_efficiency_300": 179,
+        "sample_efficiency_200": 184,
+        "test_mean_reward": -205.2053334620432,
+        "test_std_reward": 126.75379137596761,
+        "test_rewards": [
+          -2.84365128872216,
+          -131.65130803050863,
+          -134.16833571941405,
+          -268.2911566132343,
+          -281.46374680929875,
+          -130.06044047046728,
+          -133.27780305158595,
+          -272.2207289837398,
+          -2.9863223283445226,
+          -357.18005472654875,
+          -316.21007925722535,
+          -250.04656119412294,
+          -129.96406238273389,
+          -249.01091357584457,
+          -1.265252241663357,
+          -128.99063158293725,
+          -134.0507174854955,
+          -131.58075246452665,
+          -387.0976920693085,
+          -250.6454733764203
+        ],
+        "seed": 42,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64,
+            32
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64_32"
+      },
+      {
+        "mean_episode_return": -619.4366485360143,
+        "success_rate": 0.21,
+        "performance_variance": 485.9340938058536,
+        "final_performance": -347.5277302040282,
+        "total_episodes": 250,
+        "max_reward": -1.0867735649298993,
+        "min_reward": -1813.79004240036,
+        "sample_efficiency_300": 217,
+        "sample_efficiency_200": null,
+        "test_mean_reward": -486.85187855875995,
+        "test_std_reward": 562.5558104444273,
+        "test_rewards": [
+          -1251.9363346078155,
+          -303.65504542295054,
+          -1364.346027992281,
+          -1364.1283583079846,
+          -0.3796689242307957,
+          -1246.708874207587,
+          -1.4077081090775962,
+          -127.85112548352748,
+          -0.19315811096367214,
+          -304.67484438161415,
+          -1253.4540649379578,
+          -1360.8176849947545,
+          -275.64893308176596,
+          -380.0081249989632,
+          -1348.7535923045139,
+          -1347.896311952108,
+          -1243.9921369713936,
+          -123.54146419791999,
+          -1283.4388786173229,
+          -278.69490574392125
+        ],
+        "seed": 43,
+        "config": {
+          "learning_rate": 0.0007,
+          "n_steps": 10,
+          "gamma": 0.99,
+          "gae_lambda": 1.0,
+          "ent_coef": 0.1,
+          "vf_coef": 0.25,
+          "max_grad_norm": 0.5,
+          "net_arch": [
+            64,
+            64,
+            32
+          ],
+          "n_envs": 4,
+          "total_timesteps": 200000
+        },
+        "config_name": "arch_64_64_32"
+      }
+    ],
+    "test_mean_reward_mean": -346.0286060104016,
+    "test_mean_reward_std": 140.82327254835837,
+    "test_mean_reward_values": [
+      -205.2053334620432,
+      -486.85187855875995
+    ],
+    "final_performance_mean": -280.4680431359677,
+    "final_performance_std": 67.05968706806053,
+    "final_performance_values": [
+      -213.40835606790716,
+      -347.5277302040282
+    ],
+    "mean_episode_return_mean": -529.1725600648062,
+    "mean_episode_return_std": 90.26408847120814,
+    "mean_episode_return_values": [
+      -438.90847159359805,
+      -619.4366485360143
+    ],
+    "success_rate_mean": 0.31,
+    "success_rate_std": 0.09999999999999999,
+    "success_rate_values": [
+      0.41,
+      0.21
+    ],
+    "performance_variance_mean": 457.79560127164996,
+    "performance_variance_std": 28.138492534203635,
+    "performance_variance_values": [
+      429.6571087374463,
+      485.9340938058536
+    ],
+    "max_reward_mean": -1.1378498817580294,
+    "max_reward_std": 0.051076316828130075,
+    "max_reward_values": [
+      -1.1889261985861594,
+      -1.0867735649298993
+    ],
+    "min_reward_mean": -1810.8373334407806,
+    "min_reward_std": 2.9527089595794678,
+    "min_reward_values": [
+      -1807.8846244812012,
+      -1813.79004240036
+    ],
+    "sample_efficiency_300_mean": 198.0,
+    "sample_efficiency_300_std": 19.0,
+    "sample_efficiency_300_success_rate": 1.0,
+    "sample_efficiency_200_mean": 184.0,
+    "sample_efficiency_200_std": 0.0,
+    "sample_efficiency_200_success_rate": 0.5
+  }
+]
