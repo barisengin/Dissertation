@@ -353,7 +353,7 @@ def run(is_training=True):
 
     # Build the neural network model (larger for LunarLander)
     model = Sequential()
-    model.add(Dense(256, input_dim=state_size, activation='relu'))
+    model.add(Dense(128, input_dim=state_size, activation='relu'))
     model.add(Dense(128, activation='relu'))
     model.add(Dense(64, activation='relu'))
     model.add(Dense(action_size, activation='linear'))
@@ -369,7 +369,7 @@ def run(is_training=True):
         EpsGreedyQPolicy(),
         attr='eps',
         value_max=1.0,        # Start with 100% exploration
-        value_min=0.05,       # End with 5% exploration
+        value_min=0.01,       # End with 1% exploration
         value_test=0.0,       # No exploration during testing
         nb_steps=50000        # Anneal over 50,000 steps (more than CartPole)
     )
@@ -382,7 +382,7 @@ def run(is_training=True):
         model=model,
         nb_actions=action_size,
         memory=memory,
-        nb_steps_warmup=2000,     # Steps before training starts
+        nb_steps_warmup=5000,     # Steps before training starts
         target_model_update=0.01, # Soft update rate for target network
         policy=policy,
         processor=processor,
@@ -475,4 +475,4 @@ def run(is_training=True):
     env.close()
 
 if __name__ == "__main__":
-    run(is_training=False)
+    run(is_training=True)

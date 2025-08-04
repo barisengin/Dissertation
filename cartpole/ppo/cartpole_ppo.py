@@ -9,31 +9,71 @@ from torch.distributions import Categorical
 import os
 import time
 
+# ============================================================================
+# HYPERPARAMETERS - MODIFY THESE TO TUNE THE ALGORITHM
+# ============================================================================
+HYPERPARAMETERS = {
+    # Learning parameters
+    'learning_rate': 0.0001,        # Learning rate for optimizer
+    'gamma': 0.99,                  # Discount factor
+    'gae_lambda': 0.95,             # GAE lambda parameter
+    
+    # PPO specific parameters
+    'clip_range': 0.2,              # PPO clipping parameter
+    'ent_coef': 0.01,               # Entropy coefficient
+    'vf_coef': 0.5,                 # Value function coefficient
+    'max_grad_norm': 0.5,           # Gradient clipping
+    
+    # Training parameters
+    'n_steps': 2048,                # Steps to collect before update
+    'batch_size': 64,               # Mini-batch size for updates
+    'n_epochs': 10,                 # Number of epochs per update
+    
+    # Network architecture
+    'policy_arch': [64, 64],        # Policy network architecture
+    'value_arch': [64, 64],         # Value network architecture
+    
+    # Training duration
+    'total_timesteps': 100000,      # Total training timesteps
+    'max_episodes': 2000,           # Maximum episodes
+    'max_steps_per_episode': 500,   # Maximum steps per episode
+    'update_frequency': 2048,       # Update after this many steps
+}
+# ============================================================================
+
 class PPONetwork(nn.Module):
     """Combined policy and value network for PPO"""
-    def __init__(self, state_size, action_size, hidden_size=128):
+    def __init__(self, state_size, action_size, policy_arch=[64, 64], value_arch=[64, 64]):
         super(PPONetwork, self).__init__()
         
-        # Shared layers
-        self.shared_layers = nn.Sequential(
-            nn.Linear(state_size, hidden_size),
-            nn.ReLU(),
-            nn.Linear(hidden_size, 64),
-            nn.ReLU()
-        )
+        # Policy network (actor)
+        policy_layers = []
+        prev_size = state_size
+        for hidden_size in policy_arch:
+            policy_layers.extend([
+                nn.Linear(prev_size, hidden_size),
+                nn.ReLU()
+            ])
+            prev_size = hidden_size
+        policy_layers.append(nn.Linear(prev_size, action_size))
+        self.policy_net = nn.Sequential(*policy_layers)
         
-        # Policy head (actor)
-        self.policy_head = nn.Linear(64, action_size)
-        
-        # Value head (critic)
-        self.value_head = nn.Linear(64, 1)
+        # Value network (critic)
+        value_layers = []
+        prev_size = state_size
+        for hidden_size in value_arch:
+            value_layers.extend([
+                nn.Linear(prev_size, hidden_size),
+                nn.ReLU()
+            ])
+            prev_size = hidden_size
+        value_layers.append(nn.Linear(prev_size, 1))
+        self.value_net = nn.Sequential(*value_layers)
         
     def forward(self, state):
-        x = self.shared_layers(state)
-        
         # Get policy logits and value
-        policy_logits = self.policy_head(x)
-        value = self.value_head(x)
+        policy_logits = self.policy_net(state)
+        value = self.value_net(state)
         
         return policy_logits, value
     
@@ -49,7 +89,8 @@ class PPOAgent:
     """PPO Agent implementation"""
     def __init__(self, state_size, action_size, lr=3e-4, gamma=0.99, 
                  clip_eps=0.2, entropy_coef=0.01, value_coef=0.5, 
-                 max_grad_norm=0.5):
+                 max_grad_norm=0.5, gae_lambda=0.95, n_epochs=4, batch_size=64,
+                 policy_arch=[64, 64], value_arch=[64, 64]):
         self.state_size = state_size
         self.action_size = action_size
         self.gamma = gamma
@@ -57,12 +98,15 @@ class PPOAgent:
         self.entropy_coef = entropy_coef
         self.value_coef = value_coef
         self.max_grad_norm = max_grad_norm
+        self.gae_lambda = gae_lambda
+        self.n_epochs = n_epochs
+        self.batch_size = batch_size
         
         # Set device
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         # Network and optimizer
-        self.network = PPONetwork(state_size, action_size).to(self.device)
+        self.network = PPONetwork(state_size, action_size, policy_arch, value_arch).to(self.device)
         self.optimizer = optim.Adam(self.network.parameters(), lr=lr)
         
         # Storage for episode data
@@ -93,7 +137,7 @@ class PPOAgent:
         self.rewards.append(reward)
         self.dones.append(done)
     
-    def compute_gae(self, next_value, gae_lambda=0.95):
+    def compute_gae(self, next_value):
         """Compute Generalized Advantage Estimation"""
         advantages = []
         gae = 0
@@ -103,14 +147,14 @@ class PPOAgent:
         
         for step in reversed(range(len(self.rewards))):
             delta = self.rewards[step] + self.gamma * values[step + 1] * (1 - self.dones[step]) - values[step]
-            gae = delta + self.gamma * gae_lambda * (1 - self.dones[step]) * gae
+            gae = delta + self.gamma * self.gae_lambda * (1 - self.dones[step]) * gae
             advantages.insert(0, gae)
             
         returns = [adv + val for adv, val in zip(advantages, self.values)]
         
         return advantages, returns
     
-    def update(self, next_value, ppo_epochs=4, batch_size=64):
+    def update(self, next_value):
         """Update policy using PPO"""
         if len(self.states) == 0:
             return {}
@@ -128,53 +172,71 @@ class PPOAgent:
         # Normalize advantages
         advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-8)
         
-        # PPO update
+        # PPO update for multiple epochs
         total_policy_loss = 0
         total_value_loss = 0
         total_entropy_loss = 0
         
-        for _ in range(ppo_epochs):
-            # Forward pass
-            policy_logits, values = self.network(states)
-            values = values.squeeze()
+        dataset_size = len(states)
+        
+        for epoch in range(self.n_epochs):
+            # Shuffle data for each epoch
+            indices = torch.randperm(dataset_size)
             
-            # Compute probabilities and log probabilities
-            probs = F.softmax(policy_logits, dim=-1)
-            dist = Categorical(probs)
-            new_log_probs = dist.log_prob(actions)
-            entropy = dist.entropy().mean()
-            
-            # Compute ratio
-            ratio = torch.exp(new_log_probs - old_log_probs)
-            
-            # Compute surrogate losses
-            surr1 = ratio * advantages
-            surr2 = torch.clamp(ratio, 1 - self.clip_eps, 1 + self.clip_eps) * advantages
-            policy_loss = -torch.min(surr1, surr2).mean()
-            
-            # Value loss
-            value_loss = F.mse_loss(values, returns)
-            
-            # Total loss
-            loss = policy_loss + self.value_coef * value_loss - self.entropy_coef * entropy
-            
-            # Optimize
-            self.optimizer.zero_grad()
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.network.parameters(), self.max_grad_norm)
-            self.optimizer.step()
-            
-            total_policy_loss += policy_loss.item()
-            total_value_loss += value_loss.item()
-            total_entropy_loss += entropy.item()
+            # Mini-batch updates
+            for start_idx in range(0, dataset_size, self.batch_size):
+                end_idx = min(start_idx + self.batch_size, dataset_size)
+                batch_indices = indices[start_idx:end_idx]
+                
+                batch_states = states[batch_indices]
+                batch_actions = actions[batch_indices]
+                batch_old_log_probs = old_log_probs[batch_indices]
+                batch_advantages = advantages[batch_indices]
+                batch_returns = returns[batch_indices]
+                
+                # Forward pass
+                policy_logits, values = self.network(batch_states)
+                values = values.squeeze()
+                
+                # Compute probabilities and log probabilities
+                probs = F.softmax(policy_logits, dim=-1)
+                dist = Categorical(probs)
+                new_log_probs = dist.log_prob(batch_actions)
+                entropy = dist.entropy().mean()
+                
+                # Compute ratio
+                ratio = torch.exp(new_log_probs - batch_old_log_probs)
+                
+                # Compute surrogate losses
+                surr1 = ratio * batch_advantages
+                surr2 = torch.clamp(ratio, 1 - self.clip_eps, 1 + self.clip_eps) * batch_advantages
+                policy_loss = -torch.min(surr1, surr2).mean()
+                
+                # Value loss
+                value_loss = F.mse_loss(values, batch_returns)
+                
+                # Total loss
+                loss = policy_loss + self.value_coef * value_loss - self.entropy_coef * entropy
+                
+                # Optimize
+                self.optimizer.zero_grad()
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(self.network.parameters(), self.max_grad_norm)
+                self.optimizer.step()
+                
+                total_policy_loss += policy_loss.item()
+                total_value_loss += value_loss.item()
+                total_entropy_loss += entropy.item()
         
         # Reset storage
         self.reset_storage()
         
+        num_updates = self.n_epochs * ((dataset_size + self.batch_size - 1) // self.batch_size)
+        
         return {
-            'policy_loss': total_policy_loss / ppo_epochs,
-            'value_loss': total_value_loss / ppo_epochs,
-            'entropy': total_entropy_loss / ppo_epochs
+            'policy_loss': total_policy_loss / num_updates,
+            'value_loss': total_value_loss / num_updates,
+            'entropy': total_entropy_loss / num_updates
         }
     
     def save_weights(self, filepath):
@@ -279,6 +341,13 @@ def check_convergence_confidence(agent, env, confidence_threshold=0.6, min_episo
     }
 
 def run(is_training=True):
+    # Print current hyperparameters
+    print("Current Hyperparameters:")
+    print("=" * 50)
+    for key, value in HYPERPARAMETERS.items():
+        print(f"{key}: {value}")
+    print("=" * 50)
+    
     # Create CartPole environment
     base_env = gym.make("CartPole-v1", render_mode="human" if not is_training else None)
     env = GymWrapper(base_env)
@@ -297,20 +366,26 @@ def run(is_training=True):
     print(f"Test observation shape: {np.array(test_obs).shape}")
     print(f"Test observation: {test_obs}")
 
-    # Create PPO agent
+    # Create PPO agent with hyperparameters
     agent = PPOAgent(
         state_size=state_size,
         action_size=action_size,
-        lr=3e-4,              # Learning rate
-        gamma=0.99,           # Discount factor
-        clip_eps=0.2,         # PPO clipping parameter
-        entropy_coef=0.01,    # Entropy coefficient
-        value_coef=0.5,       # Value loss coefficient
-        max_grad_norm=0.5     # Gradient clipping
+        lr=HYPERPARAMETERS['learning_rate'],
+        gamma=HYPERPARAMETERS['gamma'],
+        clip_eps=HYPERPARAMETERS['clip_range'],
+        entropy_coef=HYPERPARAMETERS['ent_coef'],
+        value_coef=HYPERPARAMETERS['vf_coef'],
+        max_grad_norm=HYPERPARAMETERS['max_grad_norm'],
+        gae_lambda=HYPERPARAMETERS['gae_lambda'],
+        n_epochs=HYPERPARAMETERS['n_epochs'],
+        batch_size=HYPERPARAMETERS['batch_size'],
+        policy_arch=HYPERPARAMETERS['policy_arch'],
+        value_arch=HYPERPARAMETERS['value_arch']
     )
 
     print("PPO Agent created with network architecture:")
-    print(agent.network)
+    print(f"Policy: {HYPERPARAMETERS['policy_arch']}")
+    print(f"Value: {HYPERPARAMETERS['value_arch']}")
     print(f"Training device: {agent.device}")
     print(f"CUDA available: {torch.cuda.is_available()}")
     if torch.cuda.is_available():
@@ -321,15 +396,17 @@ def run(is_training=True):
     
 
     # Create directory for saving data
-    os.makedirs('./cartpole/ppo/generated_data', exist_ok=True)
+    os.makedirs('./cartpole/ppo/weights', exist_ok=True)
 
     if is_training:
+        start_time = time.time()
         print("Starting PPO training...")
         
-        # Training parameters
-        max_episodes = 2000
-        max_steps_per_episode = 500
-        update_frequency = 2048  # Update after collecting this many steps
+        # Training parameters from hyperparameters
+        max_episodes = HYPERPARAMETERS['max_episodes']
+        max_steps_per_episode = HYPERPARAMETERS['max_steps_per_episode']
+        update_frequency = HYPERPARAMETERS['update_frequency']
+        total_timesteps = HYPERPARAMETERS['total_timesteps']
         
         episode_rewards = []
         episode_lengths = []
@@ -338,7 +415,7 @@ def run(is_training=True):
         
         steps_collected = 0
         
-        while episode_count < max_episodes:
+        while episode_count < max_episodes and step_count < total_timesteps:
             state = env.reset()
             episode_reward = 0
             episode_length = 0
@@ -360,6 +437,10 @@ def run(is_training=True):
                 steps_collected += 1
                 
                 if done:
+                    break
+                
+                # Check if we've reached total timesteps
+                if step_count >= total_timesteps:
                     break
             
             episode_rewards.append(episode_reward)
@@ -443,11 +524,11 @@ def run(is_training=True):
         plt.grid(True, alpha=0.3)
         
         plt.tight_layout()
-        plt.savefig("./cartpole/ppo/generated_data/cartpole_ppo_training.png", dpi=300, bbox_inches='tight')
+        plt.savefig("./cartpole/ppo/weights/cartpole_ppo_training.png", dpi=300, bbox_inches='tight')
         plt.show()
 
         # Save the trained model
-        agent.save_weights('./cartpole/ppo/generated_data/cartpole_ppo_weights.pth')
+        agent.save_weights('./cartpole/ppo/weights/cartpole_ppo_weights.pth')
         print("Training completed and weights saved!")
         
         # Print final statistics
@@ -457,12 +538,18 @@ def run(is_training=True):
         print(f"Average Reward: {final_100_avg:.2f}")
         print(f"Success Rate: {success_episodes}% (episodes with 475+ reward)")
         print(f"Max Reward: {max(episode_rewards[-100:])}")
+
+        end_time = time.time()
+        duration = end_time - start_time
+        print(f"\nTotal training time: {duration:.2f} seconds")
+        print(f"Total episodes: {episode_count}")
+        print(f"Total timesteps: {step_count}")
         
     else:
         print("Loading trained weights...")
         # Load trained weights
         try:
-            agent.load_weights('./cartpole/ppo/generated_data/cartpole_ppo_weights.pth')
+            agent.load_weights('./cartpole/ppo/weights/cartpole_ppo_weights.pth')
             print("Weights loaded successfully!")
         except FileNotFoundError:
             print("No trained weights found. Please train the model first.")
@@ -499,5 +586,4 @@ def run(is_training=True):
     env.close()
 
 if __name__ == "__main__":
-    # Set training mode here
-    run(is_training=True)  # Change to False for testing
+    run(is_training=True)

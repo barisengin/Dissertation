@@ -14,6 +14,31 @@ from collections import deque
 import warnings
 warnings.filterwarnings('ignore')
 
+# ============================================================================
+# HYPERPARAMETERS - MODIFY THESE TO TUNE THE ALGORITHM
+# ============================================================================
+HYPERPARAMETERS = {
+    # Learning parameters
+    'learning_rate': 0.005,         # Learning rate for both policy and baseline
+    'gamma': 0.995,                 # Discount factor (higher for longer episodes)
+    
+    # Network architecture
+    'hidden_sizes': [128, 128],     # Network architecture [layer1, layer2, ...]
+    'use_baseline': True,           # Use baseline network to reduce variance
+    
+    # Training parameters
+    'max_episodes': 1500,           # Maximum number of episodes
+    'total_timesteps': 100000,      # Maximum total timesteps (alternative stopping criterion)
+    'early_stopping': False,        # Stop when CartPole is "solved" (195+ avg reward)
+    'early_stopping_threshold': 195.0,  # Threshold for early stopping
+    'early_stopping_window': 100,  # Window size for early stopping check
+    
+    # Logging
+    'log_frequency': 100,           # Print progress every N episodes
+    'test_episodes': 20,            # Number of episodes for final testing
+}
+# ============================================================================
+
 class PerformanceLogger:
     
     def __init__(self, save_dir="./cartpole/reinforce/json_data/"):
@@ -29,8 +54,8 @@ class PerformanceLogger:
         self.timesteps = []
         
         # Performance metrics (CartPole specific)
-        self.convergence_threshold = 195.0  # CartPole considered solved at 195
-        self.convergence_window = 100
+        self.convergence_threshold = HYPERPARAMETERS['early_stopping_threshold']
+        self.convergence_window = HYPERPARAMETERS['early_stopping_window']
         self.performance_windows = [10, 50, 100, 200]
         
         # Sample efficiency tracking
@@ -68,13 +93,13 @@ class PerformanceLogger:
         
         self.recent_rewards.append(reward)
         
-        # Check for convergence
-        if not self.convergence_detected and len(self.recent_rewards) == self.convergence_window:
+        # Check for convergence (only if early stopping is enabled)
+        if HYPERPARAMETERS['early_stopping'] and not self.convergence_detected and len(self.recent_rewards) == self.convergence_window:
             avg_reward = np.mean(self.recent_rewards)
             if avg_reward >= self.convergence_threshold:
                 self.convergence_detected = True
                 self.convergence_episode = episode_num
-                print(f"Convergence detected at episode {episode_num}")
+                print(f"Convergence detected at episode {episode_num} (avg reward: {avg_reward:.2f})")
         
         # Sample efficiency tracking
         if not self.threshold_achieved and reward >= self.convergence_threshold:
@@ -86,6 +111,10 @@ class PerformanceLogger:
         # Calculate stability metrics every 50 episodes
         if episode_num % 50 == 0 and episode_num > 0:
             self._calculate_stability_metrics(episode_num)
+    
+    def should_stop_early(self):
+        """Check if early stopping criteria is met"""
+        return HYPERPARAMETERS['early_stopping'] and self.convergence_detected
     
     def log_training_loss(self, loss):
         """Log training loss values"""
@@ -184,83 +213,66 @@ class PerformanceLogger:
             'improvement_ratio': late_performance / early_performance if early_performance > 0 else None,
             'monotonic_improvement': slope > 0
         }
-    
-    def save_data(self, filename_prefix="reinforce_cartpole"):
-        """Save all logged data to JSON files"""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # Raw data
-        raw_data = {
-            'episode_rewards': self.episode_rewards,
-            'episode_lengths': self.episode_lengths,
-            'episode_times': self.episode_times,
-            'policy_losses': self.policy_losses,
-            'baseline_losses': self.baseline_losses,
-            'timesteps': self.timesteps,
-            'metadata': {
-                'timestamp': timestamp,
-                'convergence_threshold': self.convergence_threshold,
-                'convergence_window': self.convergence_window,
-                'total_episodes': len(self.episode_rewards),
-                'total_training_steps': self.total_training_steps
-            }
-        }
-        
-        # Performance metrics
-        performance_metrics = self.get_performance_metrics()
-        
-        # Save files
-        raw_file = os.path.join(self.save_dir, f"{filename_prefix}_raw_data_{timestamp}.json")
-        metrics_file = os.path.join(self.save_dir, f"{filename_prefix}_metrics_{timestamp}.json")
-        
-        with open(raw_file, 'w') as f:
-            json.dump(raw_data, f, indent=2, default=str)
-        
-        with open(metrics_file, 'w') as f:
-            json.dump(performance_metrics, f, indent=2, default=str)
-        
-        print(f"Data saved to {raw_file} and {metrics_file}")
-        return raw_file, metrics_file
 
 class PolicyNetwork(nn.Module):
-    """Simple policy network for REINFORCE"""
+    """Policy network for REINFORCE with configurable architecture"""
     
-    def __init__(self, state_size, action_size, hidden_size=128):
+    def __init__(self, state_size, action_size, hidden_sizes=None):
         super(PolicyNetwork, self).__init__()
-        self.fc1 = nn.Linear(state_size, hidden_size)
-        self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, action_size)
+        if hidden_sizes is None:
+            hidden_sizes = HYPERPARAMETERS['hidden_sizes']
+        
+        self.layers = nn.ModuleList()
+        
+        # Build network layers
+        prev_size = state_size
+        for hidden_size in hidden_sizes:
+            self.layers.append(nn.Linear(prev_size, hidden_size))
+            prev_size = hidden_size
+        
+        # Output layer
+        self.output_layer = nn.Linear(prev_size, action_size)
         
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        for layer in self.layers:
+            x = F.relu(layer(x))
+        x = self.output_layer(x)
         return F.softmax(x, dim=1)
 
 class BaselineNetwork(nn.Module):
-    """Value network for baseline subtraction"""
+    """Value network for baseline subtraction with configurable architecture"""
     
-    def __init__(self, state_size, hidden_size=128):
+    def __init__(self, state_size, hidden_sizes=None):
         super(BaselineNetwork, self).__init__()
-        self.fc1 = nn.Linear(state_size, hidden_size)
-        self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, 1)
+        if hidden_sizes is None:
+            hidden_sizes = HYPERPARAMETERS['hidden_sizes']
+            
+        self.layers = nn.ModuleList()
+        
+        # Build network layers
+        prev_size = state_size
+        for hidden_size in hidden_sizes:
+            self.layers.append(nn.Linear(prev_size, hidden_size))
+            prev_size = hidden_size
+        
+        # Output layer
+        self.output_layer = nn.Linear(prev_size, 1)
         
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        for layer in self.layers:
+            x = F.relu(layer(x))
+        x = self.output_layer(x)
         return x
 
 class REINFORCEAgent:
-    """REINFORCE algorithm implementation"""
+    """REINFORCE algorithm implementation with configurable hyperparameters"""
     
-    def __init__(self, state_size, action_size, lr=1e-3, gamma=0.99, use_baseline=True):
+    def __init__(self, state_size, action_size):
         self.state_size = state_size
         self.action_size = action_size
-        self.lr = lr
-        self.gamma = gamma
-        self.use_baseline = use_baseline
+        self.lr = HYPERPARAMETERS['learning_rate']
+        self.gamma = HYPERPARAMETERS['gamma']
+        self.use_baseline = HYPERPARAMETERS['use_baseline']
         
         # Set device
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -268,11 +280,11 @@ class REINFORCEAgent:
         
         # Initialize networks
         self.policy_net = PolicyNetwork(state_size, action_size).to(self.device)
-        self.policy_optimizer = optim.Adam(self.policy_net.parameters(), lr=lr)
+        self.policy_optimizer = optim.Adam(self.policy_net.parameters(), lr=self.lr)
         
-        if use_baseline:
+        if self.use_baseline:
             self.baseline_net = BaselineNetwork(state_size).to(self.device)
-            self.baseline_optimizer = optim.Adam(self.baseline_net.parameters(), lr=lr)
+            self.baseline_optimizer = optim.Adam(self.baseline_net.parameters(), lr=self.lr)
         
         # Storage for episode data
         self.reset_episode_data()
@@ -367,6 +379,7 @@ class REINFORCEAgent:
             'baseline_net_state_dict': self.baseline_net.state_dict() if self.use_baseline else None,
             'policy_optimizer_state_dict': self.policy_optimizer.state_dict(),
             'baseline_optimizer_state_dict': self.baseline_optimizer.state_dict() if self.use_baseline else None,
+            'hyperparameters': HYPERPARAMETERS,
         }, filepath)
     
     def load_model(self, filepath):
@@ -377,6 +390,13 @@ class REINFORCEAgent:
             self.baseline_net.load_state_dict(checkpoint['baseline_net_state_dict'])
 
 def run(is_training=True):
+    # Print current hyperparameters
+    print("Current REINFORCE Hyperparameters:")
+    print("=" * 50)
+    for key, value in HYPERPARAMETERS.items():
+        print(f"{key}: {value}")
+    print("=" * 50)
+    
     print("Setting up CartPole with REINFORCE...")
     
     # Create CartPole environment
@@ -399,29 +419,29 @@ def run(is_training=True):
         logger = PerformanceLogger()
         
         # Create REINFORCE agent
-        agent = REINFORCEAgent(
-            state_size=state_size,
-            action_size=action_size,
-            lr=1e-3,                    # Learning rate
-            gamma=0.99,                 # Discount factor
-            use_baseline=True           # Use baseline to reduce variance
-        )
+        agent = REINFORCEAgent(state_size=state_size, action_size=action_size)
         
         print("REINFORCE Agent created with configuration:")
         print(f"- Algorithm: REINFORCE (vanilla policy gradient)")
-        print(f"- Learning Rate: 1e-3")
-        print(f"- Discount Factor: 0.99")
-        print(f"- Baseline: Enabled (reduces variance)")
-        print(f"- Network Architecture: [4] -> [128] -> [128] -> [2]")
+        print(f"- Learning Rate: {HYPERPARAMETERS['learning_rate']}")
+        print(f"- Discount Factor: {HYPERPARAMETERS['gamma']}")
+        print(f"- Baseline: {'Enabled' if HYPERPARAMETERS['use_baseline'] else 'Disabled'}")
+        print(f"- Network Architecture: {HYPERPARAMETERS['hidden_sizes']}")
         print(f"- Device: {agent.device}")
-        print(f"- Optimization: Adam optimizer")
+        print(f"- Early Stopping: {'Enabled' if HYPERPARAMETERS['early_stopping'] else 'Disabled'}")
+        if HYPERPARAMETERS['early_stopping']:
+            print(f"- Early Stopping Threshold: {HYPERPARAMETERS['early_stopping_threshold']}")
+        print(f"- Max Episodes: {HYPERPARAMETERS['max_episodes']}")
+        print(f"- Max Timesteps: {HYPERPARAMETERS['total_timesteps']}")
         
         print("\nStarting training...")
-        print("Note: REINFORCE has high variance but is theoretically sound")
-        print("Expected to see noisy learning but eventual convergence")
+        print("Note: REINFORCE is episodic - it updates after each complete episode")
+        print("High variance is expected, especially without baseline")
         
         # Training parameters
-        max_episodes = 2000
+        max_episodes = HYPERPARAMETERS['max_episodes']
+        total_timesteps = HYPERPARAMETERS['total_timesteps']
+        log_frequency = HYPERPARAMETERS['log_frequency']
         total_steps = 0
         
         start_time = time.time()
@@ -448,7 +468,7 @@ def run(is_training=True):
                     
                 state = next_state
             
-            # Update policy after episode completion
+            # Update policy after episode completion (this is key to REINFORCE)
             policy_loss, baseline_loss = agent.update_policy()
             
             # Log episode data
@@ -464,25 +484,28 @@ def run(is_training=True):
             )
             
             # Print progress
-            if episode % 100 == 0:
+            if episode % log_frequency == 0:
                 recent_rewards = logger.episode_rewards[-100:] if len(logger.episode_rewards) >= 100 else logger.episode_rewards
                 avg_reward = np.mean(recent_rewards) if recent_rewards else 0
                 print(f"Episode {episode}, Avg Reward (100 ep): {avg_reward:.2f}, Total Steps: {total_steps}")
             
-            # Check for early convergence
-            if logger.convergence_detected:
+            # Check stopping criteria
+            if total_steps >= total_timesteps:
+                print(f"Reached maximum timesteps ({total_timesteps}) at episode {episode}")
+                break
+                
+            if logger.should_stop_early():
                 print(f"Training completed early due to convergence at episode {episode}")
                 break
         
         training_time = time.time() - start_time
-        print(f"\nTraining completed in {training_time/60:.2f} minutes")
+        print(f"\nTraining completed in {training_time:.2f} seconds")
+        print(f"Total episodes: {episode + 1}")
+        print(f"Total timesteps: {total_steps}")
         
         # Save the model
         agent.save_model("./cartpole/reinforce/weights/reinforce_cartpole.pth")
         print("Model saved successfully!")
-        
-        # Save comprehensive metrics
-        logger.save_data()
         
         # Generate training plots
         if logger.episode_rewards:
@@ -587,7 +610,8 @@ def run(is_training=True):
                 plt.grid(True, alpha=0.3)
             
             plt.tight_layout()
-            plt.savefig("./cartpole/reinforce/weights/reinforce_cartpole_training.png", 
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            plt.savefig(f"./cartpole/reinforce/weights/reinforce_cartpole_training_{timestamp}.png", 
                        dpi=300, bbox_inches='tight')
             plt.show()
             
@@ -596,7 +620,7 @@ def run(is_training=True):
             print("\n=== REINFORCE CARTPOLE TRAINING SUMMARY ===")
             print(f"Total Episodes: {final_metrics['basic_stats']['total_episodes']}")
             print(f"Total Training Steps: {final_metrics['basic_stats']['total_training_steps']:,}")
-            print(f"Training Time: {training_time/60:.2f} minutes")
+            print(f"Training Time: {training_time:.2f} seconds")
             print(f"Final Reward: {final_metrics['basic_stats']['final_reward']:.2f}")
             print(f"Mean Reward: {final_metrics['basic_stats']['mean_reward']:.2f}")
             print(f"Max Reward: {final_metrics['basic_stats']['max_reward']:.2f}")
@@ -614,24 +638,18 @@ def run(is_training=True):
             
             # REINFORCE specific insights
             print(f"\nREINFORCE Specific Metrics:")
-            print(f"Policy gradient algorithm with Monte Carlo returns")
-            print(f"Baseline network used for variance reduction: {'Yes' if agent.use_baseline else 'No'}")
+            print(f"Episodic updates: {len(logger.policy_losses)} policy updates")
+            print(f"Baseline network used: {'Yes' if agent.use_baseline else 'No'}")
             if logger.policy_losses:
                 avg_policy_loss = np.mean([x for x in logger.policy_losses if x is not None])
                 print(f"Average policy loss: {avg_policy_loss:.4f}")
-            print(f"Learning stability: {'High variance expected' if not agent.use_baseline else 'Reduced variance with baseline'}")
+            print(f"Variance reduction: {'Baseline helps reduce gradient variance' if agent.use_baseline else 'High variance expected'}")
     
     else:
         print("Loading trained REINFORCE model...")
         try:
-            # Create agent with same configuration
-            agent = REINFORCEAgent(
-                state_size=state_size,
-                action_size=action_size,
-                lr=1e-3,
-                gamma=0.99,
-                use_baseline=True
-            )
+            # Create agent
+            agent = REINFORCEAgent(state_size=state_size, action_size=action_size)
             
             # Load model
             agent.load_model("./cartpole/reinforce/weights/reinforce_cartpole.pth")
@@ -639,7 +657,7 @@ def run(is_training=True):
             
             # Test the model
             print("Testing the REINFORCE agent...")
-            test_episodes = 10
+            test_episodes = HYPERPARAMETERS['test_episodes']
             test_rewards = []
             
             for episode in range(test_episodes):
@@ -671,4 +689,4 @@ def run(is_training=True):
     env.close()
 
 if __name__ == "__main__":
-    run(is_training=False)
+    run(is_training=True)

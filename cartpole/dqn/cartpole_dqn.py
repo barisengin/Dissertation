@@ -104,7 +104,7 @@ def run(is_training=True):
         # Train the agent
         history = agent.fit(
             env,
-            nb_steps=50000,       # Total training steps
+            nb_steps=100000,       # Total training steps
             visualize=False,      # Set to True to watch training
             verbose=1,            # Reduce verbosity
             log_interval=5000,     # Log every 5000 steps
@@ -144,17 +144,17 @@ def run(is_training=True):
                 plt.grid(True, alpha=0.3)
             
             plt.tight_layout()
-            plt.savefig("./cartpole/dqn/generated_data/cartpole_dqn_training.png", dpi=300, bbox_inches='tight')
+            plt.savefig("./cartpole/dqn/weights/cartpole_dqn_training.png", dpi=300, bbox_inches='tight')
             plt.show()
 
             # Save the trained model
-            agent.save_weights('./cartpole/dqn/generated_data/cartpole_dqn_weights_tuned.h5f', overwrite=True)
+            agent.save_weights('./cartpole/dqn/weights/cartpole_dqn_weights_tuned.h5f', overwrite=True)
             print("Training completed and weights saved!")
         
     else:
         print("Loading trained weights...")
         # Load trained weights
-        agent.load_weights('./cartpole/dqn/generated_data/cartpole_dqn_weights_tuned.h5f')
+        agent.load_weights('./cartpole/dqn/weights/cartpole_dqn_weights_tuned.h5f')
         
         # Test the agent
         print("Testing the agent...")
