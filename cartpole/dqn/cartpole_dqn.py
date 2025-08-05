@@ -58,6 +58,7 @@ def run(is_training=True):
     print(f"Test observation: {test_obs}")
 
     # Build the neural network model
+    
     model = Sequential()
     model.add(Dense(128, input_dim=state_size, activation='relu'))
     model.add(Dense(64, activation='relu'))
@@ -70,6 +71,7 @@ def run(is_training=True):
     memory = SequentialMemory(limit=50000, window_length=1)
 
     # Configure epsilon-greedy policy with linear annealing
+    
     policy = LinearAnnealedPolicy(
         EpsGreedyQPolicy(),
         attr='eps',
@@ -80,9 +82,9 @@ def run(is_training=True):
     )
 
     # Create processor
+
     processor = CartPoleProcessor()
 
-    # Create the DQN agent
     agent = DQNAgent(
         model=model,
         nb_actions=action_size,
@@ -96,7 +98,6 @@ def run(is_training=True):
         delta_clip=1.0           # Gradient clipping
     )
 
-    # Compile the agent
     agent.compile(Adam(learning_rate=0.0005), metrics=['mae'])
 
     if is_training:

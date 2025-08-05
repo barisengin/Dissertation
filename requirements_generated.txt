@@ -1,0 +1,11 @@
+torch==2.0.1 --extra-index-url https://download.pytorch.org/whl/cu117
+tensorflow==2.10.1
+stable-baselines3==2.2.1
+gymnasium[atari,accept-rom-license]==0.29.1
+opencv-python
+numpy==1.26.4
+matplotlib==3.9.4
+Pillow==11.2.1
+scipy
+pandas
+keras-rl2==1.0.5

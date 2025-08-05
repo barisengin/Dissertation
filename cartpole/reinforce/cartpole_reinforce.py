@@ -309,10 +309,6 @@ class REINFORCEAgent:
         
         return action.item()
     
-    def store_reward(self, reward):
-        """Store reward for current step"""
-        self.rewards.append(reward)
-    
     def compute_returns(self):
         """Compute discounted returns for the episode"""
         returns = []
@@ -327,6 +323,10 @@ class REINFORCEAgent:
             returns = (returns - returns.mean()) / (returns.std() + 1e-8)
         
         return returns
+    
+    def store_reward(self, reward):
+        """Store reward for current step"""
+        self.rewards.append(reward)
     
     def update_policy(self):
         """Update policy using REINFORCE algorithm"""
